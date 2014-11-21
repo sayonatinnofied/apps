@@ -1,0 +1,28 @@
+/***************************** Log In View **********************************/
+
+.login-heading {
+    text-align: center;
+}
+.custom-label .x-form-label {
+    font-size: 13px;
+}
+.custom-label .x-input-el {
+    background-color: rgba(245, 222, 179, 0.48);
+}
+.remember-me .x-form-label {
+    font-size: 13px;
+}
+.custom-label {
+    border-bottom: 1px solid white;
+}
+/******************************** Video List View *****************************/
+
+.image-wrapper {
+    display: inline-block;
+}
+.title-wrapper {
+    display: inline-block;
+    width: 50%;
+    font-size: 15px;
+    vertical-align: top;
+}

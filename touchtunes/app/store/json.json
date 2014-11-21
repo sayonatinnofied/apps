@@ -1,0 +1,2187 @@
+{
+    "feed": {
+        "author": {
+            "name": {
+                "label": "iTunes Store"
+            },
+            "uri": {
+                "label": "http://www.apple.com/itunes/"
+            }
+        },
+        "entry": [{
+            "im:name": {
+                "label": "Shake It Off"
+            },
+            "rights": {
+                "label": "℗ 2014 Big Machine Records, LLC."
+            },
+            "im:price": {
+                "label": "$1.99",
+                "attributes": {
+                    "amount": "1.99000",
+                    "currency": "USD"
+                }
+            },
+            "im:image": [{
+                "label": "http://a1243.phobos.apple.com/us/r30/Video2/v4/02/e7/57/02e7574c-81f8-ed99-16ef-4156276fd41c/vidtrkimg_00843930013845_1_1.71x53-75.jpg",
+                "attributes": {
+                    "height": "53"
+                }
+            }, {
+                "label": "http://a797.phobos.apple.com/us/r30/Video2/v4/02/e7/57/02e7574c-81f8-ed99-16ef-4156276fd41c/vidtrkimg_00843930013845_1_1.80x60-75.jpg",
+                "attributes": {
+                    "height": "60"
+                }
+            }, {
+                "label": "http://a925.phobos.apple.com/us/r30/Video2/v4/02/e7/57/02e7574c-81f8-ed99-16ef-4156276fd41c/vidtrkimg_00843930013845_1_1.100x100-75.jpg",
+                "attributes": {
+                    "height": "100"
+                }
+            }],
+            "im:artist": {
+                "label": "Taylor Swift",
+                "attributes": {
+                    "href": "https://itunes.apple.com/us/artist/taylor-swift/id159260351?uo=2"
+                }
+            },
+            "title": {
+                "label": "Shake It Off - Taylor Swift"
+            },
+            "link": [{
+                "attributes": {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://itunes.apple.com/us/music-video/shake-it-off/id907320486?uo=2"
+                }
+            }, {
+                "im:duration": {
+                    "label": "30000.0"
+                },
+                "attributes": {
+                    "title": "Preview",
+                    "rel": "enclosure",
+                    "type": "video/x-m4v",
+                    "href": "http://a1830.v.phobos.apple.com/us/r1000/047/Video5/v4/3e/ba/cd/3ebacdb2-bb43-f602-d0ca-05bd3dab908e/mzvf_2777565772277600583.640x480.h264lc.U.p.m4v",
+                    "im:assetType": "preview"
+                }
+            }],
+            "id": {
+                "label": "https://itunes.apple.com/us/music-video/shake-it-off/id907320486?uo=2",
+                "attributes": {
+                    "im:id": "907320486"
+                }
+            },
+            "im:contentType": {
+                "attributes": {
+                    "term": "Music Video",
+                    "label": "Music Video"
+                }
+            },
+            "category": {
+                "attributes": {
+                    "im:id": "1614",
+                    "term": "Pop",
+                    "scheme": "https://itunes.apple.com/us/genre/music-videos-pop/id1614?uo=2",
+                    "label": "Pop"
+                }
+            },
+            "im:releaseDate": {
+                "label": "2014-08-18T00:00:00-07:00",
+                "attributes": {
+                    "label": "August 18, 2014"
+                }
+            }
+        }, {
+            "im:name": {
+                "label": "All About That Bass"
+            },
+            "rights": {
+                "label": "℗ (C) 2014 Epic Records, a division of Sony Music Entertainment"
+            },
+            "im:price": {
+                "label": "$1.99",
+                "attributes": {
+                    "amount": "1.99000",
+                    "currency": "USD"
+                }
+            },
+            "im:image": [{
+                "label": "http://a760.phobos.apple.com/us/r30/Video6/v4/bb/c7/8b/bbc78ba3-dfc8-7319-ea8f-a46918d1310c/dj.tddrguje.71x53-75.jpg",
+                "attributes": {
+                    "height": "53"
+                }
+            }, {
+                "label": "http://a666.phobos.apple.com/us/r30/Video6/v4/bb/c7/8b/bbc78ba3-dfc8-7319-ea8f-a46918d1310c/dj.tddrguje.80x60-75.jpg",
+                "attributes": {
+                    "height": "60"
+                }
+            }, {
+                "label": "http://a234.phobos.apple.com/us/r30/Video6/v4/bb/c7/8b/bbc78ba3-dfc8-7319-ea8f-a46918d1310c/dj.tddrguje.100x100-75.jpg",
+                "attributes": {
+                    "height": "100"
+                }
+            }],
+            "im:artist": {
+                "label": "Meghan Trainor",
+                "attributes": {
+                    "href": "https://itunes.apple.com/us/artist/meghan-trainor/id348580754?uo=2"
+                }
+            },
+            "title": {
+                "label": "All About That Bass - Meghan Trainor"
+            },
+            "link": [{
+                "attributes": {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://itunes.apple.com/us/music-video/all-about-that-bass/id888972869?uo=2"
+                }
+            }, {
+                "im:duration": {
+                    "label": "30000.0"
+                },
+                "attributes": {
+                    "title": "Preview",
+                    "rel": "enclosure",
+                    "type": "video/x-m4v",
+                    "href": "http://a1206.v.phobos.apple.com/us/r1000/049/Video6/v4/09/72/8f/09728f4c-97ad-0994-ed81-6ddd97fd4390/mzvf_412930086196658699.640x480.h264lc.U.p.m4v",
+                    "im:assetType": "preview"
+                }
+            }],
+            "id": {
+                "label": "https://itunes.apple.com/us/music-video/all-about-that-bass/id888972869?uo=2",
+                "attributes": {
+                    "im:id": "888972869"
+                }
+            },
+            "im:contentType": {
+                "attributes": {
+                    "term": "Music Video",
+                    "label": "Music Video"
+                }
+            },
+            "category": {
+                "attributes": {
+                    "im:id": "1614",
+                    "term": "Pop",
+                    "scheme": "https://itunes.apple.com/us/genre/music-videos-pop/id1614?uo=2",
+                    "label": "Pop"
+                }
+            },
+            "im:releaseDate": {
+                "label": "2014-06-12T00:00:00-07:00",
+                "attributes": {
+                    "label": "June 12, 2014"
+                }
+            }
+        }, {
+            "im:name": {
+                "label": "Bang Bang (feat. Ariana Grande & Nicki Minaj)"
+            },
+            "rights": {
+                "label": "℗ 2014 Republic Records a division of UMG Recordings Inc & Lava Music LLC"
+            },
+            "im:price": {
+                "label": "$1.99",
+                "attributes": {
+                    "amount": "1.99000",
+                    "currency": "USD"
+                }
+            },
+            "im:image": [{
+                "label": "http://a385.phobos.apple.com/us/r30/Video3/v4/40/83/9d/40839d85-4805-db18-fdb9-c0c148be9668/vidtrkimg_00602537994090_1_1.71x53-75.jpg",
+                "attributes": {
+                    "height": "53"
+                }
+            }, {
+                "label": "http://a1939.phobos.apple.com/us/r30/Video3/v4/40/83/9d/40839d85-4805-db18-fdb9-c0c148be9668/vidtrkimg_00602537994090_1_1.80x60-75.jpg",
+                "attributes": {
+                    "height": "60"
+                }
+            }, {
+                "label": "http://a1539.phobos.apple.com/us/r30/Video3/v4/40/83/9d/40839d85-4805-db18-fdb9-c0c148be9668/vidtrkimg_00602537994090_1_1.100x100-75.jpg",
+                "attributes": {
+                    "height": "100"
+                }
+            }],
+            "im:artist": {
+                "label": "Jessie J",
+                "attributes": {
+                    "href": "https://itunes.apple.com/us/artist/jessie-j/id405360400?uo=2"
+                }
+            },
+            "title": {
+                "label": "Bang Bang (feat. Ariana Grande & Nicki Minaj) - Jessie J"
+            },
+            "link": [{
+                "attributes": {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://itunes.apple.com/us/music-video/bang-bang-feat.-ariana-grande/id913746045?uo=2"
+                }
+            }, {
+                "im:duration": {
+                    "label": "30000.0"
+                },
+                "attributes": {
+                    "title": "Preview",
+                    "rel": "enclosure",
+                    "type": "video/x-m4v",
+                    "href": "http://a1357.v.phobos.apple.com/us/r1000/173/Video5/v4/7e/a3/41/7ea3418e-003d-b86a-bfb2-da42a0bb3412/mzvf_4683386469842485461.640x480.h264lc.U.p.m4v",
+                    "im:assetType": "preview"
+                }
+            }],
+            "id": {
+                "label": "https://itunes.apple.com/us/music-video/bang-bang-feat.-ariana-grande/id913746045?uo=2",
+                "attributes": {
+                    "im:id": "913746045"
+                }
+            },
+            "im:contentType": {
+                "attributes": {
+                    "term": "Music Video",
+                    "label": "Music Video"
+                }
+            },
+            "category": {
+                "attributes": {
+                    "im:id": "1614",
+                    "term": "Pop",
+                    "scheme": "https://itunes.apple.com/us/genre/music-videos-pop/id1614?uo=2",
+                    "label": "Pop"
+                }
+            },
+            "im:releaseDate": {
+                "label": "2014-08-28T00:00:00-07:00",
+                "attributes": {
+                    "label": "August 28, 2014"
+                }
+            }
+        }, {
+            "im:name": {
+                "label": "Break Free (feat. Zedd)"
+            },
+            "rights": {
+                "label": "℗ 2014 Republic Records, a division of UMG Recordings, Inc."
+            },
+            "im:price": {
+                "label": "$1.99",
+                "attributes": {
+                    "amount": "1.99000",
+                    "currency": "USD"
+                }
+            },
+            "im:image": [{
+                "label": "http://a1185.phobos.apple.com/us/r30/Video3/v4/64/71/b3/6471b373-bcf4-8586-7635-19200932dfc7/vidtrkimg_00602537999484_1_1.71x53-75.jpg",
+                "attributes": {
+                    "height": "53"
+                }
+            }, {
+                "label": "http://a1091.phobos.apple.com/us/r30/Video3/v4/64/71/b3/6471b373-bcf4-8586-7635-19200932dfc7/vidtrkimg_00602537999484_1_1.80x60-75.jpg",
+                "attributes": {
+                    "height": "60"
+                }
+            }, {
+                "label": "http://a1315.phobos.apple.com/us/r30/Video3/v4/64/71/b3/6471b373-bcf4-8586-7635-19200932dfc7/vidtrkimg_00602537999484_1_1.100x100-75.jpg",
+                "attributes": {
+                    "height": "100"
+                }
+            }],
+            "im:artist": {
+                "label": "Ariana Grande",
+                "attributes": {
+                    "href": "https://itunes.apple.com/us/artist/ariana-grande/id412778295?uo=2"
+                }
+            },
+            "title": {
+                "label": "Break Free (feat. Zedd) - Ariana Grande"
+            },
+            "link": [{
+                "attributes": {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://itunes.apple.com/us/music-video/break-free-feat.-zedd/id911166041?uo=2"
+                }
+            }, {
+                "im:duration": {
+                    "label": "30000.0"
+                },
+                "attributes": {
+                    "title": "Preview",
+                    "rel": "enclosure",
+                    "type": "video/x-m4v",
+                    "href": "http://a388.v.phobos.apple.com/us/r1000/018/Video3/v4/a9/96/2a/a9962a50-dcb3-71fd-52ed-f735cd218cac/mzvf_9217414033360493612.640x480.h264lc.U.p.m4v",
+                    "im:assetType": "preview"
+                }
+            }],
+            "id": {
+                "label": "https://itunes.apple.com/us/music-video/break-free-feat.-zedd/id911166041?uo=2",
+                "attributes": {
+                    "im:id": "911166041"
+                }
+            },
+            "im:contentType": {
+                "attributes": {
+                    "term": "Music Video",
+                    "label": "Music Video"
+                }
+            },
+            "category": {
+                "attributes": {
+                    "im:id": "1614",
+                    "term": "Pop",
+                    "scheme": "https://itunes.apple.com/us/genre/music-videos-pop/id1614?uo=2",
+                    "label": "Pop"
+                }
+            },
+            "im:releaseDate": {
+                "label": "2014-08-12T00:00:00-07:00",
+                "attributes": {
+                    "label": "August 12, 2014"
+                }
+            }
+        }, {
+            "im:name": {
+                "label": "Meanwhile Back At Mama's (Director's Cut) [feat. Faith Hill]"
+            },
+            "rights": {
+                "label": "℗ 2014 McGraw Music, LLC."
+            },
+            "im:price": {
+                "label": "$1.99",
+                "attributes": {
+                    "amount": "1.99000",
+                    "currency": "USD"
+                }
+            },
+            "im:image": [{
+                "label": "http://a133.phobos.apple.com/us/r30/Video4/v4/cb/76/2c/cb762c8b-f645-ee6e-00b1-d2b13c6026e1/vidtrkimg_00843930013951_1_1.71x53-75.jpg",
+                "attributes": {
+                    "height": "53"
+                }
+            }, {
+                "label": "http://a39.phobos.apple.com/us/r30/Video4/v4/cb/76/2c/cb762c8b-f645-ee6e-00b1-d2b13c6026e1/vidtrkimg_00843930013951_1_1.80x60-75.jpg",
+                "attributes": {
+                    "height": "60"
+                }
+            }, {
+                "label": "http://a1271.phobos.apple.com/us/r30/Video4/v4/cb/76/2c/cb762c8b-f645-ee6e-00b1-d2b13c6026e1/vidtrkimg_00843930013951_1_1.100x100-75.jpg",
+                "attributes": {
+                    "height": "100"
+                }
+            }],
+            "im:artist": {
+                "label": "Tim McGraw",
+                "attributes": {
+                    "href": "https://itunes.apple.com/us/artist/tim-mcgraw/id3496236?uo=2"
+                }
+            },
+            "title": {
+                "label": "Meanwhile Back At Mama's (Director's Cut) [feat. Faith Hill] - Tim McGraw"
+            },
+            "link": [{
+                "attributes": {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://itunes.apple.com/us/music-video/meanwhile-back-at-mamas-directors/id917060774?uo=2"
+                }
+            }, {
+                "im:duration": {
+                    "label": "30000.0"
+                },
+                "attributes": {
+                    "title": "Preview",
+                    "rel": "enclosure",
+                    "type": "video/x-m4v",
+                    "href": "http://a1227.v.phobos.apple.com/us/r30/Video3/v4/46/16/90/461690dc-1fb3-7b95-01ce-42fe05c508e6/mzvf_6483696231455166366.640x480.h264lc.U.p.m4v",
+                    "im:assetType": "preview"
+                }
+            }],
+            "id": {
+                "label": "https://itunes.apple.com/us/music-video/meanwhile-back-at-mamas-directors/id917060774?uo=2",
+                "attributes": {
+                    "im:id": "917060774"
+                }
+            },
+            "im:contentType": {
+                "attributes": {
+                    "term": "Music Video",
+                    "label": "Music Video"
+                }
+            },
+            "category": {
+                "attributes": {
+                    "im:id": "1606",
+                    "term": "Country",
+                    "scheme": "https://itunes.apple.com/us/genre/music-videos-country/id1606?uo=2",
+                    "label": "Country"
+                }
+            },
+            "im:releaseDate": {
+                "label": "2014-09-16T00:00:00-07:00",
+                "attributes": {
+                    "label": "September 16, 2014"
+                }
+            }
+        }, {
+            "im:name": {
+                "label": "Chandelier"
+            },
+            "rights": {
+                "label": "℗ (C) 2014 Monkey Puzzle Records, under exclusive license to RCA Records"
+            },
+            "im:price": {
+                "label": "$1.99",
+                "attributes": {
+                    "amount": "1.99000",
+                    "currency": "USD"
+                }
+            },
+            "im:image": [{
+                "label": "http://a460.phobos.apple.com/us/r30/Video3/v4/c7/d6/cb/c7d6cbd3-b112-0ee5-9559-af0651e87067/8864446131250101VIC.71x53-75.jpg",
+                "attributes": {
+                    "height": "53"
+                }
+            }, {
+                "label": "http://a366.phobos.apple.com/us/r30/Video3/v4/c7/d6/cb/c7d6cbd3-b112-0ee5-9559-af0651e87067/8864446131250101VIC.80x60-75.jpg",
+                "attributes": {
+                    "height": "60"
+                }
+            }, {
+                "label": "http://a382.phobos.apple.com/us/r30/Video3/v4/c7/d6/cb/c7d6cbd3-b112-0ee5-9559-af0651e87067/8864446131250101VIC.100x100-75.jpg",
+                "attributes": {
+                    "height": "100"
+                }
+            }],
+            "im:artist": {
+                "label": "Sia",
+                "attributes": {
+                    "href": "https://itunes.apple.com/us/artist/sia/id13493906?uo=2"
+                }
+            },
+            "title": {
+                "label": "Chandelier - Sia"
+            },
+            "link": [{
+                "attributes": {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://itunes.apple.com/us/music-video/chandelier-directors-cut/id873189841?uo=2"
+                }
+            }, {
+                "im:duration": {
+                    "label": "30000.0"
+                },
+                "attributes": {
+                    "title": "Preview",
+                    "rel": "enclosure",
+                    "type": "video/x-m4v",
+                    "href": "http://a927.v.phobos.apple.com/us/r1000/019/Video6/v4/bc/9f/aa/bc9faa89-c066-83a5-2731-3f873a300637/mzvf_9078545860729249433.640x358.h264lc.U.p.m4v",
+                    "im:assetType": "preview"
+                }
+            }],
+            "id": {
+                "label": "https://itunes.apple.com/us/music-video/chandelier-directors-cut/id873189841?uo=2",
+                "attributes": {
+                    "im:id": "873189841"
+                }
+            },
+            "im:contentType": {
+                "attributes": {
+                    "term": "Music Video",
+                    "label": "Music Video"
+                }
+            },
+            "category": {
+                "attributes": {
+                    "im:id": "1614",
+                    "term": "Pop",
+                    "scheme": "https://itunes.apple.com/us/genre/music-videos-pop/id1614?uo=2",
+                    "label": "Pop"
+                }
+            },
+            "im:releaseDate": {
+                "label": "2014-05-07T00:00:00-07:00",
+                "attributes": {
+                    "label": "May 7, 2014"
+                }
+            }
+        }, {
+            "im:name": {
+                "label": "Happy (from Despicable Me 2)"
+            },
+            "rights": {
+                "label": "℗ (C) 2013 Back Lot Music, under exclusive license to Columbia Records, a Division of Sony Music Entertainment"
+            },
+            "im:price": {
+                "label": "$1.99",
+                "attributes": {
+                    "amount": "1.99000",
+                    "currency": "USD"
+                }
+            },
+            "im:image": [{
+                "label": "http://a530.phobos.apple.com/us/r30/Video6/v4/d4/c1/e4/d4c1e421-59c3-db9a-cc1f-677177fa6a62/dj.grymklyi.71x53-75.jpg",
+                "attributes": {
+                    "height": "53"
+                }
+            }, {
+                "label": "http://a84.phobos.apple.com/us/r30/Video6/v4/d4/c1/e4/d4c1e421-59c3-db9a-cc1f-677177fa6a62/dj.grymklyi.80x60-75.jpg",
+                "attributes": {
+                    "height": "60"
+                }
+            }, {
+                "label": "http://a660.phobos.apple.com/us/r30/Video6/v4/d4/c1/e4/d4c1e421-59c3-db9a-cc1f-677177fa6a62/dj.grymklyi.100x100-75.jpg",
+                "attributes": {
+                    "height": "100"
+                }
+            }],
+            "im:artist": {
+                "label": "Pharrell Williams",
+                "attributes": {
+                    "href": "https://itunes.apple.com/us/artist/pharrell-williams/id14934728?uo=2"
+                }
+            },
+            "title": {
+                "label": "Happy (from Despicable Me 2) - Pharrell Williams"
+            },
+            "link": [{
+                "attributes": {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://itunes.apple.com/us/music-video/happy-from-despicable-me-2/id793299815?uo=2"
+                }
+            }, {
+                "im:duration": {
+                    "label": "30000.0"
+                },
+                "attributes": {
+                    "title": "Preview",
+                    "rel": "enclosure",
+                    "type": "video/x-m4v",
+                    "href": "http://a1041.v.phobos.apple.com/us/r1000/033/Video4/v4/8f/34/00/8f340063-d7dc-631c-d9e6-1a2f60eb182b/mzvf_4685630826388908218.640x328.h264lc.U.p.m4v",
+                    "im:assetType": "preview"
+                }
+            }],
+            "id": {
+                "label": "https://itunes.apple.com/us/music-video/happy-from-despicable-me-2/id793299815?uo=2",
+                "attributes": {
+                    "im:id": "793299815"
+                }
+            },
+            "im:contentType": {
+                "attributes": {
+                    "term": "Music Video",
+                    "label": "Music Video"
+                }
+            },
+            "category": {
+                "attributes": {
+                    "im:id": "1614",
+                    "term": "Pop",
+                    "scheme": "https://itunes.apple.com/us/genre/music-videos-pop/id1614?uo=2",
+                    "label": "Pop"
+                }
+            },
+            "im:releaseDate": {
+                "label": "2014-01-08T00:00:00-07:00",
+                "attributes": {
+                    "label": "January 8, 2014"
+                }
+            }
+        }, {
+            "im:name": {
+                "label": "Burnin' It Down"
+            },
+            "rights": {
+                "label": "℗ (C) 2014 Broken Bow Records"
+            },
+            "im:price": {
+                "label": "$1.99",
+                "attributes": {
+                    "amount": "1.99000",
+                    "currency": "USD"
+                }
+            },
+            "im:image": [{
+                "label": "http://a1406.phobos.apple.com/us/r30/Video3/v4/66/ec/bb/66ecbb0d-c9d4-88e6-0119-add2f11fddf3/8864448249580101VIC.71x53-75.jpg",
+                "attributes": {
+                    "height": "53"
+                }
+            }, {
+                "label": "http://a1312.phobos.apple.com/us/r30/Video3/v4/66/ec/bb/66ecbb0d-c9d4-88e6-0119-add2f11fddf3/8864448249580101VIC.80x60-75.jpg",
+                "attributes": {
+                    "height": "60"
+                }
+            }, {
+                "label": "http://a1440.phobos.apple.com/us/r30/Video3/v4/66/ec/bb/66ecbb0d-c9d4-88e6-0119-add2f11fddf3/8864448249580101VIC.100x100-75.jpg",
+                "attributes": {
+                    "height": "100"
+                }
+            }],
+            "im:artist": {
+                "label": "Jason Aldean",
+                "attributes": {
+                    "href": "https://itunes.apple.com/us/artist/jason-aldean/id63684710?uo=2"
+                }
+            },
+            "title": {
+                "label": "Burnin' It Down - Jason Aldean"
+            },
+            "link": [{
+                "attributes": {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://itunes.apple.com/us/music-video/burnin-it-down/id913637439?uo=2"
+                }
+            }, {
+                "im:duration": {
+                    "label": "30000.0"
+                },
+                "attributes": {
+                    "title": "Preview",
+                    "rel": "enclosure",
+                    "type": "video/x-m4v",
+                    "href": "http://a1496.v.phobos.apple.com/us/r1000/136/Video4/v4/92/3c/b0/923cb0dd-2127-9f9c-bb84-1aa23981e4be/mzvf_8904895251861530420.640x358.h264lc.U.p.m4v",
+                    "im:assetType": "preview"
+                }
+            }],
+            "id": {
+                "label": "https://itunes.apple.com/us/music-video/burnin-it-down/id913637439?uo=2",
+                "attributes": {
+                    "im:id": "913637439"
+                }
+            },
+            "im:contentType": {
+                "attributes": {
+                    "term": "Music Video",
+                    "label": "Music Video"
+                }
+            },
+            "category": {
+                "attributes": {
+                    "im:id": "1606",
+                    "term": "Country",
+                    "scheme": "https://itunes.apple.com/us/genre/music-videos-country/id1606?uo=2",
+                    "label": "Country"
+                }
+            },
+            "im:releaseDate": {
+                "label": "2014-08-30T00:00:00-07:00",
+                "attributes": {
+                    "label": "August 30, 2014"
+                }
+            }
+        }, {
+            "im:name": {
+                "label": "This Is How We Do"
+            },
+            "rights": {
+                "label": "℗ 2014 Capitol Records, LLC"
+            },
+            "im:price": {
+                "label": "$1.99",
+                "attributes": {
+                    "amount": "1.99000",
+                    "currency": "USD"
+                }
+            },
+            "im:image": [{
+                "label": "http://a286.phobos.apple.com/us/r30/Video6/v4/8a/e4/b4/8ae4b46b-c78b-5ef5-7ce2-65180b26af17/vidtrkimg_00602537972203_1_1.71x53-75.jpg",
+                "attributes": {
+                    "height": "53"
+                }
+            }, {
+                "label": "http://a1840.phobos.apple.com/us/r30/Video6/v4/8a/e4/b4/8ae4b46b-c78b-5ef5-7ce2-65180b26af17/vidtrkimg_00602537972203_1_1.80x60-75.jpg",
+                "attributes": {
+                    "height": "60"
+                }
+            }, {
+                "label": "http://a176.phobos.apple.com/us/r30/Video6/v4/8a/e4/b4/8ae4b46b-c78b-5ef5-7ce2-65180b26af17/vidtrkimg_00602537972203_1_1.100x100-75.jpg",
+                "attributes": {
+                    "height": "100"
+                }
+            }],
+            "im:artist": {
+                "label": "Katy Perry",
+                "attributes": {
+                    "href": "https://itunes.apple.com/us/artist/katy-perry/id64387566?uo=2"
+                }
+            },
+            "title": {
+                "label": "This Is How We Do - Katy Perry"
+            },
+            "link": [{
+                "attributes": {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://itunes.apple.com/us/music-video/this-is-how-we-do/id906495847?uo=2"
+                }
+            }, {
+                "im:duration": {
+                    "label": "30000.0"
+                },
+                "attributes": {
+                    "title": "Preview",
+                    "rel": "enclosure",
+                    "type": "video/x-m4v",
+                    "href": "http://a1266.v.phobos.apple.com/us/r1000/173/Video5/v4/31/b6/c2/31b6c289-2d96-2503-26dd-acfb3ba20a39/mzvf_8816603758067793857.640x480.h264lc.U.p.m4v",
+                    "im:assetType": "preview"
+                }
+            }],
+            "id": {
+                "label": "https://itunes.apple.com/us/music-video/this-is-how-we-do/id906495847?uo=2",
+                "attributes": {
+                    "im:id": "906495847"
+                }
+            },
+            "im:contentType": {
+                "attributes": {
+                    "term": "Music Video",
+                    "label": "Music Video"
+                }
+            },
+            "category": {
+                "attributes": {
+                    "im:id": "1614",
+                    "term": "Pop",
+                    "scheme": "https://itunes.apple.com/us/genre/music-videos-pop/id1614?uo=2",
+                    "label": "Pop"
+                }
+            },
+            "im:releaseDate": {
+                "label": "2014-08-07T00:00:00-07:00",
+                "attributes": {
+                    "label": "August 7, 2014"
+                }
+            }
+        }, {
+            "im:name": {
+                "label": "Somethin' Bad (with Carrie Underwood)"
+            },
+            "rights": {
+                "label": "℗ (C) 2014 Sony Music Entertainment"
+            },
+            "im:price": {
+                "label": "$1.99",
+                "attributes": {
+                    "amount": "1.99000",
+                    "currency": "USD"
+                }
+            },
+            "im:image": [{
+                "label": "http://a702.phobos.apple.com/us/r30/Video5/v4/a1/1e/02/a11e02a2-b146-b16e-25ed-a8abc473bc1c/8864447095070101VIC.71x53-75.jpg",
+                "attributes": {
+                    "height": "53"
+                }
+            }, {
+                "label": "http://a256.phobos.apple.com/us/r30/Video5/v4/a1/1e/02/a11e02a2-b146-b16e-25ed-a8abc473bc1c/8864447095070101VIC.80x60-75.jpg",
+                "attributes": {
+                    "height": "60"
+                }
+            }, {
+                "label": "http://a2000.phobos.apple.com/us/r30/Video5/v4/a1/1e/02/a11e02a2-b146-b16e-25ed-a8abc473bc1c/8864447095070101VIC.100x100-75.jpg",
+                "attributes": {
+                    "height": "100"
+                }
+            }],
+            "im:artist": {
+                "label": "Miranda Lambert",
+                "attributes": {
+                    "href": "https://itunes.apple.com/us/artist/miranda-lambert/id18732261?uo=2"
+                }
+            },
+            "title": {
+                "label": "Somethin' Bad (with Carrie Underwood) - Miranda Lambert"
+            },
+            "link": [{
+                "attributes": {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://itunes.apple.com/us/music-video/somethin-bad-carrie-underwood/id891849431?uo=2"
+                }
+            }, {
+                "im:duration": {
+                    "label": "30000.0"
+                },
+                "attributes": {
+                    "title": "Preview",
+                    "rel": "enclosure",
+                    "type": "video/x-m4v",
+                    "href": "http://a1245.v.phobos.apple.com/us/r1000/000/Video4/v4/c2/60/48/c2604878-2c3e-d145-2eb0-bcfba0bd2a2a/mzvf_3677000653712932599.640x346.h264lc.U.p.m4v",
+                    "im:assetType": "preview"
+                }
+            }],
+            "id": {
+                "label": "https://itunes.apple.com/us/music-video/somethin-bad-carrie-underwood/id891849431?uo=2",
+                "attributes": {
+                    "im:id": "891849431"
+                }
+            },
+            "im:contentType": {
+                "attributes": {
+                    "term": "Music Video",
+                    "label": "Music Video"
+                }
+            },
+            "category": {
+                "attributes": {
+                    "im:id": "1606",
+                    "term": "Country",
+                    "scheme": "https://itunes.apple.com/us/genre/music-videos-country/id1606?uo=2",
+                    "label": "Country"
+                }
+            },
+            "im:releaseDate": {
+                "label": "2014-06-26T00:00:00-07:00",
+                "attributes": {
+                    "label": "June 26, 2014"
+                }
+            }
+        }, {
+            "im:name": {
+                "label": "Grown Woman (Bonus Video)"
+            },
+            "im:image": [{
+                "label": "http://a325.phobos.apple.com/us/r30/Video4/v4/88/e9/9f/88e99f9a-1be0-38a9-37a1-6481317228f7/dj.bwqucauj.71x53-75.jpg",
+                "attributes": {
+                    "height": "53"
+                }
+            }, {
+                "label": "http://a1879.phobos.apple.com/us/r30/Video4/v4/88/e9/9f/88e99f9a-1be0-38a9-37a1-6481317228f7/dj.bwqucauj.80x60-75.jpg",
+                "attributes": {
+                    "height": "60"
+                }
+            }, {
+                "label": "http://a263.phobos.apple.com/us/r30/Video4/v4/88/e9/9f/88e99f9a-1be0-38a9-37a1-6481317228f7/dj.bwqucauj.100x100-75.jpg",
+                "attributes": {
+                    "height": "100"
+                }
+            }],
+            "im:collection": {
+                "im:name": {
+                    "label": "BEYONCÉ"
+                },
+                "link": {
+                    "attributes": {
+                        "rel": "alternate",
+                        "type": "text/html",
+                        "href": "https://itunes.apple.com/us/album/beyonce/id780330041?uo=2"
+                    }
+                },
+                "im:contentType": {
+                    "im:contentType": {
+                        "attributes": {
+                            "term": "Album",
+                            "label": "Album"
+                        }
+                    },
+                    "attributes": {
+                        "term": "Music",
+                        "label": "Music"
+                    }
+                }
+            },
+            "im:price": {
+                "label": "$1.99",
+                "attributes": {
+                    "amount": "1.99000",
+                    "currency": "USD"
+                }
+            },
+            "im:contentType": {
+                "attributes": {
+                    "term": "Music Video",
+                    "label": "Music Video"
+                }
+            },
+            "rights": {
+                "label": "℗ (C) 2013 Columbia Records, a Division of Sony Music Entertainment"
+            },
+            "title": {
+                "label": "Grown Woman (Bonus Video) - Beyoncé"
+            },
+            "link": [{
+                "attributes": {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://itunes.apple.com/us/music-video/grown-woman-bonus-video/id780334212?uo=2"
+                }
+            }, {
+                "im:duration": {
+                    "label": "30000.0"
+                },
+                "attributes": {
+                    "title": "Preview",
+                    "rel": "enclosure",
+                    "type": "video/x-m4v",
+                    "href": "http://a1181.v.phobos.apple.com/us/r1000/046/Video4/v4/b1/31/7a/b1317aea-27c3-2246-1882-5c6e9d6e6ebb/mzvf_6241119791752034279.640x480.h264lc.U.p.m4v",
+                    "im:assetType": "preview"
+                }
+            }],
+            "id": {
+                "label": "https://itunes.apple.com/us/music-video/grown-woman-bonus-video/id780334212?uo=2",
+                "attributes": {
+                    "im:id": "780334212"
+                }
+            },
+            "im:artist": {
+                "label": "Beyoncé",
+                "attributes": {
+                    "href": "https://itunes.apple.com/us/artist/beyonce/id1419227?uo=2"
+                }
+            },
+            "category": {
+                "attributes": {
+                    "im:id": "1614",
+                    "term": "Pop",
+                    "scheme": "https://itunes.apple.com/us/genre/music-videos-pop/id1614?uo=2",
+                    "label": "Pop"
+                }
+            },
+            "im:releaseDate": {
+                "label": "2013-12-13T00:00:00-07:00",
+                "attributes": {
+                    "label": "December 13, 2013"
+                }
+            }
+        }, {
+            "im:name": {
+                "label": "Bailando (feat. Descemer Bueno & Gente de Zona)"
+            },
+            "rights": {
+                "label": "℗ 2014 Universal International Music BV"
+            },
+            "im:price": {
+                "label": "$1.99",
+                "attributes": {
+                    "amount": "1.99000",
+                    "currency": "USD"
+                }
+            },
+            "im:image": [{
+                "label": "http://a910.phobos.apple.com/us/r30/Video5/v4/b2/a7/d8/b2a7d8ad-9ac2-73b7-b703-5367e0c3596e/vidtrkimg_00602537832729_1_1.71x53-75.jpg",
+                "attributes": {
+                    "height": "53"
+                }
+            }, {
+                "label": "http://a816.phobos.apple.com/us/r30/Video5/v4/b2/a7/d8/b2a7d8ad-9ac2-73b7-b703-5367e0c3596e/vidtrkimg_00602537832729_1_1.80x60-75.jpg",
+                "attributes": {
+                    "height": "60"
+                }
+            }, {
+                "label": "http://a208.phobos.apple.com/us/r30/Video5/v4/b2/a7/d8/b2a7d8ad-9ac2-73b7-b703-5367e0c3596e/vidtrkimg_00602537832729_1_1.100x100-75.jpg",
+                "attributes": {
+                    "height": "100"
+                }
+            }],
+            "im:artist": {
+                "label": "Enrique Iglesias",
+                "attributes": {
+                    "href": "https://itunes.apple.com/us/artist/enrique-iglesias/id90895?uo=2"
+                }
+            },
+            "title": {
+                "label": "Bailando (feat. Descemer Bueno & Gente de Zona) - Enrique Iglesias"
+            },
+            "link": [{
+                "attributes": {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://itunes.apple.com/us/music-video/bailando-feat.-descemer-bueno/id865729564?uo=2"
+                }
+            }, {
+                "im:duration": {
+                    "label": "30000.0"
+                },
+                "attributes": {
+                    "title": "Preview",
+                    "rel": "enclosure",
+                    "type": "video/x-m4v",
+                    "href": "http://a801.v.phobos.apple.com/us/r1000/011/Video4/v4/0b/9e/fa/0b9efacc-0a65-3dbf-15a0-285493f2da12/mzvf_8524156454065272119.640x480.h264lc.U.p.m4v",
+                    "im:assetType": "preview"
+                }
+            }],
+            "id": {
+                "label": "https://itunes.apple.com/us/music-video/bailando-feat.-descemer-bueno/id865729564?uo=2",
+                "attributes": {
+                    "im:id": "865729564"
+                }
+            },
+            "im:contentType": {
+                "attributes": {
+                    "term": "Music Video",
+                    "label": "Music Video"
+                }
+            },
+            "category": {
+                "attributes": {
+                    "im:id": "1612",
+                    "term": "Latin",
+                    "scheme": "https://itunes.apple.com/us/genre/music-videos-latin/id1612?uo=2",
+                    "label": "Latin"
+                }
+            },
+            "im:releaseDate": {
+                "label": "2014-04-18T00:00:00-07:00",
+                "attributes": {
+                    "label": "April 18, 2014"
+                }
+            }
+        }, {
+            "im:name": {
+                "label": "Bailando (feat. Sean Paul, Descemer Bueno & Gente de Zona)"
+            },
+            "rights": {
+                "label": "℗ 2014 Universal International Music BV"
+            },
+            "im:price": {
+                "label": "$1.99",
+                "attributes": {
+                    "amount": "1.99000",
+                    "currency": "USD"
+                }
+            },
+            "im:image": [{
+                "label": "http://a542.phobos.apple.com/us/r30/Video5/v4/46/67/86/46678631-75fc-58d6-0b73-440f71abe6c9/vidtrkimg_00602537893560_1_1.71x53-75.jpg",
+                "attributes": {
+                    "height": "53"
+                }
+            }, {
+                "label": "http://a96.phobos.apple.com/us/r30/Video5/v4/46/67/86/46678631-75fc-58d6-0b73-440f71abe6c9/vidtrkimg_00602537893560_1_1.80x60-75.jpg",
+                "attributes": {
+                    "height": "60"
+                }
+            }, {
+                "label": "http://a1424.phobos.apple.com/us/r30/Video5/v4/46/67/86/46678631-75fc-58d6-0b73-440f71abe6c9/vidtrkimg_00602537893560_1_1.100x100-75.jpg",
+                "attributes": {
+                    "height": "100"
+                }
+            }],
+            "im:artist": {
+                "label": "Enrique Iglesias",
+                "attributes": {
+                    "href": "https://itunes.apple.com/us/artist/enrique-iglesias/id90895?uo=2"
+                }
+            },
+            "title": {
+                "label": "Bailando (feat. Sean Paul, Descemer Bueno & Gente de Zona) - Enrique Iglesias"
+            },
+            "link": [{
+                "attributes": {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://itunes.apple.com/us/music-video/bailando-feat.-sean-paul-descemer/id891112539?uo=2"
+                }
+            }, {
+                "im:duration": {
+                    "label": "30000.0"
+                },
+                "attributes": {
+                    "title": "Preview",
+                    "rel": "enclosure",
+                    "type": "video/x-m4v",
+                    "href": "http://a433.v.phobos.apple.com/us/r1000/011/Video4/v4/fe/56/57/fe565735-c5b6-8a63-5346-e50f2ef5c5b3/mzvf_3706808142170238215.640x322.h264lc.U.p.m4v",
+                    "im:assetType": "preview"
+                }
+            }],
+            "id": {
+                "label": "https://itunes.apple.com/us/music-video/bailando-feat.-sean-paul-descemer/id891112539?uo=2",
+                "attributes": {
+                    "im:id": "891112539"
+                }
+            },
+            "im:contentType": {
+                "attributes": {
+                    "term": "Music Video",
+                    "label": "Music Video"
+                }
+            },
+            "category": {
+                "attributes": {
+                    "im:id": "1612",
+                    "term": "Latin",
+                    "scheme": "https://itunes.apple.com/us/genre/music-videos-latin/id1612?uo=2",
+                    "label": "Latin"
+                }
+            },
+            "im:releaseDate": {
+                "label": "2014-06-12T00:00:00-07:00",
+                "attributes": {
+                    "label": "June 12, 2014"
+                }
+            }
+        }, {
+            "im:name": {
+                "label": "Blame (feat. John Newman)"
+            },
+            "rights": {
+                "label": "℗ (C) 2014 Sony Music Entertainment UK Limited"
+            },
+            "im:price": {
+                "label": "$1.99",
+                "attributes": {
+                    "amount": "1.99000",
+                    "currency": "USD"
+                }
+            },
+            "im:image": [{
+                "label": "http://a503.phobos.apple.com/us/r30/Video3/v4/a8/2d/08/a82d089b-0aa5-071b-5689-30cf23a1589d/8864448278740101VIC.71x53-75.jpg",
+                "attributes": {
+                    "height": "53"
+                }
+            }, {
+                "label": "http://a409.phobos.apple.com/us/r30/Video3/v4/a8/2d/08/a82d089b-0aa5-071b-5689-30cf23a1589d/8864448278740101VIC.80x60-75.jpg",
+                "attributes": {
+                    "height": "60"
+                }
+            }, {
+                "label": "http://a409.phobos.apple.com/us/r30/Video3/v4/a8/2d/08/a82d089b-0aa5-071b-5689-30cf23a1589d/8864448278740101VIC.100x100-75.jpg",
+                "attributes": {
+                    "height": "100"
+                }
+            }],
+            "im:artist": {
+                "label": "Calvin Harris",
+                "attributes": {
+                    "href": "https://itunes.apple.com/us/artist/calvin-harris/id201955086?uo=2"
+                }
+            },
+            "title": {
+                "label": "Blame (feat. John Newman) - Calvin Harris"
+            },
+            "link": [{
+                "attributes": {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://itunes.apple.com/us/music-video/blame-feat.-john-newman/id918211902?uo=2"
+                }
+            }, {
+                "im:duration": {
+                    "label": "30000.0"
+                },
+                "attributes": {
+                    "title": "Preview",
+                    "rel": "enclosure",
+                    "type": "video/x-m4v",
+                    "href": "http://a101.v.phobos.apple.com/us/r1000/053/Video3/v4/af/56/cb/af56cbf0-44ab-c01d-e64f-0366e726ecc6/mzvf_2257006649843778669.640x352.h264lc.U.p.m4v",
+                    "im:assetType": "preview"
+                }
+            }],
+            "id": {
+                "label": "https://itunes.apple.com/us/music-video/blame-feat.-john-newman/id918211902?uo=2",
+                "attributes": {
+                    "im:id": "918211902"
+                }
+            },
+            "im:contentType": {
+                "attributes": {
+                    "term": "Music Video",
+                    "label": "Music Video"
+                }
+            },
+            "category": {
+                "attributes": {
+                    "im:id": "1617",
+                    "term": "Dance",
+                    "scheme": "https://itunes.apple.com/us/genre/music-videos-dance/id1617?uo=2",
+                    "label": "Dance"
+                }
+            },
+            "im:releaseDate": {
+                "label": "2014-09-13T00:00:00-07:00",
+                "attributes": {
+                    "label": "September 13, 2014"
+                }
+            }
+        }, {
+            "im:name": {
+                "label": "Dark Horse (feat. Juicy J)"
+            },
+            "rights": {
+                "label": "℗ 2014 Capitol Records, LLC"
+            },
+            "im:price": {
+                "label": "$1.99",
+                "attributes": {
+                    "amount": "1.99000",
+                    "currency": "USD"
+                }
+            },
+            "im:image": [{
+                "label": "http://a1501.phobos.apple.com/us/r30/Video/v4/62/14/03/62140346-0c8a-eeb2-3a07-024c561c78c0/dj.lcslgfyy.71x53-75.jpg",
+                "attributes": {
+                    "height": "53"
+                }
+            }, {
+                "label": "http://a1055.phobos.apple.com/us/r30/Video/v4/62/14/03/62140346-0c8a-eeb2-3a07-024c561c78c0/dj.lcslgfyy.80x60-75.jpg",
+                "attributes": {
+                    "height": "60"
+                }
+            }, {
+                "label": "http://a1375.phobos.apple.com/us/r30/Video/v4/62/14/03/62140346-0c8a-eeb2-3a07-024c561c78c0/dj.lcslgfyy.100x100-75.jpg",
+                "attributes": {
+                    "height": "100"
+                }
+            }],
+            "im:artist": {
+                "label": "Katy Perry",
+                "attributes": {
+                    "href": "https://itunes.apple.com/us/artist/katy-perry/id64387566?uo=2"
+                }
+            },
+            "title": {
+                "label": "Dark Horse (feat. Juicy J) - Katy Perry"
+            },
+            "link": [{
+                "attributes": {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://itunes.apple.com/us/music-video/dark-horse-feat.-juicy-j/id826322075?uo=2"
+                }
+            }, {
+                "im:duration": {
+                    "label": "30000.0"
+                },
+                "attributes": {
+                    "title": "Preview",
+                    "rel": "enclosure",
+                    "type": "video/x-m4v",
+                    "href": "http://a895.v.phobos.apple.com/us/r1000/054/Video2/v4/22/3c/c2/223cc286-da10-8a5a-d01a-551a4bc77eb9/mzvf_974430432095710326.640x480.h264lc.U.p.m4v",
+                    "im:assetType": "preview"
+                }
+            }],
+            "id": {
+                "label": "https://itunes.apple.com/us/music-video/dark-horse-feat.-juicy-j/id826322075?uo=2",
+                "attributes": {
+                    "im:id": "826322075"
+                }
+            },
+            "im:contentType": {
+                "attributes": {
+                    "term": "Music Video",
+                    "label": "Music Video"
+                }
+            },
+            "category": {
+                "attributes": {
+                    "im:id": "1614",
+                    "term": "Pop",
+                    "scheme": "https://itunes.apple.com/us/genre/music-videos-pop/id1614?uo=2",
+                    "label": "Pop"
+                }
+            },
+            "im:releaseDate": {
+                "label": "2014-02-21T00:00:00-07:00",
+                "attributes": {
+                    "label": "February 21, 2014"
+                }
+            }
+        }, {
+            "im:name": {
+                "label": "Problem (feat. Iggy Azalea)"
+            },
+            "rights": {
+                "label": "℗ 2014 Republic Records, a division of UMG Recordings, Inc."
+            },
+            "im:price": {
+                "label": "$1.99",
+                "attributes": {
+                    "amount": "1.99000",
+                    "currency": "USD"
+                }
+            },
+            "im:image": [{
+                "label": "http://a1442.phobos.apple.com/us/r30/Video3/v4/40/56/fb/4056fb9b-7a26-69b7-e65f-93cf77424822/vidtrkimg_00602537855452_1_1.71x53-75.jpg",
+                "attributes": {
+                    "height": "53"
+                }
+            }, {
+                "label": "http://a996.phobos.apple.com/us/r30/Video3/v4/40/56/fb/4056fb9b-7a26-69b7-e65f-93cf77424822/vidtrkimg_00602537855452_1_1.80x60-75.jpg",
+                "attributes": {
+                    "height": "60"
+                }
+            }, {
+                "label": "http://a660.phobos.apple.com/us/r30/Video3/v4/40/56/fb/4056fb9b-7a26-69b7-e65f-93cf77424822/vidtrkimg_00602537855452_1_1.100x100-75.jpg",
+                "attributes": {
+                    "height": "100"
+                }
+            }],
+            "im:artist": {
+                "label": "Ariana Grande",
+                "attributes": {
+                    "href": "https://itunes.apple.com/us/artist/ariana-grande/id412778295?uo=2"
+                }
+            },
+            "title": {
+                "label": "Problem (feat. Iggy Azalea) - Ariana Grande"
+            },
+            "link": [{
+                "attributes": {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://itunes.apple.com/us/music-video/problem-feat.-iggy-azalea/id885999736?uo=2"
+                }
+            }, {
+                "im:duration": {
+                    "label": "30000.0"
+                },
+                "attributes": {
+                    "title": "Preview",
+                    "rel": "enclosure",
+                    "type": "video/x-m4v",
+                    "href": "http://a714.v.phobos.apple.com/us/r1000/057/Video4/v4/a9/67/fb/a967fb37-454a-566f-d635-59880cb6567a/mzvf_5215868496167331261.640x332.h264lc.U.p.m4v",
+                    "im:assetType": "preview"
+                }
+            }],
+            "id": {
+                "label": "https://itunes.apple.com/us/music-video/problem-feat.-iggy-azalea/id885999736?uo=2",
+                "attributes": {
+                    "im:id": "885999736"
+                }
+            },
+            "im:contentType": {
+                "attributes": {
+                    "term": "Music Video",
+                    "label": "Music Video"
+                }
+            },
+            "category": {
+                "attributes": {
+                    "im:id": "1614",
+                    "term": "Pop",
+                    "scheme": "https://itunes.apple.com/us/genre/music-videos-pop/id1614?uo=2",
+                    "label": "Pop"
+                }
+            },
+            "im:releaseDate": {
+                "label": "2014-06-05T00:00:00-07:00",
+                "attributes": {
+                    "label": "June 5, 2014"
+                }
+            }
+        }, {
+            "im:name": {
+                "label": "Dollhouse"
+            },
+            "im:image": [{
+                "label": "http://a1551.phobos.apple.com/us/r30/Video4/v4/bc/4a/39/bc4a3910-4d39-418a-9f76-c22037c674e7/USATV1400448.sca1.71x53-75.jpg",
+                "attributes": {
+                    "height": "53"
+                }
+            }, {
+                "label": "http://a1105.phobos.apple.com/us/r30/Video4/v4/bc/4a/39/bc4a3910-4d39-418a-9f76-c22037c674e7/USATV1400448.sca1.80x60-75.jpg",
+                "attributes": {
+                    "height": "60"
+                }
+            }, {
+                "label": "http://a1201.phobos.apple.com/us/r30/Video4/v4/bc/4a/39/bc4a3910-4d39-418a-9f76-c22037c674e7/USATV1400448.sca1.100x100-75.jpg",
+                "attributes": {
+                    "height": "100"
+                }
+            }],
+            "im:collection": {
+                "im:name": {
+                    "label": "Dollhouse - EP"
+                },
+                "link": {
+                    "attributes": {
+                        "rel": "alternate",
+                        "type": "text/html",
+                        "href": "https://itunes.apple.com/us/album/dollhouse-ep/id876756413?uo=2"
+                    }
+                },
+                "im:contentType": {
+                    "im:contentType": {
+                        "attributes": {
+                            "term": "Album",
+                            "label": "Album"
+                        }
+                    },
+                    "attributes": {
+                        "term": "Music",
+                        "label": "Music"
+                    }
+                }
+            },
+            "im:price": {
+                "label": "$0.99",
+                "attributes": {
+                    "amount": "0.99000",
+                    "currency": "USD"
+                }
+            },
+            "im:contentType": {
+                "attributes": {
+                    "term": "Music Video",
+                    "label": "Music Video"
+                }
+            },
+            "rights": {
+                "label": "℗ 2014 Atlantic Recording Corporation"
+            },
+            "title": {
+                "label": "Dollhouse - Melanie Martinez"
+            },
+            "link": [{
+                "attributes": {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://itunes.apple.com/us/music-video/dollhouse/id876756439?uo=2"
+                }
+            }, {
+                "im:duration": {
+                    "label": "30000.0"
+                },
+                "attributes": {
+                    "title": "Preview",
+                    "rel": "enclosure",
+                    "type": "video/x-m4v",
+                    "href": "http://a330.v.phobos.apple.com/us/r1000/047/Video2/v4/79/b9/af/79b9af4c-9f75-667b-865e-1d2c12c6465f/mzvf_1751089455738385898.640x480.h264lc.U.p.m4v",
+                    "im:assetType": "preview"
+                }
+            }],
+            "id": {
+                "label": "https://itunes.apple.com/us/music-video/dollhouse/id876756439?uo=2",
+                "attributes": {
+                    "im:id": "876756439"
+                }
+            },
+            "im:artist": {
+                "label": "Melanie Martinez",
+                "attributes": {
+                    "href": "https://itunes.apple.com/us/artist/melanie-martinez/id212916643?uo=2"
+                }
+            },
+            "category": {
+                "attributes": {
+                    "im:id": "1620",
+                    "term": "Alternative",
+                    "scheme": "https://itunes.apple.com/us/genre/music-videos-alternative/id1620?uo=2",
+                    "label": "Alternative"
+                }
+            },
+            "im:releaseDate": {
+                "label": "2014-05-19T00:00:00-07:00",
+                "attributes": {
+                    "label": "May 19, 2014"
+                }
+            }
+        }, {
+            "im:name": {
+                "label": "Drunk On a Plane"
+            },
+            "rights": {
+                "label": "℗ 2014 Capitol Records Nashville"
+            },
+            "im:price": {
+                "label": "$1.99",
+                "attributes": {
+                    "amount": "1.99000",
+                    "currency": "USD"
+                }
+            },
+            "im:image": [{
+                "label": "http://a1225.phobos.apple.com/us/r30/Video5/v4/8d/80/71/8d8071ec-b470-98cf-865f-7140e2d0b268/vidtrkimg_00602537879571_1_1.71x53-75.jpg",
+                "attributes": {
+                    "height": "53"
+                }
+            }, {
+                "label": "http://a1131.phobos.apple.com/us/r30/Video5/v4/8d/80/71/8d8071ec-b470-98cf-865f-7140e2d0b268/vidtrkimg_00602537879571_1_1.80x60-75.jpg",
+                "attributes": {
+                    "height": "60"
+                }
+            }, {
+                "label": "http://a107.phobos.apple.com/us/r30/Video5/v4/8d/80/71/8d8071ec-b470-98cf-865f-7140e2d0b268/vidtrkimg_00602537879571_1_1.100x100-75.jpg",
+                "attributes": {
+                    "height": "100"
+                }
+            }],
+            "im:artist": {
+                "label": "Dierks Bentley",
+                "attributes": {
+                    "href": "https://itunes.apple.com/us/artist/dierks-bentley/id3088872?uo=2"
+                }
+            },
+            "title": {
+                "label": "Drunk On a Plane - Dierks Bentley"
+            },
+            "link": [{
+                "attributes": {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://itunes.apple.com/us/music-video/drunk-on-a-plane/id877866033?uo=2"
+                }
+            }, {
+                "im:duration": {
+                    "label": "30000.0"
+                },
+                "attributes": {
+                    "title": "Preview",
+                    "rel": "enclosure",
+                    "type": "video/x-m4v",
+                    "href": "http://a135.v.phobos.apple.com/us/r1000/043/Video/v4/74/f6/1d/74f61d55-dfbc-e836-0cee-63f17a333326/mzvf_7139399312798562571.640x480.h264lc.U.p.m4v",
+                    "im:assetType": "preview"
+                }
+            }],
+            "id": {
+                "label": "https://itunes.apple.com/us/music-video/drunk-on-a-plane/id877866033?uo=2",
+                "attributes": {
+                    "im:id": "877866033"
+                }
+            },
+            "im:contentType": {
+                "attributes": {
+                    "term": "Music Video",
+                    "label": "Music Video"
+                }
+            },
+            "category": {
+                "attributes": {
+                    "im:id": "1606",
+                    "term": "Country",
+                    "scheme": "https://itunes.apple.com/us/genre/music-videos-country/id1606?uo=2",
+                    "label": "Country"
+                }
+            },
+            "im:releaseDate": {
+                "label": "2014-05-13T00:00:00-07:00",
+                "attributes": {
+                    "label": "May 13, 2014"
+                }
+            }
+        }, {
+            "im:name": {
+                "label": "Dirt"
+            },
+            "rights": {
+                "label": "℗ 2014 Republic Nashville Records, a division of UMG Recordings, Inc."
+            },
+            "im:price": {
+                "label": "$1.99",
+                "attributes": {
+                    "amount": "1.99000",
+                    "currency": "USD"
+                }
+            },
+            "im:image": [{
+                "label": "http://a1055.phobos.apple.com/us/r30/Video3/v4/14/85/28/1485285e-5254-6eef-e9ec-4a32518dd179/vidtrkimg_00602537917327_1_1.71x53-75.jpg",
+                "attributes": {
+                    "height": "53"
+                }
+            }, {
+                "label": "http://a609.phobos.apple.com/us/r30/Video3/v4/14/85/28/1485285e-5254-6eef-e9ec-4a32518dd179/vidtrkimg_00602537917327_1_1.80x60-75.jpg",
+                "attributes": {
+                    "height": "60"
+                }
+            }, {
+                "label": "http://a1857.phobos.apple.com/us/r30/Video3/v4/14/85/28/1485285e-5254-6eef-e9ec-4a32518dd179/vidtrkimg_00602537917327_1_1.100x100-75.jpg",
+                "attributes": {
+                    "height": "100"
+                }
+            }],
+            "im:artist": {
+                "label": "Florida Georgia Line",
+                "attributes": {
+                    "href": "https://itunes.apple.com/us/artist/florida-georgia-line/id399241518?uo=2"
+                }
+            },
+            "title": {
+                "label": "Dirt - Florida Georgia Line"
+            },
+            "link": [{
+                "attributes": {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://itunes.apple.com/us/music-video/dirt/id897705081?uo=2"
+                }
+            }, {
+                "im:duration": {
+                    "label": "30000.0"
+                },
+                "attributes": {
+                    "title": "Preview",
+                    "rel": "enclosure",
+                    "type": "video/x-m4v",
+                    "href": "http://a816.v.phobos.apple.com/us/r1000/054/Video4/v4/ff/ef/b6/ffefb6b3-915b-465c-5c16-38014669061c/mzvf_1612862179995375908.640x354.h264lc.U.p.m4v",
+                    "im:assetType": "preview"
+                }
+            }],
+            "id": {
+                "label": "https://itunes.apple.com/us/music-video/dirt/id897705081?uo=2",
+                "attributes": {
+                    "im:id": "897705081"
+                }
+            },
+            "im:contentType": {
+                "attributes": {
+                    "term": "Music Video",
+                    "label": "Music Video"
+                }
+            },
+            "category": {
+                "attributes": {
+                    "im:id": "1606",
+                    "term": "Country",
+                    "scheme": "https://itunes.apple.com/us/genre/music-videos-country/id1606?uo=2",
+                    "label": "Country"
+                }
+            },
+            "im:releaseDate": {
+                "label": "2014-07-11T00:00:00-07:00",
+                "attributes": {
+                    "label": "July 11, 2014"
+                }
+            }
+        }, {
+            "im:name": {
+                "label": "Neon Light"
+            },
+            "rights": {
+                "label": "℗ 2014 Ten Point Productions, Inc. under exclusive license to Warner Bros. Records Inc."
+            },
+            "im:price": {
+                "label": "$1.99",
+                "attributes": {
+                    "amount": "1.99000",
+                    "currency": "USD"
+                }
+            },
+            "im:image": [{
+                "label": "http://a1504.phobos.apple.com/us/r30/Video5/v4/73/db/f6/73dbf618-f308-b604-edcb-0f18ef68aa80/USWBV1400473.sca1.71x53-75.jpg",
+                "attributes": {
+                    "height": "53"
+                }
+            }, {
+                "label": "http://a1410.phobos.apple.com/us/r30/Video5/v4/73/db/f6/73dbf618-f308-b604-edcb-0f18ef68aa80/USWBV1400473.sca1.80x60-75.jpg",
+                "attributes": {
+                    "height": "60"
+                }
+            }, {
+                "label": "http://a674.phobos.apple.com/us/r30/Video5/v4/73/db/f6/73dbf618-f308-b604-edcb-0f18ef68aa80/USWBV1400473.sca1.100x100-75.jpg",
+                "attributes": {
+                    "height": "100"
+                }
+            }],
+            "im:artist": {
+                "label": "Blake Shelton",
+                "attributes": {
+                    "href": "https://itunes.apple.com/us/artist/blake-shelton/id189204?uo=2"
+                }
+            },
+            "title": {
+                "label": "Neon Light - Blake Shelton"
+            },
+            "link": [{
+                "attributes": {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://itunes.apple.com/us/music-video/neon-light/id918398663?uo=2"
+                }
+            }, {
+                "im:duration": {
+                    "label": "30000.0"
+                },
+                "attributes": {
+                    "title": "Preview",
+                    "rel": "enclosure",
+                    "type": "video/x-m4v",
+                    "href": "http://a1916.v.phobos.apple.com/us/r1000/018/Video4/v4/7a/bb/12/7abb126c-54c7-61a6-e28f-dbe993a8b665/mzvf_5278900937781769731.640x480.h264lc.U.p.m4v",
+                    "im:assetType": "preview"
+                }
+            }],
+            "id": {
+                "label": "https://itunes.apple.com/us/music-video/neon-light/id918398663?uo=2",
+                "attributes": {
+                    "im:id": "918398663"
+                }
+            },
+            "im:contentType": {
+                "attributes": {
+                    "term": "Music Video",
+                    "label": "Music Video"
+                }
+            },
+            "category": {
+                "attributes": {
+                    "im:id": "1606",
+                    "term": "Country",
+                    "scheme": "https://itunes.apple.com/us/genre/music-videos-country/id1606?uo=2",
+                    "label": "Country"
+                }
+            },
+            "im:releaseDate": {
+                "label": "2014-09-15T00:00:00-07:00",
+                "attributes": {
+                    "label": "September 15, 2014"
+                }
+            }
+        }, {
+            "im:name": {
+                "label": "Amnesia"
+            },
+            "rights": {
+                "label": "℗ 2014 Capitol Records Ltd."
+            },
+            "im:price": {
+                "label": "$1.99",
+                "attributes": {
+                    "amount": "1.99000",
+                    "currency": "USD"
+                }
+            },
+            "im:image": [{
+                "label": "http://a1216.phobos.apple.com/us/r30/Video4/v4/b0/67/7d/b0677d1c-addf-99db-683c-272dde1956d9/vidtrkimg_00602537833474_1_1.71x53-75.jpg",
+                "attributes": {
+                    "height": "53"
+                }
+            }, {
+                "label": "http://a1122.phobos.apple.com/us/r30/Video4/v4/b0/67/7d/b0677d1c-addf-99db-683c-272dde1956d9/vidtrkimg_00602537833474_1_1.80x60-75.jpg",
+                "attributes": {
+                    "height": "60"
+                }
+            }, {
+                "label": "http://a770.phobos.apple.com/us/r30/Video4/v4/b0/67/7d/b0677d1c-addf-99db-683c-272dde1956d9/vidtrkimg_00602537833474_1_1.100x100-75.jpg",
+                "attributes": {
+                    "height": "100"
+                }
+            }],
+            "im:artist": {
+                "label": "5 Seconds of Summer",
+                "attributes": {
+                    "href": "https://itunes.apple.com/us/artist/5-seconds-of-summer/id538811449?uo=2"
+                }
+            },
+            "title": {
+                "label": "Amnesia - 5 Seconds of Summer"
+            },
+            "link": [{
+                "attributes": {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://itunes.apple.com/us/music-video/amnesia/id906544728?uo=2"
+                }
+            }, {
+                "im:duration": {
+                    "label": "30000.0"
+                },
+                "attributes": {
+                    "title": "Preview",
+                    "rel": "enclosure",
+                    "type": "video/x-m4v",
+                    "href": "http://a298.v.phobos.apple.com/us/r1000/128/Video5/v4/aa/40/a7/aa40a76a-7310-c493-3459-115676e99d38/mzvf_4927861583664245184.640x480.h264lc.U.p.m4v",
+                    "im:assetType": "preview"
+                }
+            }],
+            "id": {
+                "label": "https://itunes.apple.com/us/music-video/amnesia/id906544728?uo=2",
+                "attributes": {
+                    "im:id": "906544728"
+                }
+            },
+            "im:contentType": {
+                "attributes": {
+                    "term": "Music Video",
+                    "label": "Music Video"
+                }
+            },
+            "category": {
+                "attributes": {
+                    "im:id": "1614",
+                    "term": "Pop",
+                    "scheme": "https://itunes.apple.com/us/genre/music-videos-pop/id1614?uo=2",
+                    "label": "Pop"
+                }
+            },
+            "im:releaseDate": {
+                "label": "2014-08-01T00:00:00-07:00",
+                "attributes": {
+                    "label": "August 1, 2014"
+                }
+            }
+        }, {
+            "im:name": {
+                "label": "Yoncé (Video)"
+            },
+            "im:image": [{
+                "label": "http://a940.phobos.apple.com/us/r30/Video6/v4/69/f0/13/69f01363-863c-ec6e-9b82-6663d05f9689/8864443858620121VIC.71x53-75.jpg",
+                "attributes": {
+                    "height": "53"
+                }
+            }, {
+                "label": "http://a846.phobos.apple.com/us/r30/Video6/v4/69/f0/13/69f01363-863c-ec6e-9b82-6663d05f9689/8864443858620121VIC.80x60-75.jpg",
+                "attributes": {
+                    "height": "60"
+                }
+            }, {
+                "label": "http://a430.phobos.apple.com/us/r30/Video6/v4/69/f0/13/69f01363-863c-ec6e-9b82-6663d05f9689/8864443858620121VIC.100x100-75.jpg",
+                "attributes": {
+                    "height": "100"
+                }
+            }],
+            "im:collection": {
+                "im:name": {
+                    "label": "BEYONCÉ"
+                },
+                "link": {
+                    "attributes": {
+                        "rel": "alternate",
+                        "type": "text/html",
+                        "href": "https://itunes.apple.com/us/album/beyonce/id780519939?uo=2"
+                    }
+                },
+                "im:contentType": {
+                    "im:contentType": {
+                        "attributes": {
+                            "term": "Album",
+                            "label": "Album"
+                        }
+                    },
+                    "attributes": {
+                        "term": "Music",
+                        "label": "Music"
+                    }
+                }
+            },
+            "im:price": {
+                "label": "$1.99",
+                "attributes": {
+                    "amount": "1.99000",
+                    "currency": "USD"
+                }
+            },
+            "im:contentType": {
+                "attributes": {
+                    "term": "Music Video",
+                    "label": "Music Video"
+                }
+            },
+            "rights": {
+                "label": "℗ (C) 2013 Columbia Records, a Division of Sony Music Entertainment"
+            },
+            "title": {
+                "label": "Yoncé (Video) - Beyoncé"
+            },
+            "link": [{
+                "attributes": {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://itunes.apple.com/us/music-video/yonce-video/id780520076?uo=2"
+                }
+            }, {
+                "im:duration": {
+                    "label": "30000.0"
+                },
+                "attributes": {
+                    "title": "Preview",
+                    "rel": "enclosure",
+                    "type": "video/x-m4v",
+                    "href": "http://a1765.v.phobos.apple.com/us/r1000/044/Video/v4/5c/37/58/5c37582d-0448-4a7f-fa5b-22e8db7369a4/mzvf_2994364082448868587.640x480.h264lc.U.p.m4v",
+                    "im:assetType": "preview"
+                }
+            }],
+            "id": {
+                "label": "https://itunes.apple.com/us/music-video/yonce-video/id780520076?uo=2",
+                "attributes": {
+                    "im:id": "780520076"
+                }
+            },
+            "im:artist": {
+                "label": "Beyoncé",
+                "attributes": {
+                    "href": "https://itunes.apple.com/us/artist/beyonce/id1419227?uo=2"
+                }
+            },
+            "category": {
+                "attributes": {
+                    "im:id": "1614",
+                    "term": "Pop",
+                    "scheme": "https://itunes.apple.com/us/genre/music-videos-pop/id1614?uo=2",
+                    "label": "Pop"
+                }
+            },
+            "im:releaseDate": {
+                "label": "2013-12-13T00:00:00-07:00",
+                "attributes": {
+                    "label": "December 13, 2013"
+                }
+            }
+        }, {
+            "im:name": {
+                "label": "Girl In a Country Song"
+            },
+            "rights": {
+                "label": "℗ 2014 Republic Records, a Division of UMG Recordings, Inc. (Dot Records)"
+            },
+            "im:price": {
+                "label": "$1.99",
+                "attributes": {
+                    "amount": "1.99000",
+                    "currency": "USD"
+                }
+            },
+            "im:image": [{
+                "label": "http://a172.phobos.apple.com/us/r30/Video3/v4/f0/bc/e1/f0bce174-1465-0615-02de-3d7251fa21dd/vidtrkimg_00602537984855_1_1.71x53-75.jpg",
+                "attributes": {
+                    "height": "53"
+                }
+            }, {
+                "label": "http://a78.phobos.apple.com/us/r30/Video3/v4/f0/bc/e1/f0bce174-1465-0615-02de-3d7251fa21dd/vidtrkimg_00602537984855_1_1.80x60-75.jpg",
+                "attributes": {
+                    "height": "60"
+                }
+            }, {
+                "label": "http://a606.phobos.apple.com/us/r30/Video3/v4/f0/bc/e1/f0bce174-1465-0615-02de-3d7251fa21dd/vidtrkimg_00602537984855_1_1.100x100-75.jpg",
+                "attributes": {
+                    "height": "100"
+                }
+            }],
+            "im:artist": {
+                "label": "Maddie & Tae",
+                "attributes": {
+                    "href": "https://itunes.apple.com/us/artist/maddie-tae/id895526551?uo=2"
+                }
+            },
+            "title": {
+                "label": "Girl In a Country Song - Maddie & Tae"
+            },
+            "link": [{
+                "attributes": {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://itunes.apple.com/us/music-video/girl-in-a-country-song/id903115876?uo=2"
+                }
+            }, {
+                "im:duration": {
+                    "label": "30000.0"
+                },
+                "attributes": {
+                    "title": "Preview",
+                    "rel": "enclosure",
+                    "type": "video/x-m4v",
+                    "href": "http://a542.v.phobos.apple.com/us/r1000/016/Video6/v4/87/be/bf/87bebf8d-44d6-38a0-0782-25058bba4849/mzvf_7449305103057772831.640x472.h264lc.U.p.m4v",
+                    "im:assetType": "preview"
+                }
+            }],
+            "id": {
+                "label": "https://itunes.apple.com/us/music-video/girl-in-a-country-song/id903115876?uo=2",
+                "attributes": {
+                    "im:id": "903115876"
+                }
+            },
+            "im:contentType": {
+                "attributes": {
+                    "term": "Music Video",
+                    "label": "Music Video"
+                }
+            },
+            "category": {
+                "attributes": {
+                    "im:id": "1606",
+                    "term": "Country",
+                    "scheme": "https://itunes.apple.com/us/genre/music-videos-country/id1606?uo=2",
+                    "label": "Country"
+                }
+            },
+            "im:releaseDate": {
+                "label": "2014-07-25T00:00:00-07:00",
+                "attributes": {
+                    "label": "July 25, 2014"
+                }
+            }
+        }, {
+            "im:name": {
+                "label": "Rude"
+            },
+            "rights": {
+                "label": "℗ (C) 2013 Sony Music Entertainment International Limited"
+            },
+            "im:price": {
+                "label": "$1.99",
+                "attributes": {
+                    "amount": "1.99000",
+                    "currency": "USD"
+                }
+            },
+            "im:image": [{
+                "label": "http://a1768.phobos.apple.com/us/r30/Video1/v4/46/c4/ec/46c4ec3b-2732-f750-f4c1-d82666d65787/8864443779660101VIC.71x53-75.jpg",
+                "attributes": {
+                    "height": "53"
+                }
+            }, {
+                "label": "http://a1674.phobos.apple.com/us/r30/Video1/v4/46/c4/ec/46c4ec3b-2732-f750-f4c1-d82666d65787/8864443779660101VIC.80x60-75.jpg",
+                "attributes": {
+                    "height": "60"
+                }
+            }, {
+                "label": "http://a202.phobos.apple.com/us/r30/Video1/v4/46/c4/ec/46c4ec3b-2732-f750-f4c1-d82666d65787/8864443779660101VIC.100x100-75.jpg",
+                "attributes": {
+                    "height": "100"
+                }
+            }],
+            "im:artist": {
+                "label": "MAGIC!",
+                "attributes": {
+                    "href": "https://itunes.apple.com/us/artist/magic!/id779604886?uo=2"
+                }
+            },
+            "title": {
+                "label": "Rude - MAGIC!"
+            },
+            "link": [{
+                "attributes": {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://itunes.apple.com/us/music-video/rude/id773679848?uo=2"
+                }
+            }, {
+                "im:duration": {
+                    "label": "30000.0"
+                },
+                "attributes": {
+                    "title": "Preview",
+                    "rel": "enclosure",
+                    "type": "video/x-m4v",
+                    "href": "http://a675.v.phobos.apple.com/us/r1000/023/Video/v4/b6/1c/92/b61c92de-4a40-537c-4679-6c39fbe408b3/mzvf_7832772380099546400.640x440.h264lc.U.p.m4v",
+                    "im:assetType": "preview"
+                }
+            }],
+            "id": {
+                "label": "https://itunes.apple.com/us/music-video/rude/id773679848?uo=2",
+                "attributes": {
+                    "im:id": "773679848"
+                }
+            },
+            "im:contentType": {
+                "attributes": {
+                    "term": "Music Video",
+                    "label": "Music Video"
+                }
+            },
+            "category": {
+                "attributes": {
+                    "im:id": "1614",
+                    "term": "Pop",
+                    "scheme": "https://itunes.apple.com/us/genre/music-videos-pop/id1614?uo=2",
+                    "label": "Pop"
+                }
+            },
+            "im:releaseDate": {
+                "label": "2013-12-07T00:00:00-07:00",
+                "attributes": {
+                    "label": "December 7, 2013"
+                }
+            }
+        }, {
+            "im:name": {
+                "label": "Turn Down for What"
+            },
+            "rights": {
+                "label": "℗ (C) 2013 Columbia Records, a Division of Sony Music Entertainment"
+            },
+            "im:price": {
+                "label": "$1.99",
+                "attributes": {
+                    "amount": "1.99000",
+                    "currency": "USD"
+                }
+            },
+            "im:image": [{
+                "label": "http://a1413.phobos.apple.com/us/r30/Video3/v4/7b/12/6c/7b126c54-9f01-2d7e-5168-dc641f577b4e/8864444761880101VIC.71x53-75.jpg",
+                "attributes": {
+                    "height": "53"
+                }
+            }, {
+                "label": "http://a967.phobos.apple.com/us/r30/Video3/v4/7b/12/6c/7b126c54-9f01-2d7e-5168-dc641f577b4e/8864444761880101VIC.80x60-75.jpg",
+                "attributes": {
+                    "height": "60"
+                }
+            }, {
+                "label": "http://a1047.phobos.apple.com/us/r30/Video3/v4/7b/12/6c/7b126c54-9f01-2d7e-5168-dc641f577b4e/8864444761880101VIC.100x100-75.jpg",
+                "attributes": {
+                    "height": "100"
+                }
+            }],
+            "im:artist": {
+                "label": "DJ Snake & Lil Jon",
+                "attributes": {
+                    "href": "https://itunes.apple.com/us/artist/dj-snake/id125742557?uo=2"
+                }
+            },
+            "title": {
+                "label": "Turn Down for What - DJ Snake & Lil Jon"
+            },
+            "link": [{
+                "attributes": {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://itunes.apple.com/us/music-video/turn-down-for-what/id839040916?uo=2"
+                }
+            }, {
+                "im:duration": {
+                    "label": "30000.0"
+                },
+                "attributes": {
+                    "title": "Preview",
+                    "rel": "enclosure",
+                    "type": "video/x-m4v",
+                    "href": "http://a15.v.phobos.apple.com/us/r1000/013/Video/v4/0c/05/66/0c0566cf-a3de-db0b-a5db-edcbcd754f0a/mzvf_726170052929977727.640x362.h264lc.U.p.m4v",
+                    "im:assetType": "preview"
+                }
+            }],
+            "id": {
+                "label": "https://itunes.apple.com/us/music-video/turn-down-for-what/id839040916?uo=2",
+                "attributes": {
+                    "im:id": "839040916"
+                }
+            },
+            "im:contentType": {
+                "attributes": {
+                    "term": "Music Video",
+                    "label": "Music Video"
+                }
+            },
+            "category": {
+                "attributes": {
+                    "im:id": "1618",
+                    "term": "Hip Hop/Rap",
+                    "scheme": "https://itunes.apple.com/us/genre/music-videos-hip-hop-rap/id1618?uo=2",
+                    "label": "Hip-Hop/Rap"
+                }
+            },
+            "im:releaseDate": {
+                "label": "2014-03-13T00:00:00-07:00",
+                "attributes": {
+                    "label": "March 13, 2014"
+                }
+            }
+        }],
+        "updated": {
+            "label": "2014-09-19T05:53:16-07:00"
+        },
+        "rights": {
+            "label": "Copyright 2008 Apple Inc."
+        },
+        "title": {
+            "label": "iTunes Store: Top Music Videos"
+        },
+        "icon": {
+            "label": "http://itunes.apple.com/favicon.ico"
+        },
+        "link": [{
+            "attributes": {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewTop?cc=us&id=38&popId=5"
+            }
+        }, {
+            "attributes": {
+                "rel": "self",
+                "href": "https://itunes.apple.com/us/rss/topmusicvideos/limit=25/json?_dc=1411131194431&page=1&start=0&limit=25"
+            }
+        }],
+        "id": {
+            "label": "https://itunes.apple.com/us/rss/topmusicvideos/limit=25/json?_dc=1411131194431&page=1&start=0&limit=25"
+        }
+    }
+}

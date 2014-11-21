@@ -1,0 +1,39 @@
+Ext.define('StorageDemo.view.LogIn',{
+	extend:'Ext.Container',
+	xtype:'login',
+	requires:[
+	'Ext.field.Password',
+	'Ext.field.Checkbox',
+	],
+	config:{
+		styleHtmlContent:true,
+		layout:{
+			type:'vbox',
+			pack:'center'
+		},
+		items:[{
+			html:'<div class="login-heading">Log In</div>'
+		},{
+			xtype:'textfield',
+			label:'Username',
+			name:'user_name',
+			cls:'custom-label'
+		},{
+			xtype:'passwordfield',
+			label:'Password',
+			name:'password',
+			cls:'custom-label'
+		},{
+			xtype:'checkboxfield',
+			cls:'remember-me',
+			label:'Keep me Logged In',
+			name:'remember_me',
+			labelWidth:'50%'
+		},{
+			xtype:'button',
+			name:'login_btn',
+			text:'Log In',
+			ui:'action'
+		}]
+	}
+});

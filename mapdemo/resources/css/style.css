@@ -1,0 +1,33 @@
+/* 
+    Document   : style
+    Created on : 17 Apr, 2013, 3:47:43 PM
+    Author     : internmc1
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root {
+    display: block;
+}
+/******************************* Map ****************************************/
+
+.infobox {
+    height: 50px;
+    width: 200px;
+    margin-left: -100px;
+    background-image: url("../images/infobox.png");
+    background-size: 100% 100%;
+    opacity: 0.8;
+    display: -webkit-box;
+    cursor: pointer !important;
+}
+.infobox .content {
+    margin: 15px 0px 0px 12px;
+    color: white;
+    font-size: 12px;
+    width: 75%;
+}
+.infobox img {
+    margin-top: 11px;
+}
+/***************************** Map ENDS ************************************/

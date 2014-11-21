@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'ubuntu', src: url('fonts/ubuntu.woff') format('woff');
+}
+body {
+    color: rgba(255, 255, 255, 0.87) !important;
+    font-family: ubuntu !important;
+}
+/******************************* Profile Details *************************/
+
+.profile-details {
+    background: -webkit-linear-gradient(top, rgba(64, 77, 109, 1) 0%, rgba(64, 77, 109, 1) 0%, rgba(99, 121, 168, 1) 100%);
+    padding: 10px;
+}
+.profile-heading {
+    position: relative;
+    margin-bottom: 5px
+}
+.profile-heading span {
+    font-size: 20px;
+}
+.profile-subheading {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.back-button {
+    position: absolute;
+    font-size: 10px;
+    top: 5px;
+}
+.circular-wrapper {
+    width: 118px;
+    position: relative;
+    margin: 0 auto;
+}
+.circular-wrapper img {
+    width: 118px;
+    border-radius: 50%;
+    border: 5px solid #656b8d
+}
+.active-dot {
+    width: 11px;
+    height: 11px;
+    background-color: rgb(131, 224, 45);
+    border-radius: 50%;
+    position: absolute;
+    left: 5px;
+    top: 15px;
+    z-index: 1;
+}
+.about-me p {
+    font-size: 12px;
+}
+/******************************* People Active ***************************/
+
+.people-active {
+    background: -webkit-linear-gradient(45deg, rgba(119, 126, 170, 1) 0%, rgba(119, 126, 170, 1) 0%, rgba(109, 121, 167, 1) 100%);
+    padding-bottom: 10px;
+}
+.friend-image {
+    width: 45px;
+    border-radius: 50%;
+    border: 3px solid #A4A8BA;
+}
+.active-small-dot {
+    width: 7px;
+    height: 7px;
+    background-color: rgb(131, 224, 45);
+    border-radius: 50%;
+    position: absolute;
+    left: 3px;
+    top: 7px;
+    z-index: 1;
+}
+.active-friends {
+    position: relative;
+}
+.list-inline {
+    margin-left: 0px;
+}
+.oval-wrapper {
+    padding: 7px;
+    font-size: 12px;
+    border-top-left-radius: 25% 50%;
+    border-top-right-radius: 25% 50%;
+    border-bottom-left-radius: 25% 50%;
+    border-bottom-right-radius: 25% 50%;
+    border: 1px solid #fff;
+}
+.col-xs-4 {
+    padding: 12px;
+}
+/******************************* Status List Wrapper **********************/
+
+.status-list-wrapper {
+    background: -webkit-linear-gradient(45deg, rgba(174, 158, 195, 1) 0%, rgba(174, 158, 195, 1) 0%, rgba(110, 120, 194, 1) 100%);
+    padding-top: 10px;
+}
+.status-image-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+}
+.active-image-wrapper {
+    width: 57px;
+    position: relative;
+    margin: 0 auto;
+}
+.status-content {
+    display: inline-block;
+    width: 75%;
+    text-align: left;
+}
+.status-heading {
+    font-size: 14px;
+    color: #fff;
+    padding-bottom: 3px;
+}
+.status-time {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.88)
+}
+.status-description p {
+    font-size: 11px;
+    color: #FFF6F6;
+}
+.status-list-heading {
+    font-weight: bold;
+}
+.status-list li {
+    padding: 10px 0px 5px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.17);
+}
+/************************* Tab Panel ***********************/
+
+.tab-panel {
+    background-color: rgba(0, 0, 0, 0.56);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 10px 0px;
+}
+.tab-panel ul {} .tab-panel ul li {
+    width: 24%;
+    text-align: center;
+    font-size: 25px;
+}
+/************************* Rating **************************/
+
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    margin-bottom: 5px;
+}
+.rating > span {
+    display: inline-block;
+    position: relative;
+    margin: 0px -3px;
+}
+.rating > span:hover:before, .rating > span:hover ~ span:before {
+    content: "\2605";
+    position: absolute;
+}
