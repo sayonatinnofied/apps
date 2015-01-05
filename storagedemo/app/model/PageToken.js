@@ -1,11 +1,16 @@
-Ext.define('StorageDemo.model.Video', {
+Ext.define('StorageDemo.model.PageToken', {
     extend: 'Ext.data.Model',
     config: {
-        // idProperty: 'videoId',
+        idProperty: 'videoId',
         fields: [{
-            name: 'nextPageToken'
+            name: 'snippet',
+            mapping: 'snippet'
         }, {
-            name: 'prevPageToken'
+            name: 'thumbnail',
+            mapping: 'snippet.thumbnails.default.url'
+        }, {
+            name: 'title',
+            mapping: 'snippet.title'
         }]
     }
 });

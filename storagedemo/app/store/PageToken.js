@@ -1,8 +1,7 @@
-Ext.define('StorageDemo.store.Videos', {
+Ext.define('StorageDemo.store.PageToken', {
     extend: 'Ext.data.Store',
     util: StorageDemo.util.Util,
     config: {
-        model: 'StorageDemo.model.PageToken',
-        autoLoad: true
+        model: 'StorageDemo.model.Video'
     }
 });

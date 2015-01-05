@@ -33,9 +33,6 @@ Ext.define('StorageDemo.controller.App', {
             backButton: {
                 tap: 'gotoVideosList'
             },
-            videosLists: {
-                activate: 'loadListData'
-            },
             logOffButton: {
                 tap: 'logOutOfAccount'
             }
@@ -67,7 +64,7 @@ Ext.define('StorageDemo.controller.App', {
             }
             // sessionstorage
             logInSessionStore.add(login);
-            
+
             // VideosLists View will be opened
             me.util.setActiveView(me, me.getVideosLists(), 'right');
 
@@ -79,38 +76,9 @@ Ext.define('StorageDemo.controller.App', {
     /*
      * VideosList is populated
      */
-    loadListData: function() {
+    launch: function() {
         var me = this;
-        me.getVideosList().mask({
-            xtype: 'loadmask'
-        });
-        Ext.Ajax.request({
-            url: me.util.api.searchUrl,
-            method: 'GET',
-            useDefaultXhrHeader: false,
-            params: {
-                part: 'snippet',
-                q: 'ambarsariya',
-                regionCode: 'IN',
-                maxResults: 30,
-                key: me.util.api.key,
-                pageToken:''
-            },
-
-            success: function(response, request) {
-                var data = Ext.decode(response.responseText);
-                console.log(data);
-                Ext.getStore('Videos').setData(data.items);
-                Ext.getStore('PageToken').setData(data);
-                me.getVideosList().unmask();
-            },
-
-            failure: function(response) {
-                me.util.failedRequest(response.statusText);
-            }
-        });
-        var data=Ext.getStore('Videos').getData();
-        console.log(data);
+        me.util.loadListData(me);
     },
 
     /*

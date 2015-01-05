@@ -29,14 +29,12 @@ Ext.application({
         'Videos',
         'Wishes',
         'LogInLocal',
-        'LogInSession',
-        'PageToken'
+        'LogInSession'
     ],
 
     models: [
         'Video',
-        'LogInCredential',
-        'PageToken'
+        'LogInCredential'
     ],
 
     controllers: [

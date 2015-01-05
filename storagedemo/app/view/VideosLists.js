@@ -3,7 +3,8 @@ Ext.define('StorageDemo.view.VideosLists', {
     xtype: 'videoslists',
     requires: [
         'Ext.dataview.List',
-        'Ext.plugin.ListPaging'
+        'Ext.plugin.ListPaging',
+        'StorageDemo.controller.CustomListPaging'
     ],
     config: {
         layout: 'fit',
@@ -22,13 +23,14 @@ Ext.define('StorageDemo.view.VideosLists', {
             xtype: 'list',
             mode: 'MULTI',
             name: 'videos_list',
+            store: 'Videos',
             striped: true,
             itemTpl: document.getElementById('list_template').innerHTML,
-            store: 'Videos',
+            
             plugins: [{
-                xclass: 'Ext.plugin.ListPaging',
-                autoPaging: true
-            }],
+                xtype: 'customlistpaging',
+                // autoPaging: true
+            }]
         }, {
             xtype: 'toolbar',
             docked: 'bottom',

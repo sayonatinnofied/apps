@@ -3,12 +3,8 @@ Ext.define('StorageDemo.model.Video', {
     config: {
         idProperty: 'videoId',
         fields: [{
-            name:'nextPageToken'
-        },{
-            name:'prevPageToken'
-        },{
             name: 'snippet',
-            mapping:'snippet'
+            mapping: 'snippet'
         }, {
             name: 'thumbnail',
             mapping: 'snippet.thumbnails.default.url'

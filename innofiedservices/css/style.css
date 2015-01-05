@@ -1,0 +1,412 @@
+@font-face {
+    font-family: 'CorbertRegular';
+    src: url('../fonts/Corbert-Regular.otf');
+}
+@font-face {
+    font-family: 'CorbertItalic';
+    src: url('../fonts/Corbert-Italic.otf');
+}
+@font-face {
+    font-family: 'CorbertMedium';
+    src: url('../fonts/corbert_medium.otf');
+}
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('../fonts/OpenSans-Bold.ttf');
+}
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'OpenSansItalic';
+    src: url('../fonts/OpenSans-Italic.ttf');
+}
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+body {
+    font-family: OpenSansRegular;
+    min-width: 750px;
+}
+/******************************* Header ********************************/
+
+.navigation {
+    background-color: #2a2a2a;
+    max-height: 90px;
+    margin-bottom: 0;
+    border: 0;
+}
+.menu {
+    margin-top: 29px;
+}
+.menu-list-options {
+    border: 0;
+    box-shadow: none;
+}
+.company-logo {
+    height: auto;
+    padding: 11px 5px 9px;
+}
+.selected > a:hover {
+    color: #4A4949 !important;
+    background-color: #2eb1ff !important;
+}
+.menu-list>li>a {
+    font-family: OpenSansRegular;
+    font-size: 14px;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    color: #2eb1ff;
+}
+.navbar-default .navbar-collapse {
+    background-color: #2a2a2a;
+}
+.selected a {
+    color: #2a2a2a !important;
+    background-color: #2eb1ff !important;
+}
+header {
+    background-color: #2a2a2a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    max-height: 90px;
+}
+/******************************* Header Ends *************************************/
+/******************************* Content ***************************************/
+
+.content {
+    margin-top: 90px;
+}
+/************************** Service Banner Wrapper **********************/
+
+.service-banner-wrapper {
+    background: url(../images/service_banner_pattern.png);
+    position: relative;
+    height: 370px;
+}
+.service-banner-content {
+    padding: 0;
+    margin-left: 16%;
+    width: 84%;
+}
+.service-banner-textual-content {
+    padding: 0;
+    width: 750px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    top: 36%;
+}
+.service-banner-left-tag {
+    color: #2eb1ff;
+    font-size: 17px;
+    text-align: right;
+    line-height: 24px;
+    width: 20%;
+}
+.service-banner-description {
+    border-left: 3px solid #2eb1ff;
+    color: #fff;
+    font-size: 26px;
+    line-height: 32px;
+    font-family: CorbertRegular;
+    width: 80%;
+    padding: 0 0 0 30px;
+}
+.service-banner-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/************************* Service Banner Wrapper Ends ******************/
+/************************* Service Details Wrapper *********************/
+/************************* Side-Menu ************/
+
+.service-details {
+    width: 1025px;
+    margin: 0 auto;
+}
+.service-details-side-menu {
+    width: 300px;
+    -webkit-box-shadow: inset -15px 0px 25px 0px #f0f0f0;
+    -moz-box-shadow: inset -15px 0px 25px 0px #f0f0f0;
+    box-shadow: inset -15px 0px 25px 0px #f0f0f0;
+    padding: 60px 30px 30px 0;
+}
+.service-details-content {
+    width: 70%;
+    padding: 60px 0 30px 50px;
+}
+.side-menu-header {
+    font-family: CorbertMedium;
+    font-size: 22px;
+    padding: 0 0 15px 0;
+    border-bottom: 1px dashed #8C8C8C;
+    color: #0D0D0D;
+}
+.service-details-side-menu-technology {
+    /* margin:0 15px 0 0; */
+}
+.technology-options {
+    background-color: #d2d2d2;
+    padding: 5px 10px;
+    font-size: 15px;
+    display: inline-block;
+    margin: 0 0 5px 0;
+    text-transform: lowercase;
+}
+.blog-item-image {
+    width: 23%;
+    padding: 0;
+}
+.books-item-image {
+    width: 34%;
+    padding: 0;
+}
+.blog-item-image img {
+    width: 64px;
+}
+.books-item-image img {
+    width: 90px;
+}
+.blog-item-content {
+    width: 77%;
+    padding-right: 0;
+}
+.blog-item-content-header {
+    font-size: 14px;
+    color: #286788;
+    margin-bottom: 10px;
+}
+.blog-item-content-author {
+    font-style: italic;
+    font-size: 13px;
+    color: #000;
+}
+.blog-item-content-author span {
+    color: #695F5F;
+    font-style: normal;
+}
+.side-menu-books-content-item {
+    position: relative;
+}
+.books-item-content {
+    width: 66%;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    padding: 0 0 0 15px;
+}
+.books-item-content-author {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.books-item-content-author-name {
+    color: #3C799D;
+    font-weight: 600;
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 5px
+}
+.books-item-content-author-designation {
+    font-size: 12px;
+}
+.side-menu-technology-content, .side-menu-blog-content, .side-menu-books-content {
+    padding: 15px 0;
+}
+.side-menu-blog-content-item, .side-menu-books-content-item {
+    margin-bottom: 15px;
+}
+/*********************** Side-Menu Ends *******************/
+/*********************** Content **************************/
+
+.service-details-content-points ul {
+    list-style: disc;
+}
+.service-details-content-points {
+    padding: 20px;
+    font-size: 14px;
+    line-height: 20px;
+}
+.service-details-content-brief {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+.service-details-content-note {
+    font-size: 14px;
+    font-style: italic;
+    padding: 20px 0;
+}
+/********************** Content Ends **********************/
+/************************ Service Details Wrapper Ends ******************/
+/*********************** Our Works Starts *****************/
+
+.our-works-wrapper {
+    background: #f0f0f0;
+    overflow: auto;
+    padding: 40px 0;
+}
+.doc-n-do {
+    margin-left: 62% !important;
+}
+.doc-n-do-logo {
+    padding: 40px 0;
+}
+.doc-n-do-content {
+    color: #4f4f4f;
+    font-family: OpenSansRegular;
+    font-size: 15px;
+    letter-spacing: .03em;
+}
+.doc-n-do-content-list {
+    margin: 30px 0px;
+}
+.doc-n-do-content-list li {
+    margin-bottom: 30px;
+}
+.doc-n-do-content-list li span {
+    vertical-align: middle;
+    font-size: 24px;
+    line-height: 16px;
+    margin-right: 8px;
+}
+.fixed-width {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+/*********************** Our Works Ends *********************/
+/************************* Comment Wrapper ****************************/
+
+.comment {
+    width: 1025px;
+    padding: 70px 0;
+    overflow: auto;
+    margin: 0 auto;
+}
+.comment-details {
+    line-height: 30px;
+    font-size: 18px;
+    color: #515151;
+}
+.comment-quote-start {
+    margin-right: 10px;
+}
+.comment-quote-end {
+    float: right;
+    margin: 10px 10px 0 10px;
+}
+.commentator-name {
+    font-family: CorbertMedium;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 0;
+}
+.commentator-designation {
+    font-size: 15px;
+}
+/************************* Comment Wrapper Ends ************************/
+/******************************* Content Ends **********************************/
+/******************************* Footer Starts *********************************/
+
+footer {
+    background: #3e3f3a url('../images/footer_pattern.png');
+}
+.footer {
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.blog-header {
+    color: #dfdfdf;
+    font-size: 36px;
+}
+.tweet-text {
+    color: #fff;
+    margin-top: 15px;
+}
+.footer-menu-tag {
+    color: #949494;
+    font-size: 14px;
+}
+.blog-latest {
+    color: #fff;
+    padding: 50px 0;
+}
+.blog-details {
+    text-align: left;
+}
+.footer-menu-list li a, .footer-menu-list li a:hover {
+    color: #949494;
+    padding: 2px;
+    font-size: 14px;
+}
+.footer-menu-list li {
+    border-right: 1px solid #949494;
+    float: left;
+    padding: 0 5px;
+}
+.footer-menu-list li:last-child {
+    border-right: 0;
+}
+.blog-latest-left {
+    border-right: 1px dotted #949494;
+}
+.blog-writter {
+    width: 30%;
+}
+.blog-details {
+    width: 70%;
+}
+.blog-writter-name {
+    font-size: 15px;
+    padding: 10px 0;
+}
+.blog-writter-designation {
+    font-size: 12px;
+    color: #949494;
+}
+.blog-details-header {
+    color: #2eb2ff;
+    font-size: 20px;
+    font-family: CorbertRegular;
+}
+.blog-details-issue-date {
+    font-size: 12px;
+    margin: 15px 0;
+}
+.blog-details-content {
+    color: #949494;
+    font-size: 15px;
+    padding: 10px 0;
+    margin-bottom: 5px;
+}
+.blog-details-read-more a {
+    color: #949494;
+    font-size: 15px;
+    font-style: italic;
+}
+.blog {
+    border-bottom: 1px solid #222222;
+}
+.tweet {
+    border-top: 1px solid #3e3e3e;
+    border-bottom: 1px solid #222222;
+    padding: 30px 0;
+}
+.footer-menu {
+    border-top: 1px solid #3e3e3e;
+    padding: 30px 10px;
+}
+.footer-menu-list li:first-child, .footer-menu-list li:first-child a {
+    padding-left: 0;
+}
+/****************************** Footer Ends ***********************************/

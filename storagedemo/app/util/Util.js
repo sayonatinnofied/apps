@@ -17,10 +17,49 @@ Ext.define('StorageDemo.util.Util', {
         Ext.Msg.alert('Error', error, Ext.emptyFn);
     },
 
-    setActiveView: function(me,view,direction) {
+    setActiveView: function(me, view, direction) {
         me.getMain().animateActiveItem(view, {
             type: 'slide',
             direction: direction
         });
     },
+
+
+    /*
+     * VideosList is populated
+     */
+    loadListData: function(listpaging) {
+        var me = this,
+            store = Ext.getStore('Videos');
+        Ext.Ajax.request({
+            url: me.api.searchUrl,
+            method: 'GET',
+            useDefaultXhrHeader: false,
+            params: {
+                part: 'snippet',
+                q: 'ambarsariya',
+                regionCode: 'IN',
+                maxResults: 30,
+                key: me.api.key,
+                pageToken: me.nextPageToken
+            },
+
+            success: function(response, request) {
+                var data = Ext.decode(response.responseText);
+                console.log(store.getCount());
+                if (store.getCount() > 0) {
+                    store.addData(data.items);
+                    listpaging.setLoading(false);
+                } else {
+                    store.setData(data.items);
+                }
+                me.nextPageToken = data.nextPageToken;
+
+            },
+
+            failure: function(response) {
+                me.failedRequest(response.statusText);
+            }
+        });
+    }
 });
