@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Canteen</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/eveningsnacks.css">
+    <link rel="stylesheet" type="text/css" href="resources/lib/bootstrap/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" href="resources/lib/bootstrapvalidator/dist/css/bootstrapValidator.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/lib/jquery-ui/jquery-ui.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header col-xs-12">
+            <h1>Header</h1>
+        </div>
+    </div>  
+
+
+    <!-- Canteen Tab Starts-->
+        <script type="text/x-handlebars-template" id="canteen_tab">
+            <div class="content col-xs-12">
+                <ul class="nav nav-tabs navigate">
+                </ul>
+                <div class="tab-content navigated-content">
+                </div>
+            </div>
+        </script>
+    <!-- Canteen Tab Ends-->   
+
+    <!-- Monojit Starts -->
+        <script type="text/x-handlebars-template" id="accounts_management_tab">
+            <li class="">
+                <a href="#accounts" data-toggle="tab">Accounts Management</a>
+            </li>
+        </script>
+
+        <script type="text/x-handlebars-template" id="accounts_management_content">                
+            <div class="tab-pane fade in" id="accounts"> 
+                <div class="col-xs-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading text-center">
+                            <h3 class="panel-title">Deposits</h3>
+                        </div>
+                        <div class="panel-body">
+                            <form class="form-horizontal form-deposit" role="form">
+                                <div class="form-group">
+                                    <label for="depositor" class="col-xs-4 control-label">User Name:</label>
+                                    <div class="col-xs-8">
+                                        <select class="form-control" id="depositor">
+                                            <option value="">Select User&rsquo;s Name</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                <label for="deposit_amount" class="col-xs-4 control-label">Deposit Amount:</label>
+                                    <div class="col-xs-8">
+                                        <input type="text" class="form-control" id="deposit_amount">
+                                    </div>
+                                </div>                                        
+                                <div class="form-group">
+                                    <div class="col-xs-offset-4 col-xs-8">
+                                        <button class="btn btn-default deposit-button">Deposit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading text-center">
+                            <h3 class="panel-title">Expenditure</h3>
+                        </div>
+                        <div class="panel-body">
+                           <form class="form-horizontal form-expenditure" role="form">
+                                <div class="form-group">
+                                    <label for="expenditure_amount" class="col-xs-4 control-label">Today&rsquo;s Expenditure:</label>
+                                    <div class="col-xs-8">
+                                        <input type="text" class="form-control" id="expenditure_amount">
+                                        <p class="help-block margin-bottom24px">Today&rsquo;s Total Expenditure</p>
+                                    </div>
+                                </div>                                        
+                                <div class="form-group">
+                                    <div class="col-xs-offset-4 col-xs-8">
+                                        <button class="btn btn-default expenditure-button">Submit</button>
+                                    </div>
+                                </div>
+                           </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="balance-status col-xs-12">                    
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#today_deposits_tab" data-toggle="tab">Today&rsquo;s Deposits</a>
+                        </li>
+                        <li class=""><a href="#transaction_history_tab" data-toggle="tab">Users&rsquo; Transaction History</a>
+                        </li>
+                        <li class=""><a href="#current_balance_tab" data-toggle="tab">Curent Balance</a>
+                        </li>
+                        <li class=""><a href="#expenditures_tab" data-toggle="tab">Expenditure History</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade active in" id="today_deposits_tab">
+                            <table class="table table-hover ">
+                                <thead>
+                                    <tr>
+                                        <th>User Name</th>
+                                        <th>Deposit Amount</th>
+                                        <th>Deposited on</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="deposits-table">
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade in" id="transaction_history_tab">
+                            <div class="trans-view col-xs-12">
+
+                                <form class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <label for="user_selector" class="col-xs-2 control-label">User Name:</label>
+                                        <div class="col-xs-6">
+                                            <select class="form-control" id="user_selector">
+                                                <option value="">Select User Name</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </form>
+                                <ul class="nav nav-pills pull-right">
+                                    <li class="active">
+                                        <a href="#last_week_trans" data-toggle="tab">This Week</a>
+                                    </li>
+                                    <li>
+                                        <a href="#all_week_trans" data-toggle="tab">All</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active fade in" id="last_week_trans">
+                                        <table class="table table-hover ">
+                                            <thead>
+                                                <tr>
+                                                    <th>Transaction Id</th>
+                                                    <th>Transaction Amount</th>
+                                                    <th>Transaction Date</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="week-trans-row-admin">
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class = "tab-pane fade in" id = "all_week_trans">
+                                        <table class = "table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>Transaction Id</th>
+                                                    <th>Transaction Amount</th>
+                                                    <th>Transaction Date</th>
+                                                </tr>
+                                            </thead>
+                                        <tbody class="all-trans-row-admin">
+                                        </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade in" id="current_balance_tab">
+                            <table class="table table-hover">
+                                <thead>
+                                    <th>User Name</th>
+                                    <th>Current Balance</th>
+                                </thead>
+                                <tbody class="admin-all-user-bal">
+
+                                </tbody>            
+                            </table>
+                            <div class="sum-total">
+                            </div>
+                        </div>
+                        <div class="tab-pane fade in" id="expenditures_tab">
+                            <table class="table table-hover ">
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Expenditure Amount</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="expenditures-table">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- admin account management ends -->
+            </div>
+        </script>
+
+        <script type="text/x-handlebars-template" id="username_dropdown">
+            {{#each users}}
+                <option value="{{user_id}}">{{user_name}}
+                </option>
+            {{/each}}
+        </script>
+
+        <script type="text/x-handlebars-template" id="todays_deposit_template">
+            {{#each deposits}}
+              <tr>
+                 <td>{{user_name}}</td>
+                 <td>{{transaction_amount}}</td>
+                 <td>{{transaction_date}}</td>
+              </tr>
+            {{/each}}   
+        </script>
+
+        <script type="text/x-handlebars-template" id="expenditures_template">
+            {{#each expenditures}}
+              <tr>
+                 <td>{{transaction_date}}</td>
+                 <td>{{transaction_amount}}</td>
+              </tr>
+            {{/each}}   
+        </script>
+
+        <script type="text/x-handlebars-template" id="all_user_balance">
+            {{#each user}}
+            <tr>
+                <td>{{usrName}}</td>
+                <td>{{currBalance}}</td>
+            </tr>
+            {{/each}}   
+        </script>
+
+        <script type="text/x-handlebars-template" id="total_balance">
+            <label class="control-label" for="sum-total">Total Amount</label>
+            <input type="text" name="sum-total" class="form-control total-balance" disabled>
+        </script>
+    <!--Monojit Ends -->
+
+
+    <!-- Sayon Starts -->
+
+        <script type="text/x-handlebars-template" id="user_tab">
+            <li class="active">
+                <a href="#user_profile" data-toggle="tab">My Canteen Account</a>
+            </li>
+        </script>
+
+
+        <script type="text/x-handlebars-template" id="user_tab_content">
+            <div class="tab-pane fade active in" id="user_profile">
+                <ul class="nav nav-pills nav-stacked col-xs-3">
+                    <li class="active"><a href="#today_menu" data-toggle="tab">Today&rsquo;s Order</a>
+                    </li>
+                    <li><a href="#trans_hist" data-toggle="tab">Transaction History</a>
+                    </li>
+                    <li><a href="#order_hist" data-toggle="tab">Order History</a>
+                    </li>
+                    <li><a href="#feedback" data-toggle="tab">Feedback & Suggestions</a>
+                    </li>
+                </ul>
+                <div class="tab-content col-xs-9">
+
+                    <div class="tab-pane fade active in" id="today_menu">
+                        <!--User side order Starts(Pabitra)-->
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                            <!-- Item panel starts -->
+                            <div class="row">
+                                <div class="col-lg-9 col-md-9 col-sm-9">
+                                    <h3>Today&rsquo;s Item:</h3>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-3">
+                                    <label class="today-item">
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- Item panel ends -->
+
+                            <!-- Order list panel starts -->
+                            <div class="row">
+                                <div class="col-lg-8 col-md-8 col-sm-8">
+                                    <button class="btn display-order-btn btn-primary">see order list</button>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4">
+                                    <label class="order-list">
+                                                
+                                    </label> 
+                                </div>
+                            </div>
+                            <!-- Order list panel ends -->
+
+                            <!-- Order status panel starts -->
+                            <div class="row">
+                                <div class="col-lg-9 col-md-9 col-sm-9">
+                                    <h3>My order status:</h3>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-3">
+                                    <label class="my-status">
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- Order set panel ends -->
+
+                            <!-- Order set panel starts -->
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 ">
+                                    <button class="btn set-order-btn btn-primary">Set order</button>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+
+                                    <label class="status-alert">
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- Order set panel ends -->
+                        </div>
+                        <!-- User side order Ends(Pabitra) -->
+                    </div>
+
+                    <div class="tab-pane fade" id="trans_hist">
+                        <div class="trans-view">
+                            <ul class="nav nav-pills pull-right">
+                                <li class="active"><a href="#last_week_trans" data-toggle="tab">This Week</a>
+                                </li>
+                                <li><a href="#all_week_trans" data-toggle="tab">All</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active fade in" id="last_week_trans">
+                                    <table class="table table-hover">
+
+                                        <thead>
+                                            <tr>
+                                                <th>Transaction Id</th>
+                                                <th>Transaction Amount</th>
+                                                <th>Transaction Date</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="week-trans-row">
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class = "tab-pane fade in" id = "all_week_trans">
+                                    <table class = "table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Transaction Id</th>
+                                                <th>Transaction Amount</th>
+                                                <th>Transaction Date</th>
+                                            </tr>
+                                        </thead>
+                                    <tbody class="all-trans-row">
+                                    </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="current-bal form-group form-horizontal">
+                        
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="order_hist">
+                        <div class="order-view">
+                            <ul class="nav nav-pills pull-right">
+                                <li class="active"><a href="#last_week_order" data-toggle="tab">This Week</a>
+                                </li>
+                                <li><a href="#all_week_order" data-toggle="tab">All</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class = "tab-pane active fade in" id = "last_week_order" >
+                                    <table class = "table table-hover">
+                                        <thead>
+                                            <tr>
+                                            <th>Order Id</th>
+                                            <th>Order Date</th >
+                                            </tr>
+                                        </thead >
+                                        <tbody class="week-order-row">
+                                        </tbody>
+                                    </table >
+                                </div>
+                                <div class = "tab-pane fade in" id = "all_week_order" >
+                                    <table class = "table table-hover">
+                                        <thead>
+                                            <tr>
+                                            <th>Order Id</th>
+                                            <th>Order Date</th >
+                                            </tr>
+                                        </thead >
+                                        <tbody class="all-order-row">
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="feedback">
+                        <div class="row section1">
+                            <div class="col-md-12 comment-area">
+                
+                            </div>
+                        </div>
+                        <div class="row section2">
+                            <div class="col-md-5 post-area">
+                                <form role="form">
+                                    <div class="form-group">
+                                        <label for="name">Have your say : </label>
+                                        <textarea class="form-control comment-here" rows="3"></textarea>
+                                        <button type="button" class="btn btn-success pull-right post-comment">Post</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </script>
+
+        <script type="text/x-handlebars-template" id="week_trans">
+            {{#each transact}}
+            <tr>
+                <td> {{transaction_id}}</td>
+                <td>{{transaction_amount}}</td >
+                <td>{{transaction_date}}</td>
+            </tr>
+            {{/each}}
+        </script>
+
+        <script type="text/x-handlebars-template" id="all_trans">
+            {{#each transact}}
+              <tr>
+                 <td>{{transaction_id}}</td>
+                 <td>{{transaction_amount}}</td>
+                 <td>{{transaction_date}}</td>
+              </tr>
+            {{/each}}   
+        </script>
+
+        <script type="text/x-handlebars-template" id="week_order">
+            {{#each order}} 
+             <tr>
+                <td>{{order_id}}</td>
+                <td>{{order_date}}</td>
+             </tr>
+            {{/each}}
+        </script>
+
+        <script type="text/x-handlebars-template" id="all_order">
+            {{#each order}}
+             <tr>
+                <td>{{order_id}}</td>
+                <td>{{order_date}}</td >
+             </tr>
+            {{/each}}
+        </script>
+
+        <script type="text/x-handlebars-template" id="current_balance">
+            <label class = "control-label" for = "curr-bal"> Your Current Balance is </label>
+            <input type="text" class="form-control current-balance" name="curr-bal" disabled>
+        </script>
+
+        <script type="text/x-handlebars-template" id="all_user_balance">
+            {{#each user}}
+            <tr>
+                <td>{{usrId}}</td>
+                <td>{{usrName}}</td>
+                <td>{{currBalance}}</td>
+            </tr>
+            {{/each}}   
+        </script>
+
+        <script type="text/x-handlebars-template" id="total_balance">
+            <label class="control-label" for="sum-total">Total Amount</label>
+            <input type="text" name="sum-total" class="form-control total-balance" disabled>
+        </script>
+    <!-- Sayon Ends -->
+
+    <!-- Asis Starts -->
+        <script type="text/x-handlebars-template" id="user_management_tab">
+            <li class="">
+                <a href="#user_management" data-toggle="tab">User Management</a>
+            </li>
+        </script>
+
+        <script type="text/x-handlebars-template" id="user_management_content">
+            <div class="tab-pane fade in" id="user_management">
+                <ul class="nav nav-pills nav-stacked col-lg-3">
+                    <li class="active">
+                        <a href="#create_user" data-toggle="tab">Create User</a>
+                    </li>
+                    <li class="">
+                        <a href="#edit_user" data-toggle="tab">Edit User Details</a>
+                    </li>
+                </ul>
+
+                <div class="tab-content col-lg-9">
+
+                    <div class="tab-pane fade active in" id="create_user">
+                        <h1>Create User Account</h1>  
+                        <form class="form-horizontal create-user-form">
+                            <fieldset>
+                              <legend>Enter Details</legend>
+                                <div class="form-group">
+                                    <label for="name" class="col-lg-2 control-label">Name</label>
+                                    <div class="col-lg-10">
+                                      <input type="text" class="form-control" id="name" placeholder="Name" name="name">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="login_id" class="col-lg-2 control-label">Username</label>
+                                    <div class="col-lg-10">
+                                      <input type="text" class="form-control" id="login_id" placeholder="Username" name="username">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input_password" class="col-lg-2 control-label">Password</label>
+                                    <div class="col-lg-10">
+                                      <input type="text" class="form-control" id="input_password" placeholder="Password" name="password">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Gender</label>
+                                    <div class="col-lg-10">
+                                        <div class="radio">
+                                            <label>
+                                              <input type="radio" name="gender" id="optionsRadios1" value="M" checked="checked">Male
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                              <input type="radio" name="gender" id="optionsRadios2" value="F">Female
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="select_role" class="col-lg-2 control-label">Role</label>
+                                    <div class="col-lg-10">
+                                        <select class="form-control" id="select_role">
+                                            <option value="user">General User</option>
+                                            <option value="admin">Admin</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-lg-10 col-lg-offset-2">
+                                      <button type="submit" class="btn btn-primary create-user-submit">Submit</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+
+                    <div class="tab-pane fade" id="edit_user">
+                      
+                    </div>
+                </div>
+            </div>
+        </script>
+
+        <script type="text/x-handlebars-template" id="create_user_message">
+            <div class="alert alert-success alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                    &times;
+                </button>
+                {{message}}
+            </div>
+        </script>
+
+        <script type="text/x-handlebars-template" id="wrong_username_message">
+            <div class="alert alert-warning alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                    &times;
+                </button>
+                {{msg}}
+            </div>
+        </script>
+
+        <script type="text/x-handlebars-template" id="edit_user_form">
+            <h1>Edit User Account</h1>
+            <form class="form-horizontal edit-user-search-from">
+                <fieldset>
+                    <legend>Search with Username</legend>
+                    <div class="form-group">
+                        <label for="edit_username" class="col-lg-2 control-label">Username</label>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="edit_username" placeholder="Username" name="username">
+                        </div>
+                    </div>
+                     <div class="form-group">
+                          <div class="col-lg-10 col-lg-offset-2">
+                            <button type="submit" class="btn btn-primary edit_user_search_button">Search</button>
+                          </div>
+                    </div>
+                </fieldset>
+            </form>
+            <div class="edit-user-result">
+                <div></div>
+            </div>
+        </script>
+
+        <script type="text/x-handlebars-template" id="edit_user_not_found">
+            <div>
+                <div class="alert alert-warning alert-dismissable">
+                    <button type="button" class="close" data-dismiss="alert">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    No result found! Try again.
+                </div>
+            </div>
+        </script>
+
+        <script type="text/x-handlebars-template" id="user_account_updated_message">
+            <div>
+                <div class="alert alert-success alert-dismissable">
+                    <button type="button" class="close" data-dismiss="alert">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    {{message}}
+                </div>
+            </div>
+        </script>
+
+        <script type="text/x-handlebars-template" id="edit_user_found">
+            <div>
+                <form class="form-horizontal edit-user-found-form">
+                    <fieldset>
+                        <legend>Edit Details</legend>
+                        <div class="form-group">
+                            <label for="name_edit" class="col-lg-2 control-label">Name</label>
+                            <div class="col-lg-10">
+                              <input type="text" class="form-control" id="name_edit" name="name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="input_password_edit" class="col-lg-2 control-label">Password</label>
+                            <div class="col-lg-10">
+                              <input type="text" class="form-control" id="input_password_edit" value="innofied" name="password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Gender</label>
+                            <div class="col-lg-10">
+                                <div class="radio">
+                                    <label>
+                                      <input type="radio" name="gender" id="gender_male" value="M">Male
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                      <input type="radio" name="gender" id="gender_female" value="F">Female
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="select_role_edit" class="col-lg-2 control-label">Role</label>
+                            <div class="col-lg-10">
+                                <select class="form-control" id="select_role_edit">
+                                    <option value="user">General User</option>
+                                    <option value="admin">Admin</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-10 col-lg-offset-2">
+                              <button type="submit" class="btn btn-primary edit-user-update-button">Update</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form> 
+            </div>
+        </script>
+	<!-- Asis Ends -->
+
+	<!-- Pabitra Admin Starts -->
+	    <script type="text/x-handlebars-template" id="admin_order_management_tab">
+	        <li class="">
+	            <a href="#admin_order_management" data-toggle="tab">Order Management</a>
+	        </li>
+	    </script>
+
+	    <script type="text/x-handlebars-template" id="admin_order_management_content">            
+	        <div class="tab-pane fade in" id="admin_order_management"> 
+	            <div class="row">
+	                <div class="col-lg-2 col-md-2  col-xs-2 ">
+	                    <h3>Set today&rsquo;s Item:</h3>
+	                </div>
+	                <div class="col-lg-2 col-md-2 col-xs-2">
+	                    <label class="item">
+	                        <input type="text" class="item_field form-control" placeholder="Enter Item name" value="" required>
+	                    </label>
+	                </div>
+	            </div>
+	            <div class="row">
+	                <div class="col-lg-3 col-md-3 col-xs-3 ">
+	                    <label class="item-field-alert">
+	                            
+	                    </label>
+	                </div>
+	            </div>    
+	            <div class="row">
+	                <div class="col-lg-1 col-md-1 col-xs-1 ">
+	                    <button class="btn set-item-btn btn-primary">Order</button>
+	                </div>
+	            </div>
+	            <!-- Set item panel ends-->
+	        
+	            <!-- display item panel stars-->
+	            <div class="row">
+	                <div class="col-lg-2 col-md-2 col-xs-2 ">
+	                    <h3 class="item-para">Today&rsquo;s item:</h3>
+	                </div>
+	                <div class="col-lg-3 col-md-3 col-xs-3">
+	                    <label class="today-item">
+	                            
+	                    </label> 
+	                </div>
+	            </div>
+	            <!-- display item panel ends-->
+	        
+	            <!-- User list panel stars-->
+	            <div class="row">
+	                <div class="col-lg-2 col-md-2 col-xs-2 ">
+	                    <h3>set orders:</h3>
+	                </div>
+	                <div class="col-lg-3 col-md-3 col-xs-3">
+	                    <label class="user-list">
+	                            
+	                    </label> 
+	                </div>
+	            </div>
+	            <!-- User list panel ends-->
+
+	            <!-- Ordered User list panel stars-->
+	            <div class="row">
+	                <div class="col-lg-2 col-md-2 col-xs-2 ">
+	                    <button class="btn display-order-btn btn-primary">see order list</button>
+	                </div>
+	                <div>
+	                    <label class="order-list">
+	                                    
+	                    </label> 
+	                </div>
+	            </div>
+	        </div>
+	    </script>
+
+	    <script id="item_field_alert_template"  type="text/x-handlebars-template">
+	        <div class="alert alert-dismissable alert-info" >
+	            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+	                &times;
+	            </button>
+	            {{alert}}
+	        </div>
+	    </script>
+
+	    <script id="today_item_template" type="text/x-handlebars-template">                
+	        {{{item}}}                
+	    </script>
+
+	    <script id="user_list_template" type="text/x-handlebars-template">                
+	        {{{users}}}                
+	    </script>
+
+	    <script id="order_list_template" type="text/x-handlebars-template">                
+	        {{{nameList}}}                
+	    </script>
+    <!-- Pabitra Admin Ends -->
+
+    <!-- Pabitra User Starts -->
+        <script id="today_item_template" type="text/x-handlebars-template">
+            {{{item}}}
+        </script>
+
+        <script id="order_list_template" type="text/x-handlebars-template">            
+                {{{nameList}}}                
+        </script>
+
+        <script id="my_status_template" type="text/x-handlebars-template">
+            {{{status}}}
+        </script>
+
+        <script id="status_alert_template"  type="text/x-handlebars-template">
+            <div class="alert alert-dismissable alert-info" >
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                    &times;
+                </button>
+                {{statusAlert}}
+            </div>
+        </script>
+    <!-- Pabitra User Ends -->
+
+    <script type="text/javascript" src="resources/lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="resources/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="resources/lib/handlebar/handlebars-v1.3.0.js"></script>
+    <script type="text/javascript" src="resources/lib/bootstrapvalidator/dist/js/bootstrapValidator.min.js"></script>
+    <script type="text/javascript" src="resources/lib/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="resources/lib/pubsub/tinypubsub.js"></script>
+
+    <script type="text/javascript" src="resources/js/validate.js"></script>
+    <script type="text/javascript" src="resources/js/database.js"></script>
+    <script type="text/javascript" src="resources/js/utilityfunctions.js"></script>    
+    <script type="text/javascript" src="resources/js/CanteenAdmin.js"></script>
+	<script type="text/javascript" src="resources/js/UserManager.js"></script>
+
+    <script type="text/javascript" src="resources/js/CanteenUserView.js"></script>
+    <script type="text/javascript" src="resources/js/AdminOrderSet.js"></script>
+	<script type="text/javascript" src="resources/js/UserOrderSet.js"></script>
+    <script type="text/javascript" src="resources/js/feedback.js"></script>
+    <script type="text/javascript" src="resources/js/Canteen.js"></script>
+</body>
+
+</html>
