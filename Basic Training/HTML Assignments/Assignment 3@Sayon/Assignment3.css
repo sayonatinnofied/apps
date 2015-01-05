@@ -1,0 +1,323 @@
+
+@import url("reset.css");
+
+/******************Start of Generic Classes*********************/
+body {
+	font-family: sans-serif;
+	margin:2px;
+	margin-right: 0px !important;
+}
+ 
+input[type="submit"]:hover {
+	cursor: pointer;
+}
+
+ul.header-list li:hover,ul.footer-list li:hover{
+	color: #000000;
+	cursor:pointer;
+}
+/******************End of Generic Classes***********************/
+
+/***********Start Of Site-Name-Header Division******************/
+
+div.sitename-header {
+	width: 97%;
+	background-color: #027CC5;
+	position: relative;
+	padding: 20px;
+}
+
+#site-name {
+	color:#ffffff;
+	font-size: 32pt;
+	font-weight: bold;
+	padding-bottom: 2px;
+}
+
+#site-caption {
+	color: #ffffff;
+	font-style: italic;
+	font-size: 12px;
+}
+
+#search-box {
+	background-color: #1796E1;
+	border: 5px solid #1796E1;
+	position: absolute;
+	top: 27px;
+	right: 50px;
+}
+
+#header-search-button {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+input.search {
+	border: 2px solid rgb(229, 235, 98);
+}
+
+/***********End Of Site-Name-Header Division**********************/
+
+/*************Start Of Flash-Header Division**********************/
+
+#flash-header {
+	width: 97%;
+	background-color: #000000;
+	padding: 20px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+div.flash-header {
+	margin: 10px;
+	margin-left: 30px;
+	border-left: 5px solid #ffffff;
+	padding-left: 7px;
+}
+
+div.flash-header-heading {
+	font-style: normal;
+	font-size: 26pt;
+	font-weight: bold;
+	color: #ffffff;
+	padding-bottom: 15px;
+}
+
+div.flash-header-text {
+	color: #ffffff;
+	padding-bottom: 15px;
+}
+
+#flashheader-submit-button {
+	width:175px;
+	height:40px;
+	background-color: #004C75;
+	color:#ffffff;
+	border-radius: 10px;
+}
+
+#flashheader-submit-button:hover {
+	background-color: rgba(50, 116, 150, 0.92) !important;
+	color: #000000 !important;
+	font-weight: bold;
+}
+
+/*************End Of Flash-Header Division************************/
+
+/***************Start of Inline-Navigation-Menu***********************/
+
+#inline-navigation {
+	width: 97%;
+	background-color: #027CC5;
+	padding: 10px 20px;
+	padding-left: 10px;
+	padding-right: 30px
+}
+
+ul.header-list li {
+	display: inline-block;
+	margin: 0px 20px;
+	color: #ffffff;
+}
+
+/*****************End of Inline-Navigation-Menu***********************/
+
+/*****************Start of Body Division******************************/
+
+#body {
+	width:97%;
+	margin: 10px 0px;
+}
+
+/******************Start of Left Body Division************/
+
+div.left-body {
+	width:30%;
+	background-color: #000000;
+	display: inline-table;
+}
+
+/****Start of Left-Body-Head Division****/
+
+div.left-body-head {
+	padding-bottom: 20px;
+	border-bottom: 1px dotted #ffffff;
+	padding-left: 15px;
+	padding-top: 10px;
+}
+
+div.h1 {
+	font-size: 36pt;
+	color:#ffffff;
+}
+
+div.h2 {
+	font-size: 52pt;
+	color:#027CC5;
+}
+
+
+
+/****End of Left-Body-Head Division******/
+
+/***Start of Registration Form Division**/
+
+div.regform {
+	padding-left: 10px;
+	color: #ffffff;
+	padding-bottom: 10px;
+	line-height: 1.6em;
+	padding-top: 20px;
+}
+
+div.regform label {
+	color: #ffffff;
+	min-width: 30%;
+	display: inline-block;
+}
+
+label.comments {
+	vertical-align: top;
+}
+
+input.radio {
+	margin-left: 26px;
+	margin-right: 10px;
+}
+
+input.radio:checked {
+	background-color: blue !important;
+}
+
+input[type="checkbox"] {
+	margin:0px 10px;
+}
+
+input.html-check {
+	margin-left: 35px;
+}
+
+#form-submit-button {
+	background-color: #037aca;
+	width: 25%;
+	height: 36px;
+	margin-left: 34%;
+	border-radius: 10px;
+	color: #ffffff;
+}
+
+p.submit {
+	padding: 20px 0px;
+}
+
+/***End of Registration form Division****/
+
+/******************End of Left Body Division**************/
+
+/******************Start of Right Body Division***********/
+
+div.right-body {
+	width: 67%;
+	display: inline-table;
+	margin-left: 20px;
+}
+
+/***Start of Welcome Note Division****/
+
+div.welcome-note-heading {
+	border-bottom: 1px dotted #838383;
+}
+
+div.welcome-note-heading h1 {
+	color: #0174BB;
+	font-size: 24pt;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+div.welcome-note-text {
+	padding: 20px 0px;
+	border-bottom: 5px solid #838383;
+
+}
+
+p.read-more {
+	margin-top: 0px;
+}
+
+div.welcome-note-text a {
+	color:  #037aca;
+	font-style: italic;
+}
+
+/***End of Welcome Note Division*****/
+
+/***Start Of Article Box Division****/
+
+div.article-box-div {
+	padding: 20px 0px
+}
+
+div.article-box {
+	width: 40%;
+	display: inline-table;
+	padding-right: 50px
+}
+
+div.article-box-heading h1 {
+	color: #0174BB;
+	font-size: 24pt;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+div.image {
+	background-color: #000000;
+	width: 40%;
+	height: 120px;
+	margin-right: 5px;
+	display: inline-table;
+}
+
+div.image-text {
+	width:50%;
+	display: inline-table;
+
+}
+
+/***End Of Article Box Division******/
+
+/******************End of Right Body Division**************/
+
+/*****************End of Body Division********************************/
+
+/*****************Start Of Footer Division****************************/
+
+#footer {
+	width: 97%;
+	background-color: #027CC5;
+	padding: 10px 20px;
+	padding-left: 10px;
+	padding-right: 30px;
+}
+
+ul.footer-list {
+	margin: 0px;
+	padding-top: 10px;
+	width: 50%;
+	margin-left: 30%;
+}
+
+ul.footer-list li {
+	display: inline-block;
+	border-right: 1.5px solid #ffffff;
+	padding-right: 5px;
+	color: #ffffff;
+}
+
+ul.footer-list li:last-child {
+	border-right: 0px !important;
+}
+
+/*****************End Of Footer Division******************************/

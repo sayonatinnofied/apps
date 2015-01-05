@@ -1,0 +1,124 @@
+/************************************************** Generic Elements Starts ***********************************************/
+
+body {
+    padding-top: 50px;
+}
+.page-header h1 {
+    font-size: 56px;
+}
+.body-section {
+    margin-top: 112px;
+}
+.body-component {
+    position: relative;
+}
+.no-margin {
+    margin: 0px !important;
+}
+.margin-bottom-15 {
+    margin-bottom: 15px !important;
+}
+.margin-bottom-20 {
+    margin-bottom: 20px !important;
+}
+.ovr-auto {
+    overflow: auto;
+}
+/************************************************** Generic Elements Ends ************************************************/
+
+/******************************************** Banner Starts ********************************/
+
+.banner {
+    min-height: 300px;
+    border-bottom: none;
+}
+.deal-image {
+    width: 300px;
+}
+.sponsor {
+    text-align: center;
+}
+.sponsor img {
+    border-radius: 4px;
+}
+.sponsor a:hover {
+    text-decoration: none;
+}
+/******************************************* Banner Ends ***********************************/
+
+/******************************************* Navigation Tab Demo Starts ********************/
+
+.nav-max-width {
+    max-width: 300px !important;
+}
+.breadcrumb-mb {
+    margin-bottom: 5px !important;
+}
+/******************************************* Navigation Tab Demo Ends **********************/
+
+/******************************************* Notification starts ***************************/
+
+.body-component-mb {
+    margin-bottom: 40px !important;
+}
+/******************************************* Notification Ends *****************************/
+
+/******************************************** Progress Bar Demo Starts **********************/
+
+.progress {
+    margin-bottom: 10px;
+}
+.prog-wd-10 {
+    width: 10% !important;
+}
+.prog-wd-20 {
+    width: 20% !important;
+}
+.prog-wd-35 {
+    width: 35% !important;
+}
+.prog-wd-40 {
+    width: 40% !important;
+}
+.prog-wd-45 {
+    width: 45% !important;
+}
+.prog-wd-60 {
+    width: 60% !important;
+}
+.prog-wd-80 {
+    width: 80% !important;
+}
+/******************************************** Progress Bar Demo Ends ************************/
+
+/**************************************** Pop Up Starts *************************************/
+
+.body-component .modal {
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    bottom: auto;
+    z-index: 1;
+    display: block;
+}
+.body-component .modal-dialog {
+    width: 90%;
+}
+/**************************************** Pop up Ends ******************************************/
+
+/**************************************** Footer Starts ****************************************/
+
+footer {
+    margin: 70px 0;
+}
+footer li {
+    float: left;
+    margin-right: 21px;
+    margin-bottom: 21px;
+}
+footer p {
+    clear: left;
+    margin-bottom: 0px;
+}
+/**************************************** Footer Ends ********************************************/

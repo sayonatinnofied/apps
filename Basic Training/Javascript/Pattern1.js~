@@ -1,0 +1,24 @@
+(function(){
+var n =prompt("Enter Depth:","5");
+    var even = function(paramOne) {
+        if (paramOne % 2 == 0 && paramOne > 0)
+            return true;
+    };
+
+function pattern1(n) {
+    for (var i = 1; i <= n; i++) {
+        str = "";
+        if (even(i) == true) {
+            str = str + " ";
+
+        }
+        for (var j = 1; j < n; j++) {
+            str = str + "# ";
+
+        }
+        return str;
+    }
+}
+
+console.log(pattern1(n));
+})();

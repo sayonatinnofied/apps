@@ -1,0 +1,25 @@
+function towers(num, frompeg, topeg, auxpeg)
+
+{
+
+    if (num == 1)
+
+    {
+
+        console.log("Move disk 1 from peg " + frompeg + " to peg " + topeg);
+
+        return;
+
+    }
+
+    towers(num - 1, frompeg, auxpeg, topeg);
+
+    console.log("Move disk " + num + " from peg " + frompeg + " to peg " + topeg);
+
+    towers(num - 1, auxpeg, topeg, frompeg);
+
+}
+
+console.log("The sequence of moves involved in the Tower of Hanoi are :");
+
+towers(3, 'A', 'C', 'B');

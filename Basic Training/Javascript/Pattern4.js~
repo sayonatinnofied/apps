@@ -1,0 +1,22 @@
+var n=prompt("Enter Depth:","5");
+var pattern4=function(n){
+var rowNum, colNum = 0;
+for (rowNum = 0; rowNum <= n; rowNum++) {
+    var frnt = "";
+    var str = " ";
+    var strRow = "";
+    var strCol = "";
+    for (var i = n; i > rowNum; i--) {
+        frnt = frnt + str;
+    }
+    for (var colNum = 0; colNum <= rowNum; colNum++) {
+        strRow = strRow + rowNum + str;
+        strCol = strCol + colNum + str;
+    }
+    strRow = frnt + strRow;
+    strCol = frnt + strCol;
+    console.log(strRow);
+    console.log(strCol);
+}
+}
+pattern4(n);

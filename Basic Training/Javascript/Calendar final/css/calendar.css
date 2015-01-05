@@ -1,0 +1,65 @@
+.width-eq {
+    width: 14.285% !important;
+    border: 1px solid rgb(50, 118, 179);
+}
+.day > span:first-child{
+    font-size: 25px !important;
+}
+.navigation-div {
+    margin: 5px 0px;
+}
+.navbar {
+    margin-right: 2px;
+    width: 16.487% !important;
+    margin-bottom: 0px !important;
+}
+.add-event-div {
+    margin-bottom: 10px;
+}
+.day {
+    height: 110px;
+}
+.modal-body .row {
+    margin-bottom: 5px;
+}
+.modal-footer {
+    text-align: center;
+}
+.addNewEvent {
+    margin-bottom: 20px;
+}
+.selectedMonth {
+    font-size: 20px;
+}
+.selectedYear {
+    font-size: 20px;
+}
+.day-head {
+    font-size: 16px;
+    font-weight: bold;
+}
+.day-head > .width-eq {
+    padding: 2px;
+    background-color: #c3d9ff;
+    color: #000000;
+}
+.event-span {
+    display: block;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: rgba(214, 234, 60, 0.26);
+    padding: 4px;
+    color: rgb(35, 35, 65);
+    font-size: 11px;
+}
+.event-span:hover {
+    cursor: pointer;
+    background-color: rgb(176, 189, 135);
+}
+.red-star {
+    color: red;
+}
+.sunday {
+    background-color: rgb(87, 157, 211) !important;
+    color: white !important;
+}

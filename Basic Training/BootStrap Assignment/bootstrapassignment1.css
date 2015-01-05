@@ -1,0 +1,415 @@
+/************************* Font Faces ******************/
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+/**************************************************************/
+
+/******************* Generic Elements Starts ******************/
+
+@import url("reset.css");
+
+.btn-green {
+    background-color: #1ab394 !important;
+    border: #1ab394 !important;
+    border-radius: 3px !important;
+}
+a:hover {
+}
+.btn-green:hover {
+    background-color: #246342!important;
+}
+
+.m-b {
+    margin-bottom: 15px;
+}
+
+.p-l-n {
+    padding-left: 0px !important;
+}
+
+.m-b-none {
+    margin-bottom: 0px !important;
+}
+
+.m-t-n-xs {
+    margin-top: -5px;
+    padding: 6px 11px !important;
+}
+.btn-mg {
+    margin-top: 2px;
+    margin-bottom: 1px;
+}
+
+.short-margin {
+    margin-bottom: 23px !important;
+    padding-bottom: 23px !important;
+}
+small {
+    color:#929292;
+    opacity: 0.8;
+}
+.m-b-20 {
+    margin-bottom: 20px !important;
+}
+.m-b-5 
+{
+    margin-bottom: 5px !important;
+}
+.btn-go {
+    padding:7px 13px !important;
+}
+.m-l {
+    margin-left: 15px !important;
+}
+.left-5 {
+    left:7px !important;
+}
+.fnt-wt-600 {
+    font-weight: 600;
+}
+
+.m-r-sm {
+    margin-right: 5px !important;
+    color: #888888 !important;
+}
+.p-l-12 {
+    padding-left: 12px !important;
+}
+/******************* Generic Elements Ends *********************/
+
+/******************* Wrapper Division Starts *******************/
+
+#wrapper {
+    overflow: auto;
+    background-color: #2f4050;
+    width: 100%;
+    font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-size: 13px;
+    color: #676a6c;
+}
+
+
+
+/*************** Side Bar Division Starts ***************/
+
+.nav-header {
+    padding: 33px 25px;
+    background: url("header-profile.png") no-repeat;
+}
+.nav-header p {
+    margin: 5px 0px 0px;
+    color: #ffffff;
+    font-weight: 600;
+}
+.nav-header p:hover, .developer-details:hover {
+    cursor: pointer;
+}
+.developer-details {
+    color: #8095a8;
+}
+.nav > li > a {
+    color: #A7B1C2 !important;
+    font-weight: 600 !important;
+    padding: 14px 20px 14px 25px !important;
+}
+.nav > li > a:hover {
+    background-color: #2A3947 !important;
+}
+.nav > li > a i {
+    margin-right: 6px !important;
+}
+.navbar-default.navbar-static-side {
+    width: 219px !important;
+    float: left !important;
+    background-color: #2f4050;
+    position: absolute;
+}
+.fa.fa-angle-left {
+    margin-right: 0px !important;
+}
+
+.side-bar {
+    width: 17.11%;
+    background-color: #2f4050 !important;
+    float: left;
+}
+.side-bar-label {
+    padding: 3px 8px !important;
+    font-weight: 600 !important;
+}
+.color-dpgrn {
+    background-color: #23c6c8 !important;
+}
+/*************** Side Bar Division Ends *****************/
+
+/*************** Body Content Division Starts ***********/
+
+.content-page {
+    width: 82.89% !important;
+    float: left !important;
+    background-color: #f3f3f4;
+}
+/*********** Navigation Bar Division Starts ***********/
+
+.btn-hide-sidebar {
+    float: left;
+    padding: 5px 13px !important;
+    margin: 0px 5px 0px 20px;
+    font-size: 14px !important;
+}
+.navigation-bar {
+    padding: 14px 15px 11px 0px !important;
+    margin-bottom: 0px !important;
+    border-bottom: 1px solid #e7eaec !important;
+}
+.navigation-link {
+    margin-top: 6px !important;
+    margin-bottom: 9px !important;
+}
+.navigation-link li {
+	margin:0px 5px;
+    padding-left: 0px !important;
+}
+.navigation-link i{
+	color: #999c9e;
+    font-size: 14px;
+    margin-right: 6px;
+
+} 
+.navigation-link a {
+   color: #999c9e;
+   font-size: 14px;
+}
+.search-span {
+    float: left;
+}
+.search-box {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin: -1px 0px !important;
+}
+.search-box:active, .search-box:focus {
+    border: none !important;
+    box-shadow: none !important;
+}
+.count-info {
+    position: relative;
+    margin-right: 5px;
+}
+.lbl {
+    position: absolute;
+    bottom: 11px;
+    left: 2px;
+    padding:1.5px 5px 4px !important;
+    font-weight: 600 !important;
+}
+.lbl-green {
+    background-color: #1ab394 !important;
+}
+
+/*********** Navigation Bar Division Ends *************/
+
+/*********** Page Heading Division Starts **************/
+
+.page-heading {
+    border-top: 4px solid #E7EAEC;
+    padding: 0px 10px 11px 10px;
+    background-color: #fff;
+}
+.page-link {
+    background-color: #fff !important;
+    margin-bottom: 0px !important;
+}
+.page-heading h2 {
+    font-size: 24px;
+    font-weight: 100;
+    margin-bottom: 2px !important;
+    margin-left: 15px !important;
+}
+.page-link a {
+    text-decoration: none !important;
+    color: #676a6c !important;
+}
+/*********** Page Heading Division Ends ***************/
+
+/*********** Form Wrapper Division Starts *************/
+
+.form-title {
+    background-color: #fff;
+    overflow: auto;
+    border-top: 4px solid #E7EAEC;
+    border-bottom: 1px solid #e7eaec;
+    padding: 11px 10px 10px 11px;
+    position: relative;
+}
+.form-content {
+    background-color: #fff;
+    padding: 15px 20px 24px 20px;
+    margin-bottom: 26px;
+}
+
+.form-wrapper {
+    padding: 22px 10px 0px 10px;
+}
+.form-title h5 {
+	font-weight: 600;
+	font-size: 14px;
+    width: 80%;
+    float: left;
+    margin: 4px !important;
+}
+.form-title .title-icons {
+    position: absolute;
+    top: 14px;
+    right: 15px;
+}
+.title-icons i {
+    color: #c0c0c0;
+}
+.title-icons a{
+    margin-left:5px;
+}
+.form-content h3{
+    margin-top: 5px !important;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px !important;
+}
+.form-content h4 {
+    margin-top: 5px !important;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px !important;
+}
+.vertical-border {
+    border-right: 1px solid #E7EAEC;
+    width: 50.1% !important;
+}
+.short-width {
+    width:49.9% !important;
+}
+.big-icon {
+    font-size: 160px;
+    color: #e5e6e7;
+}
+
+.hr-line-dashed {
+    border-bottom: 1px dashed #e0e0e0;
+    margin: 20px 0px;
+}
+.hr-line-nomargin {
+    margin-top: -2px !important;
+}
+.text-navy {
+    color: #1ab394 !important;
+}
+.btn-modal {
+    padding: 7px 13px !important;
+
+}
+.inline-form-mg{
+    margin-top: 2px;
+}
+
+.btn-white {
+    background-color: #fff !important;
+    border: 1px solid #e7eaec !important;
+}
+.input-group-addon {
+    background-color: #fff !important;
+    border-radius: 0px !important;
+}
+
+.form-control {
+	border-radius: 0px !important;
+	box-shadow: none !important;
+    border-color: #dee0e0 !important;
+    opacity: 0.8;
+}
+.form-control:focus {
+	border-color: #1ab394 !important;
+}
+
+.input-group-addon {
+    border-color: #e0e0e0 !important;
+}
+.form-inline-mgtop {
+    margin-top: 2px !important;
+}
+.btn-save {
+    padding: 7px 13px !important;
+}
+.input-lg {
+    padding-left: 12px !important;
+}
+
+.color-green {
+    color: #1ab394 !important;
+}
+.br-color-green {
+    border-color: #1ab394 !important;
+    opacity: 1 !important;
+}
+.color-yellow {
+    color: #f7c029 !important;
+}
+.br-color-yellow {
+    border-color: #f7c029 !important;
+    opacity: 1 !important;
+}
+.color-red {
+color: #ED5565 !important; 
+
+}
+.br-color-red {
+border-color: #ED5565 !important;
+opacity: 1 !important;
+}
+/*********** Form Wrapper Division Ends ***************/
+
+/*************** Body Content Division Ends *************/
+
+@media (max-width: 767px) {
+    .side-bar {
+        display: none;
+    }
+    .content-page {
+        margin-left: 0px !important;
+        width: 100% !important;
+    }
+    .navbar-header {
+        float: left !important;
+    }
+    .search-box {
+        display: none;
+    }
+}
+@media(max-width: 1000px) {
+    .text-muted {
+        display: none;
+    }
+}
+
+/******************* Wrapper Division Ends *********************/

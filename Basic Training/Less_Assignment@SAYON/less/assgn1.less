@@ -1,0 +1,227 @@
+@import url(../lib/bootstrap-3.2.0/less/bootstrap.less);
+
+/********************************** Variables Declaration ******************************/
+
+@body-color:#272727;
+
+@container-color:#f0f2ef;
+
+@color-white:#fff;
+
+@font-white:;
+
+@color-yellow:#ffb21e;
+
+@color-red:#b10f0f;
+
+@color-green:#718928;
+
+@color-blue:#2939e9;
+
+@color-orange:#A4471c;
+
+
+/****************************************************************************************/
+
+/********************************** Mixins **********************************************/
+
+.rounded-corners(@radius:15px){
+
+border-radius:@radius;
+
+}
+.padding (@top;@right;@bottom;@left) {
+    padding: @arguments;
+
+}
+.margin (@top;@right;@bottom;@left) {
+    padding: @arguments;
+
+}
+.horizontal-gradient (@startColor: #1e202e, @endColor: #1e2661) {
+
+background: linear-gradient(0deg, @startColor 40%, @endColor 100%); 
+background: -moz-linear-gradient(0deg, @startColor 40%, @endColor 100%); 
+background: -webkit-linear-gradient(0deg, @startColor 40%, @endColor 100%); 
+background: -o-linear-gradient(0deg, @startColor 40%, @endColor 100%); 
+}
+.background-button(@color:#1f1e1d,@border:#000,@font:#ffb21e){
+	background-color: @color;
+	border-color: @border;
+	color: @font;
+}
+.color (@color){
+	color:@color;
+}
+.font (@size) {
+	font-size: @size;
+}
+/*****************************************************************************************/
+
+/********************************** Nested Less ******************************************/
+
+.container {
+    .header {
+    	padding: 10px 0px;
+
+    	 .sitename {
+	.padding(50px,0px,0px,10px);
+	.font(40px);
+	.color(#fb6e26);
+	font-weight: bold;
+	span{
+		.font(40px);
+		.color(@color-yellow);
+		font-weight: normal;
+	}
+}
+.contact-info{
+	padding-top: 15px;
+	.service-type {
+		.font(25px);
+		.color(@color-red);
+		margin-bottom: 0px;
+	}
+	p{	margin-bottom: 0px;
+		.small-font {
+			.font(14px) !important;
+			
+			
+		}
+		span {
+			.font(40px);
+			.color(@color-white);
+			
+		}
+	}
+	.col-lg-2 {
+		padding-top: 31px;
+		.btn-lg{
+			.background-button(#5f5f5f;#5f5f5f;#fff);
+		}
+	}
+}
+    } 
+    .body-content {
+        .rounded-corners;
+        background-color: @container-color;
+        .padding(15px;0px;10px;0px);
+
+		.jumbotron {
+			#gradient > .horizontal(#000,#273a5b);
+            .rounded-corners;
+            margin-bottom: 20px;
+            padding-top: 65px;
+            .jumbotron-image{
+		position: relative;
+		bottom: 45px;
+		.img-lg{
+			width: 110px;
+		}
+		img:first-child{
+			width: 80px;
+		}
+			img {
+			width: 90px;
+			-webkit-box-reflect :below -1px -webkit-linear-gradient(transparent, transparent 80%, white 94%);
+		}
+		
+
+	}
+            
+            h2 {
+            	color:@color-yellow;
+            }
+            	ul {
+            		li{
+            			color: @color-white;
+            		}
+            	}
+            .btn-primary {
+            	.background-button;
+            }
+        	}
+		.navbar-default {
+			.rounded-corners;
+			background-color: @body-color;
+			 
+			.navbar-nav li {
+				.margin(0,0,0,50px);
+				}
+				a{
+				color: @color-white;
+				}
+				li:first-child a {
+					background-color: #285fc2;
+				}
+			}
+			
+		}
+		.panel {
+			.rounded-corners;
+			border: none;
+			.color-green{
+					background-color: @color-green;
+				}
+				.color-blue{
+					background-color: @color-blue;
+				}
+				.color-orange{
+					background-color: @color-orange;
+				}
+			.panel-heading {
+				border-radius:15px 15px 0px 0px;
+				border:none;
+				color: @color-white;
+				
+			}
+			.panel-body {
+				color: @color-white;
+				background-color: @body-color;
+				border-radius:0px 0px  15px 15px;
+				.margin-bottom-none {
+					margin-bottom: 0px;
+				}
+				span {
+					color:@color-red;
+					font-size:22px;
+					margin-right:3px;
+				}
+				.btn-primary {
+					.background-button;
+				}
+			}
+		}
+		.footer {
+			.padding(15px,0px,5px,0px);
+			li {
+				 border-left:1px solid @color-yellow;
+				 color: @color-yellow;
+			   }
+			li:first-child {
+				border: none !important;
+			}
+		}
+    }
+    .welcome-text {
+        background-color: @color-white;
+        .padding(10px;10px;10px;20px);
+
+    }
+    .customer-service-text {
+        .welcome-text;
+    }
+
+
+/******************************************************************************************/
+
+/******************************** Generic Elements ****************************************/
+
+body {
+    background-color: @body-color;
+
+}
+.btn {
+	.rounded-corners(3px);
+}
+/******************************************************************************************/

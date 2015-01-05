@@ -1,0 +1,169 @@
+/****************************Start of Header Part****************************/
+#header { 
+	position:relative;
+	width: 98.6%;
+	background-color: #005FAF;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 18px;
+}
+
+#companyname {
+	font-size: 30pt;
+	font-style: oblique;
+	color: #F4FAFD;
+}
+
+#signuplink {
+	font-size: 12pt;
+	position: absolute;
+	color: #F4FAFD !important;
+	top: 33px;
+	right: 100px;	
+}
+
+#und a{
+color: #F4FAFD;
+}
+
+/**************************End of Header Part***********************************/
+
+/**************************Start Of Inline Menu*********************************/
+
+#inlinemenu {
+	width:100%;
+	background-color: #0060B0;
+	margin-top: 10px;
+	margin-bottom: 10px;	
+}
+
+table.inlinemenu {
+	width:100%;
+}
+
+table.inlinemenu td {
+	font-size: 12pt;
+	text-transform: capitalize;;
+	border-right: 4px solid #F4FAFD;
+	text-align: center;
+	color:#F4FAFD;	
+}
+
+td.nblink {
+	border-right: none !important;
+}
+
+table.inlinemenu td:hover {
+	cursor: pointer;
+	color: rgb(173, 193, 221);
+	
+}
+
+/****************************End Of Inline Menu************************************/
+
+/****************************Start of Navigation Pane******************************/
+
+div.leftnavigation {
+	float:left;
+	width:20%;
+	background-color: #C7DEF2;
+	border: 2px solid #0A4669;
+	padding-left: 45px;
+	padding-bottom: 25px;
+	padding-top: 25px;
+	padding-right: 45px;
+	margin-right: 30px;
+
+}
+
+.navigationlist li {
+	border-bottom: 1px solid #B3D3E5;
+	line-height: 1.6em;
+}
+
+.navigationlist li:hover {
+	cursor: pointer;
+	
+}
+/****************************End Of Navigation Pane********************************/
+
+/****************************Start Of Article Box**********************************/
+div.articlebox {
+	width: 90%;
+	height: 50%;
+}
+
+div.articlebox1 {
+	display: inline-block;
+	width: 30%;
+	background-color: #C7DEF2;
+	border: 2px solid #5C99BE;
+	padding: 20px;
+	margin-right: 13px;
+	margin-top: 8px;
+	line-height: 1.4em;
+}
+
+div.articlebox2 {
+	display: inline-block;
+	width: 30%;
+	background-color: #C7DEF2;
+	border: 2px solid #5C99BE;
+	padding: 20px;
+	margin-left: 13px;
+	margin-top: 8px;
+	line-height: 1.4em;
+}
+
+/****************************End Of Article Box************************************/
+
+/****************************Start Of Company Details******************************/
+
+div.companydetails {
+	width: 110%;
+	height: 100%;
+	
+}
+
+/****************************End Of Company Details********************************/
+
+/****************************Start of Company Heading******************************/
+
+div.companyheading {
+	width: 75%;
+	height: 50%;
+	margin:0px auto;
+	font-size: 12pt
+}
+
+/****************************End of Company Heading********************************/
+
+/****************************Start of footer Division******************************/
+
+
+#footer {
+	width: 100%;
+	margin-top: 20px;
+
+}
+
+table.footermenu {
+
+	margin:0px auto;
+}
+table.footermenu td {
+
+	text-align: center;
+	border-right: 2px solid #000000;
+	color:#000000;
+	text-transform: capitalize;
+	width: 70px
+
+}
+
+table.footermenu td:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+/************************End Of Footer Division************************************/

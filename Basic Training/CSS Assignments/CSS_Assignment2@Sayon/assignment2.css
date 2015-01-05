@@ -1,0 +1,624 @@
+/********************************* Color Reference *************************************/
+
+/******************************* Generic Elements Starts *********************************/
+
+@import url("reset.css");
+
+/*@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);*/
+
+@font-face {
+    font-family: 'PT Sans';
+    src: url(fonts/ptsans.woff);
+}
+@font-face {
+    font-family: 'Fjalla One';
+    src: url(fonts/fjalla.woff);
+}
+@font-face {
+    font-family: 'Ubuntu';
+    src: url(fonts/ubuntu.woff);
+}
+body {
+    font-family: 'PT Sans', Arial, sans-serif;
+    color: #5a5a5a;
+    background-color: #404040;
+    font-size: 15px;
+    line-height: 21px;
+    background: #f6f6f6 url(images/base-content.jpg) repeat;
+}
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+}
+.container {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+p {
+    margin: 0 0 10px;
+}
+/******************************* Generic Elements Ends ***********************************/
+
+/******************************** Header Starts *****************************************/
+
+#header {
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("images/base-body.jpg");
+    background-size: 100%;
+    background-position-y: 49.95%;
+    opacity: 1;
+    z-index: -1;
+}
+.header-overlay {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: url(images/base-overlay.png);
+}
+.header-overlay .container {
+    position: relative;
+    top: 30%;
+    opacity: 1 !important;
+}
+.header-overlay .container img {
+    height: 70px;
+    margin-bottom: 35px;
+    opacity: 1 !important;
+}
+.header-overlay .container h1 {
+    color: #FFF;
+    font-size: 54px;
+    line-height: 60px;
+    margin: 0px;
+    text-transform: uppercase;
+    font-family: 'Fjalla One', Arial, sans-serif;
+    opacity: 1 !important;
+}
+.header-overlay .arrow-link {
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    text-align: center;
+    width: 100%;
+}
+.header-overlay .arrow-link a {
+    font-size: 64px;
+    line-height: 70px;
+    color: #FFF;
+}
+/******************************** Header Ends *******************************************/
+
+/******************************** Body Wrapper Division Starts **************************/
+
+.body-wrapper {
+    background: #f6f6f6 url(images/base-content.jpg) repeat;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+}
+/********************* Navigation Division Starts *********************/
+
+.navigation {
+    /* background: #f6f6f6 url(../images/base-content.jpg) repeat;*/
+    border-bottom: 1px solid #dadada;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+.navigation .logo {
+    margin: 15px 0px;
+    float: left;
+    padding-left: 25px;
+}
+.logo img {
+    height: 30px;
+}
+.navigation-menu {
+    margin-bottom: 20px;
+    margin-left: 0;
+    list-style: none;
+}
+.navigation-menu ol {
+    float: right;
+}
+.navigation-menu ol li {
+    float: left;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: Ubuntu, Arial, sans-serif;
+    padding: 23px 25px;
+    line-height: 14px;
+    color: #404040;
+}
+.navigation-menu ol li:first-child {
+    color: #2baaea;
+}
+.navigation-menu ol li:hover {
+    color: #2baaea;
+    cursor: pointer;
+    transition: all 0.4s linear;
+}
+/********************** Navigation Division Ends **************************/
+
+.sep-padding {
+    height: 99px;
+}
+/********************** Services Division Starts **************************/
+
+.services {
+    padding: 20px 0px 30px;
+    overflow: auto;
+}
+.services .service-item {
+    padding-bottom: 30px;
+    text-align: center;
+    float: left;
+    min-height: 1px;
+    margin-left: 30px;
+    width: 270px;
+}
+.service-item:first-child {
+    margin-left: 0px;
+}
+.services .service-item i {
+    color: #2baaea;
+    font-size: 72px;
+    margin-top: 2px;
+}
+.services .service-item h5 {
+    font-size: 13px;
+    line-height: 18px;
+    color: #b0b0b0;
+    margin: 26px 0px 2px;
+    text-transform: uppercase;
+    font-family: ubuntu;
+}
+.services .service-item h4 {
+    font-size: 20px;
+    line-height: 26px;
+    color: #000;
+    font-family: ubuntu;
+}
+.service-item p {
+    margin: 10px 0 10px;
+}
+/********************** Services Division Ends ****************************/
+
+.sep-main-border {
+    text-align: center;
+    width: 100%;
+    float: left;
+}
+/********************** Portfolio Division Starts *************************/
+
+.portfolio {
+    padding: 60px 0px 25px;
+    margin-top: 30px;
+}
+.header {
+    margin-bottom: 25px;
+    padding-left: 25px;
+    border-left: 3px solid #2baaea;
+}
+.portofolio .image-slider {
+    position: relative;
+    padding: 25px 0px 20px;
+}
+.header h2 {
+    margin: 0px 0px 5px;
+    font-size: 36px;
+    line-height: 38px;
+    color: #2a2a2a;
+    font-family: ubuntu;
+}
+.header p {
+    margin: 0px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #404040;
+}
+.image-slider {
+    padding: 25px 0px 20px;
+}
+.image-viewport ul li {
+    display: inline-block;
+    width: 23.07%;
+    margin-right: 26px;
+}
+.image-div {
+    position: relative;
+}
+.hover {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(43, 170, 234, 0.8);
+    opacity: 0;
+    text-align: center;
+    vertical-align: center;
+}
+.hover i {
+    position: absolute;
+    top: 45%;
+    right: 45%;
+    font-size: 24px;
+    color: #fff;
+}
+.hover:hover {
+    cursor: pointer;
+    opacity: 1 !important;
+    transition: all 0.4s linear;
+}
+.image-viewport ul li:last-child {
+    margin-right: 0px;
+}
+.image-viewport ul li img {
+    width: 100%;
+    display: block;
+}
+.slider-box {
+    margin-top: 5px;
+}
+.slider-box ol {
+    margin-left: 44%;
+}
+.slider-box ol li {
+    display: inline-block;
+    margin: 20px 4px;
+    width: 60px;
+    height: 8px;
+    background-color: #2baaea;
+}
+.slider-box ol li:last-child {
+    background-color: #bee2f4;
+}
+/********************** Portfolio Division Ends ************************************/
+
+/********************** About Company Division Starts ******************************/
+
+.about-company {
+    overflow: auto;
+    margin-top: 6%;
+    padding-top: 3px;
+    margin-bottom: 50px;
+}
+.about-text {
+    margin-bottom: 60px !important;
+    overflow: auto;
+    margin-top: 21px;
+}
+.about-text-col {
+    width: 570px;
+    float: left;
+    min-height: 1px;
+}
+.about-text-col:last-child {
+    margin-left: 30px;
+}
+.about-text-col h3 {
+    font-size: 24.5px;
+    margin: 20px 0 19px;
+    color: #2a2a2a;
+    font-family: Ubuntu, Arial, sans-serif;
+}
+.about-text-chart .bar {
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+    height: 44px;
+    position: relative;
+}
+.about-text-chart .bar p {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    line-height: 44px;
+    color: #FFF;
+}
+.about-text-chart .bar p span {
+    float: left;
+    margin-left: 15px;
+}
+.about-text-chart .bar p i {
+    float: right;
+    margin-right: 15px;
+    font-style: normal;
+    color: #2a2a2a;
+}
+.progress {
+    background-color: #2baaea;
+    height: 100%;
+}
+.p1 {
+    width: 70%;
+}
+.p2 {
+    width: 85%;
+}
+.p3 {
+    width: 80%;
+}
+.p4 {
+    width: 90%;
+}
+.p5 {
+    width: 75%;
+}
+/********************* Teams Divsion Starts ********************/
+
+.about-company .teams {
+    padding-top: 13px;
+    margin-top: 10%;
+}
+.team-image {
+    padding-bottom: 30px;
+    width: 31.6%;
+    float: left;
+    min-height: 30px;
+    margin-right: 30.43px;
+}
+.team-image:last-child {
+    margin-right: 0px;
+}
+.figure {
+    position: relative;
+}
+.figure img {
+    width: 100%;
+}
+.figure p {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #2baaea;
+    padding: 8px 15px;
+    font-size: 12px;
+    color: #FFF;
+    text-transform: uppercase;
+}
+.team-image h5 {
+    font-size: 18px;
+    margin: 15px 0px 14px;
+    color: #2a2a2a;
+    font-family: Ubuntu, Arial, sans-serif;
+}
+.team-image p {} .team-image .social-icons {
+    margin: 15px 0 0 -2px;
+}
+.social-icons li {
+    display: inline;
+    margin-right: 12px;
+    line-height: 20px;
+}
+.social-icons li a {
+    color: #a9a9a9;
+}
+.social-icons li a i {
+    font-size: 18px;
+}
+.social-icons li a i:hover {
+    color: #404040;
+    transition: all 0.3s linear;
+}
+/******************** Team Division Ends ***********************/
+
+/********************** About Company Division Ends ********************************/
+
+/********************** Testimonial & Tweets Division Starts ***********************/
+
+.testimonials, .tweets {
+    background-color: #2baaea;
+    padding: 41px 0px 53px;
+    margin: 17px 0px;
+    position: relative;
+    border-top: 1px solid #0b8ed0;
+    border-bottom: 1px solid #0b8ed0;
+    color: #FFF;
+    overflow: hidden;
+}
+.testimonials .container, .tweets .container {
+    position: relative;
+}
+.testimonials .testimonials-icon, .tweets .tweets-icon {
+    font-size: 90px;
+    color: #60c2f3;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.testimonials-text p, .tweets-text p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
+    text-shadow: #404040 1px 1px 1px;
+    min-height: 72px;
+    margin-left: 10.7%;
+    padding-top: 15px;
+}
+.testimonials-text .author {
+    color: #f9f9f9 !important;
+    font-size: 14px !important;
+    line-height: 18px !important;
+    text-transform: lowercase !important;
+    text-shadow: #404040 1px 1px 1px !important;
+    margin-left: 10.7%;
+}
+.tweets {
+    margin-bottom: 0px !important;
+}
+/********************** Testimonial & Tweets Division Ends *************************/
+
+/********************** Google Maps Division Starts ********************************/
+
+.google-maps {
+    overflow: hidden;
+    height: 600px;
+    position: relative;
+}
+.google-maps li {
+    width: 102%;
+}
+.google-maps li img {
+    width: 14%;
+    float: left;
+}
+.g-image {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+}
+/********************** Google Maps Division Ends **********************************/
+
+/********************** Contact Division Starts ************************************/
+
+.contacts {
+    padding: 80px 0px 60px;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+.contact_form-col {
+    width: 570px;
+    float: left;
+    min-height: 1px;
+    margin-right: 30px;
+}
+.contact_form-col:last-child {
+    margin-right: 0px;
+}
+input[type="text"], input[type="email"] {
+    height: 42.3px;
+    padding: 0px 15px;
+    font-family: Ubuntu;
+    border: 1px solid #eaeaea;
+    outline: none;
+    font-size: 14px;
+    margin-bottom: 20px;
+    box-shadow: inset -1px 1px 3px #f0f0f0;
+    width: 94.3%;
+}
+.contact_form-col textarea {
+    width: 94.3%;
+    height: 63px;
+    padding: 17.3px 15px;
+    font-family: Ubuntu;
+    border: 1px solid #eaeaea;
+    outline: none;
+    font-size: 14px;
+    box-shadow: inset -1px 1px 3px #f0f0f0;
+    margin-bottom: 14px;
+}
+input[type="submit"] {
+    width: 100%;
+    font-size: 16px;
+    background-color: #2baaea;
+    padding: 18px 20px;
+    color: #FFF !important;
+    line-height: 1;
+    font-family: Ubuntu;
+    border: 0px;
+}
+input[type="submit"]:hover {
+    background-color: #404040;
+    transition: background-color .3s ease;
+    cursor: pointer;
+}
+.data-status {
+    height: 30px;
+}
+#contact_form {
+    margin: 31px 0px;
+}
+/********************** Contact Division Ends **************************************/
+
+/********************** Footer Social Division Starts ******************************/
+
+.footer-social {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #FFF;
+}
+.footer-social ul li {
+    list-style-type: none;
+    display: inline;
+    margin: 0px 44.752px;
+}
+.footer-social ul li:first-child {
+    margin-left: 40px;
+}
+.footer-social ul li a {
+    color: #e0e0e0;
+}
+.footer-social ul li i {
+    font-size: 54px;
+    line-height: 76px;
+}
+.footer-social ul li i:hover {
+    color: #404040;
+    transition: all 0.3s linear;
+}
+/********************** Footer Social Division Ends ********************************/
+
+/********************** Footer Copyright Division Starts ***************************/
+
+.footer-copyright {
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 13px;
+    line-height: 18px;
+    text-transform: uppercase;
+    border-top: 1px solid #eaeaea;
+}
+.footer-copyright p {
+    margin: 0px;
+}
+.footer-copyright img {
+    height: 30px;
+    margin-bottom: 15px;
+}
+/********************** Footer Copyright Division Ends *****************************/
+
+/******************************** Body Wrapper Division Ends ****************************/
+
+/******************************** Color Division Starts *********************************/
+
+.color {
+    background-color: #37729c;
+    width: 80px;
+    position: fixed;
+    top: 15%;
+    left: 0;
+    color: #FFF;
+    text-transform: uppercase;
+    z-index: 1000;
+    text-align: center;
+}
+.color h5 {
+    margin: 0px;
+    color: #FFF;
+    line-height: 1em;
+    cursor: pointer;
+    padding: 15px 0px;
+    font-weight: bold;
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 13px;
+}
+.color h5:hover {
+    background-color: #316386;
+    transition: all 0.2s linear;
+}
+/******************************** Color Division Ends ***********************************/

@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BOOTSTRAP ASSGN 1</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="bootstrapassignment1.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="jquery/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.1.0/css/font-awesome.min.css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <!--******************* Wrapper Division Starts *********************-->
+    <div id="wrapper">
+        <!--  ********************* Side Bar Starts ************************************  -->
+        <nav class="navbar-default side-bar" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="nav-header">
+                        <div>
+                            <span>
+                                <img alt="image" class="img-circle" src="profile_small.jpg">
+                            </span>
+                            <p>Amelia Smith</p>
+                            <div class="dropdown">
+                                <div class="dropdown-toggle developer-details" type="button" data-toggle="dropdown">
+                                    Art Director
+                                    <span class="caret"></span>
+                                </div>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Profile</a>
+                                    </li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Contacts</a>
+                                    </li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mailbox</a>
+                                    </li>
+                                    <li role="presentation" class="divider"></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Logout</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-th-large"></i> 
+                            <span class="nav-label">Dashboards</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-bar-chart-o"></i>
+                            <span class="nav-label">Graphs</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-envelope"></i>
+                            <span class="nav-label">Mailbox</span>
+                            <span class="label label-warning pull-right side-bar-label">16/24</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-flask"></i>
+                            <span class="nav-label">Widgets</span>
+                            <span class="label label-info pull-right side-bar-label color-dpgrn">NEW</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-edit"></i>
+                            <span class="nav-label">Forms</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-desktop"></i>
+                            <span class="nav-label">App Views</span>
+                            <span class="pull-right label label-primary side-bar-label lbl-green">SPECIAL</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-files-o"></i>
+                            <span class="nav-label">Other Pages</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-flask"></i>
+                            <span class="nav-label">UI Elements</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-laptop"></i>
+                            <span class="nav-label">Layout</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-table"></i>
+                            <span class="nav-label">Tables</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-picture-o"></i>
+                            <span class="nav-label">Gallery</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-sitemap"></i>
+                            <span class="nav-label">Menu Levels</span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="css_animation.html">
+                            <i class="fa fa-magic"></i>
+                            <span class="nav-label">CSS Animations</span>
+                            <span class="label label-info pull-right side-bar-label color-dpgrn">62</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--********************* Side Bar Ends ************************************-->
+
+        <!--************************ Content Page Division Starts **************-->
+
+        <div class="content-page container">
+            <div class="row">
+
+                <!--**************** Navigation Bar Division Starts ************-->
+
+                <nav class="navbar navbar-static-top navigation-bar" role="navigation">
+                    <div class="navbar-header">
+                        <a href="" class="btn btn-primary btn-hide-sidebar btn-green">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                        <span class="search-span">
+                            <input type="text" placeholder="Search for something..." class="search-box form-control">
+                        </span>
+                    </div>
+
+                    <ul class="navbar-top-links navbar-right list-inline navigation-link">
+                        <li>
+                            <span class="m-r-sm text-muted welcome-message">Welcome to INSPINIA+ Admin Theme.</span>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                <i class="fa fa-envelope"></i> 
+                                <span class="label label-warning lbl ">16</span>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                <i class="fa fa-bell"></i> 
+                                <span class="label label-primary lbl lbl-green left-5">8</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-sign-out"></i>
+                                <strong class="fnt-wt-600">Log out</strong>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!--***************** Naviagtion Bar Division Ends **************-->
+
+            </div>
+
+            <!--********************* Page Heading Division Starts **************-->
+
+            <div class="row page-heading">
+                <div>
+                    <h2>Basic Form</h2>
+                    <ol class="breadcrumb page-link">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a>Forms</a>
+                        </li>
+                        <li class="active">
+                            <strong>Basic Form</strong>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <!--******************* Page Heading Division Ends ******************-->
+
+            <!--******************* Form Wrapper Division Starts ****************-->
+
+            <div class="form-wrapper">
+                <div class="row">
+
+                    <!--*********** Basic Form Division Starts *****************-->
+
+                    <div class="col-lg-7">
+                        <div class="form-title">
+                            <h5>Basic form
+                                <small>Simple login form example</small>
+                            </h5>
+                            <div class="title-icons pull-right">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#">Config option 1</a>
+                                    </li>
+                                    <li><a href="#">Config option 2</a>
+                                    </li>
+                                </ul>
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="form-content">
+                            <div class="row">
+                                <div class="col-sm-6 vertical-border">
+                                    <h3>Sign in</h3>
+                                    <p>Sign in today for more experience.</p>
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <label>Email</label>
+                                            <input type="email" placeholder="Enter email" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Password</label>
+                                            <input type="password" placeholder="Password" class="form-control">
+                                        </div>
+                                        <div>
+                                            <button class="btn btn-sm btn-primary btn-green pull-right m-t-n-xs" type="submit">
+                                                <strong>Log in</strong>
+                                            </button>
+                                            <label>
+                                                <input type="checkbox" class="i-checks">Remember me</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-sm-6 short-width">
+                                    <h4>Not a member?</h4>
+                                    <p>You can create an account:</p>
+                                    <p class="text-center">
+                                        <a href=""><i class="fa fa-sign-in big-icon"></i></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--******************* Basic Form Division Ends **************-->
+
+                    <!--******************* Horizontal Form Division Starts *******-->
+
+                    <div class="col-lg-5">
+                        <div class="form-title">
+                            <h5>Horizontal form</h5>
+                            <div class="title-icons pull-right">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#">Config option 1</a>
+                                    </li>
+                                    <li><a href="#">Config option 2</a>
+                                    </li>
+                                </ul>
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="form-content">
+                            <form class="form-horizontal">
+                                <p>Sign in today for more expirience.</p>
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Email</label>
+
+                                    <div class="col-lg-10">
+                                        <input type="email" placeholder="Email" class="form-control">
+                                        <span class="help-block m-b-none">Example block-level help text here.</span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Password</label>
+
+                                    <div class="col-lg-10">
+                                        <input type="password" placeholder="Password" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-lg-offset-2 col-lg-10">
+                                        <div class="checkbox i-checks">
+                                            <label>
+                                                <input type="checkbox"><i></i> Remember me</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-lg-offset-2 col-lg-10">
+                                        <button class="btn btn-sm btn-white btn-mg" type="submit">Sign in</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!--********************* Horizontal Form Division Ends *******************-->
+
+                </div>
+                <div class="row">
+
+                    <!--******************** Inline form Division Starts *******************-->
+
+                    <div class="col-lg-8">
+                        <div class="form-title">
+                            <h5>Inline form</h5>
+                            <div class="title-icons pull-right">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#">Config option 1</a>
+                                    </li>
+                                    <li><a href="#">Config option 2</a>
+                                    </li>
+                                </ul>
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="form-content short-margin">
+                            <form role="form" class="form-inline form-inline-mgtop">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail2" class="sr-only">Email address</label>
+                                    <input type="email" placeholder="Enter email" id="exampleInputEmail2" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword2" class="sr-only">Password</label>
+                                    <input type="password" placeholder="Password" id="exampleInputPassword2" class="form-control">
+                                </div>
+                                <div class="checkbox m-l m-r-xs">
+                                    <label class="i-checks">
+                                        <input type="checkbox"><i></i> Remember me</label>
+                                </div>
+                                <button class="btn btn-white" type="submit">Sign in</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!--*********************** Inline Form Division Ends ********************-->
+
+                    <!--*********************** Modal Form Division Starts *******************-->
+
+                    <div class="col-lg-4">
+                        <div class="form-title">
+                            <h5>Modal form
+                                <small>Example of login in modal box</small>
+                            </h5>
+                            <div class="title-icons pull-right">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#">Config option 1</a>
+                                    </li>
+                                    <li><a href="#">Config option 2</a>
+                                    </li>
+                                </ul>
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="form-content short-margin">
+                            <div class="text-center">
+                                <a data-toggle="modal" class="btn btn-primary btn-green btn-modal" href="#modal-form">Form in simple modal box</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--************************** Modal Form Division Ends *****************-->
+
+                </div>
+                <div class="row">
+
+                    <!--************************* All Form Elements Division Starts *******************-->
+
+                    <div class="col-lg-12">
+                        <div class="form-title">
+                            <h5>All form elements
+                                <small>With custom checkbox and radion elements</small>
+                            </h5>
+                            <div class="title-icons pull-right">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#">Config option 1</a>
+                                    </li>
+                                    <li><a href="#">Config option 2</a>
+                                    </li>
+                                </ul>
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="form-content">
+                            <form method="get" class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Normal</label>
+
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Help text</label>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control">
+                                        <span class="help-block m-b-none">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Password</label>
+
+                                    <div class="col-sm-10">
+                                        <input type="password" class="form-control" name="password">
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Placeholder</label>
+
+                                    <div class="col-sm-10">
+                                        <input type="text" placeholder="placeholder" class="form-control opacity-1">
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Disabled</label>
+
+                                    <div class="col-lg-10">
+                                        <input type="text" disabled="" placeholder="Disabled input here..." class="form-control opacity-1">
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-lg-2 control-label">Static control</label>
+
+                                    <div class="col-lg-10">
+                                        <p class="form-control-static">email@example.com</p>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed hr-line-nomargin"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Checkboxes and radios
+                                        <br/>
+                                        <small class="text-navy">Normal Bootstrap elements</small>
+                                    </label>
+
+                                    <div class="col-sm-10">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" value="">Option one is this and that&mdash;be sure to include why it's great</label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" checked="" value="option1" id="optionsRadios1" name="optionsRadios">Option one is this and that&mdash;be sure to include why it's great</label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" value="option2" id="optionsRadios2" name="optionsRadios">Option two can be something else and selecting it will deselect option one</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Inline checkboxes</label>
+
+                                    <div class="col-sm-10">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" value="option1" id="inlineCheckbox1">a</label>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" value="option2" id="inlineCheckbox2">b</label>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" value="option3" id="inlineCheckbox3">c</label>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Checkboxes &amp; radios
+                                        <br/>
+                                        <small class="text-navy">Custom elements</small>
+                                    </label>
+
+                                    <div class="col-sm-10">
+                                        <div class="checkbox i-checks">
+                                            <label>
+                                                <input type="checkbox" value=""> <i></i> Option one</label>
+                                        </div>
+                                        <div class="checkbox i-checks">
+                                            <label>
+                                                <input type="checkbox" value="" checked=""> <i></i> Option two checked</label>
+                                        </div>
+                                        <div class="checkbox i-checks">
+                                            <label>
+                                                <input type="checkbox" value="" disabled="" checked=""> <i></i> Option three checked and disabled</label>
+                                        </div>
+                                        <div class="checkbox i-checks">
+                                            <label>
+                                                <input type="checkbox" value="" disabled=""> <i></i> Option four disabled</label>
+                                        </div>
+                                        <div class="radio i-checks">
+                                            <label>
+                                                <input type="radio" value="option1" name="a"> <i></i> Option one</label>
+                                        </div>
+                                        <div class="radio i-checks">
+                                            <label>
+                                                <input type="radio" checked="" value="option2" name="a"> <i></i> Option two checked
+                                            </label>
+                                        </div>
+                                        <div class="radio i-checks">
+                                            <label>
+                                                <input type="radio" disabled="" checked="" value="option2"> <i></i> Option three checked and disabled</label>
+                                        </div>
+                                        <div class="radio i-checks">
+                                            <label>
+                                                <input type="radio" disabled="" name="a"> <i></i> Option four disabled</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Inline checkboxes</label>
+
+                                    <div class="col-sm-10">
+                                        <label class="checkbox-inline i-checks">
+                                            <input type="checkbox" value="option1">a</label>
+                                        <label class="checkbox-inline i-checks">
+                                            <input type="checkbox" value="option2">b</label>
+                                        <label class="checkbox-inline i-checks">
+                                            <input type="checkbox" value="option3">c</label>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Select</label>
+
+                                    <div class="col-sm-10">
+                                        <select class="form-control m-b " name="account">
+                                            <option>option 1</option>
+                                            <option>option 2</option>
+                                            <option>option 3</option>
+                                            <option>option 4</option>
+                                        </select>
+
+                                        <div class="col-lg-4 p-l-n">
+                                            <select class="form-control " multiple="">
+                                                <option>option 1</option>
+                                                <option>option 2</option>
+                                                <option>option 3</option>
+                                                <option>option 4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group has-success">
+                                    <label class="col-sm-2 control-label color-green">Input with success</label>
+
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control br-color-green">
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group has-warning">
+                                    <label class="col-sm-2 control-label color-yellow">Input with warning</label>
+
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control br-color-yellow">
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group has-error">
+                                    <label class="col-sm-2 control-label color-red">Input with error</label>
+
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control br-color-red">
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Control sizing</label>
+
+                                    <div class="col-sm-10">
+                                        <input type="text" placeholder=".input-lg" class="form-control input-lg m-b">
+                                        <input type="text" placeholder="Default input" class="form-control m-b">
+                                        <input type="text" placeholder=".input-sm" class="form-control input-sm p-l-12">
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Column sizing</label>
+
+                                    <div class="col-sm-10">
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <input type="text" placeholder=".col-md-2" class="form-control">
+                                            </div>
+                                            <div class="col-md-3">
+                                                <input type="text" placeholder=".col-md-3" class="form-control">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <input type="text" placeholder=".col-md-4" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Input groups</label>
+
+                                    <div class="col-sm-10">
+                                        <div class="input-group m-b">
+                                            <span class="input-group-addon">@</span>
+                                            <input type="text" placeholder="Username" class="form-control">
+                                        </div>
+                                        <div class="input-group m-b">
+                                            <input type="text" class="form-control">
+                                            <span class="input-group-addon">.00</span>
+                                        </div>
+                                        <div class="input-group m-b">
+                                            <span class="input-group-addon">$</span>
+                                            <input type="text" class="form-control">
+                                            <span class="input-group-addon">.00</span>
+                                        </div>
+                                        <div class="input-group m-b">
+                                            <span class="input-group-addon">
+                                                <input type="checkbox">
+                                            </span>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <input type="radio">
+                                            </span>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Button addons</label>
+
+                                    <div class="col-sm-10">
+                                        <div class="input-group m-b-20">
+                                            <span class="input-group-btn">
+                                                <button type="button" class="btn btn-primary btn-green btn-go">Go!</button>
+                                            </span>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="input-group m-b-5">
+                                            <input type="text" class="form-control">
+                                            <span class="input-group-btn">
+                                                <button type="button" class="btn btn-primary btn-green btn-go">Go!
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">With dropdowns</label>
+
+                                    <div class="col-sm-10">
+                                        <div class="input-group m-b-20">
+                                            <div class="input-group-btn">
+                                                <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button">Action
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">Action</a>
+                                                    </li>
+                                                    <li><a href="#">Another action</a>
+                                                    </li>
+                                                    <li><a href="#">Something else here</a>
+                                                    </li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">Separated link</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="input-group m-b-5">
+                                            <input type="text" class="form-control">
+
+                                            <div class="input-group-btn">
+                                                <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button">Action
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu pull-right">
+                                                    <li><a href="#">Action</a>
+                                                    </li>
+                                                    <li><a href="#">Another action</a>
+                                                    </li>
+                                                    <li><a href="#">Something else here</a>
+                                                    </li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">Separated link</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label">Segmented</label>
+
+                                    <div class="col-sm-10">
+                                        <div class="input-group m-b-20">
+                                            <div class="input-group-btn">
+                                                <button tabindex="-1" class="btn btn-white" type="button">Action</button>
+                                                <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button">
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">Action</a>
+                                                    </li>
+                                                    <li><a href="#">Another action</a>
+                                                    </li>
+                                                    <li><a href="#">Something else here</a>
+                                                    </li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">Separated link</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="input-group m-b-5">
+                                            <input type="text" class="form-control">
+
+                                            <div class="input-group-btn">
+                                                <button tabindex="-1" class="btn btn-white" type="button">Action</button>
+                                                <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button">
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu pull-right">
+                                                    <li><a href="#">Action</a>
+                                                    </li>
+                                                    <li><a href="#">Another action</a>
+                                                    </li>
+                                                    <li><a href="#">Something else here</a>
+                                                    </li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">Separated link</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hr-line-dashed"></div>
+                                <div class="form-group">
+                                    <div class="col-sm-4 col-sm-offset-2">
+                                        <button class="btn btn-white" type="submit">Cancel</button>
+                                        <button class="btn btn-primary btn-green btn-save" type="submit">Save changes</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!--****************************** All Form Division Ends *************************-->
+                </div>
+            </div>
+            <!--****************************** Page Content Ends *************************-->
+        </div>
+    </div>
+    <!--************************************* Wrapper Division Ends *******************************-->    
+</body>
+
+</html>

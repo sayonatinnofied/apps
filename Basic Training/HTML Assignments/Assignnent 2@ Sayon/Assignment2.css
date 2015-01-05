@@ -1,0 +1,260 @@
+/****************************Start of Generic classes*****************************/
+
+.panel {
+	width:13%;
+	height:75%;
+	display: inline-table;
+	line-height: 1.4em;
+}
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+	text-transform: capitalize;
+}
+
+.panel h2 {
+	font-style: italic;
+}
+
+label {
+	text-transform:capitalize;
+}
+
+span.asterik {
+	color: #BC5E78;
+}
+
+
+
+/****************************End Of Generic Classes*******************************/ 
+
+/**************************Start of Header Division*******************************/
+
+#header {
+	width:95%;
+	position:relative;
+	color: #ffffff;
+	font-size: 22pt;
+	font-weight: normal;
+	font-style: italic;
+	background-color: #000;
+	border-radius: 28px;
+	border: 5px solid #6C7781;
+	box-shadow: 11px 8px 2px #926FD7;
+	margin-bottom: 20px;
+	padding-left: 50px;
+	text-shadow: 9px 10px 3px #ffffff;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#headermenu {
+	position: absolute;
+	right: 350px;
+	top: 20px;
+}
+
+#headertable li {
+	display:inline-block;
+	font-size: 12pt;
+	text-align: center;
+	border-right: 2px solid #ffffff;
+	padding: 0px 5px;
+}
+
+#headertable li:last-child {
+	border-right: 0px;
+}
+
+#headertable a {
+	text-decoration: underline;
+}
+
+
+/**************************End of Header Division*********************************/
+
+/**************************Start of Inline Menu Division**************************/
+
+#inlinemenu {
+	
+	width: 98%;
+	background-color: #000;
+	margin: 0px auto 15px;
+	border-radius: 15px;
+	border: 5px solid #6C7781;
+	box-shadow: 10px 8px 2px #926FD7;
+	margin-top: -5px !important;
+}
+ul.inlinemenu {
+	text-align: center;
+	margin: 0px auto;
+	width: 93%;
+	padding: 15px 30px 5px
+}
+
+ul.inlinemenu li {
+	display: inline-block;
+	text-align: center;
+	border-right: 2px solid #ffffff;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-size: 10pt;
+	padding: 0px 35px;
+}
+
+ul.inlinemenu li:last-child {
+	border-right: 0px !important;
+}
+
+
+/**************************End of Inline Menu Division****************************/
+
+/**************************Start Of Body Division*********************************/
+
+#body {
+	width:99%;
+	height: 100%;
+	margin:10px;
+	margin-right: 0px !important;
+	margin-top: 5px !important;
+
+}
+
+/**************************Start of Left Panel Division**********************/
+
+#leftpanel {
+
+	background-color: #E0E0E0;
+	border: 2px solid #A0A09F;
+	padding: 10px;
+	margin-right: 10px;
+}
+	
+
+/**************************End of Left Panel Division************************/
+
+/**************************Start of Right Panel Division*********************/
+
+
+#rightpanel {
+
+	background-color: #E0E0E0;
+	border: 2px solid #A0A09F;
+	padding: 10px;
+	margin-left: 10px;	
+
+}
+
+
+/**************************End of Right Panel Division***********************/
+
+/**************************Start of Registration Form Division***************/
+
+#regform {
+
+	width:60%;
+	height:100%;
+	display: inline-table;
+	padding-top: 8px;
+	padding-bottom: 50px;
+	padding-right: 50px;
+	padding-left: 50px;
+	line-height: 1.4em;
+	background-color: #EDEEFF;
+	border: 2px solid #D1CFE3;
+
+}
+
+#regtable {
+	margin-left: 20px;
+	padding-left: 15px;
+	border-spacing: 50px 15px;
+	margin-bottom: 20px;
+}
+
+#submit {
+	width:100%;
+	margin: 0px auto;
+	text-align: center;
+}
+
+input[type="submit"] {
+	width: 15%;
+	height: 45px;
+	font-size: 18pt;
+}
+
+input[type="text"] ,input[type="email"] {
+	width: 40%;
+}
+
+input[type="radio"] {
+	margin-left: 45px;
+}
+
+#formhead {
+	margin: 20px;
+	margin-left: 0px;
+	margin-bottom: 25px;
+}
+
+#formheading {
+	font-weight: bolder;
+	font-size: 20pt;
+	padding: 20px;
+	margin: 20px;
+	font-style: italic;
+	color: #4383CC;
+	margin-left: 0px;
+}
+
+
+#note {
+	font-style: italic;
+}
+
+#regform label {
+	display: inline-block;
+	text-align: right;
+	min-width: 18%;
+	margin-right: 50px;
+}
+
+/**************************End of Registration Form Division*****************/
+
+/**************************End Of Body Division************************************/
+
+/**************************Start of Footer Division********************************/
+
+#footer {
+	width:98%;
+	background-color: #000;
+	margin: 0px auto 15px;
+	border-radius: 15px;
+	border: 5px solid #6C7781;
+	box-shadow: 10px 8px 2px #926FD7;	
+}
+
+ul.footermenu {
+	text-align: center;
+	width: 60%;
+	margin-left: 20%;
+	padding-top: 1%;
+	padding-bottom: 5px;
+}
+
+ul.footermenu li {
+	display: inline-block;
+	text-align: center;
+	border-right: 2px solid #ffffff;
+	padding-bottom: 0px;
+	font-size: 10pt;
+	padding: 0px 10px;	
+}
+
+ul.footermenu li:last-child {
+	border-right:0px !important;
+}
+
+/**************************End of Footer Division********************************/

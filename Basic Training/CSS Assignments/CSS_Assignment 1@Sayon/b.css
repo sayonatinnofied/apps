@@ -1,0 +1,362 @@
+@import url("reset.css");
+
+/***********************Start Of Generic Classes***********************/
+
+body {
+    font: 16px/26px"Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    color: #5c5c5c;
+}
+li a {
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.navigation-menu ul li a:hover {
+    color: #1bbc9b;
+    cursor: pointer;
+}
+/***********************End Of Generic Classes*************************/
+
+/***********************Start Of Header Wrapper Division***************/
+
+.header-wrapper {
+    background-color: #2a333b;
+    padding: 10px 0px;
+}
+.header-logo {
+    margin-left: 2px;
+    padding: 40px;
+    vertical-align: middle;
+    display: inline-table;
+    margin-right: 22%;
+}
+.header-logo img {
+    display: inline-block;
+    vertical-align: top;
+}
+.logo-tag {
+    color: #a5b3bf;
+    display: inline-block;
+    border-left: 1px solid #3f4d59;
+    margin-left: 30px;
+    padding-left: 30px;
+    width: 40%;
+}
+div.header-icons {
+    display: inline-table;
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+.header-icons ul li {
+    font-size: 16px;
+    display: inline-block;
+    color: #a5b3bf;
+    font-size: 18px;
+    background-color: rgba(88, 91, 102, 0.33);
+    padding: 8px 14px;
+    margin: -1px;
+    border-radius: 3px;
+}
+.header-icons > ul > li:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+/***********************End Of Header Wrapper Division*****************/
+
+/***********************Start Of Navigation Division*******************/
+
+.navigation-wrapper {
+    background-color: #f0f2f4;
+    width: 100%;
+}
+.navigation-menu {
+    display: inline-table;
+    vertical-align: middle;
+    width: 72.4%;
+    padding: 30px;
+}
+.navigation-menu ul li {
+    display: inline-block;
+}
+.navigation-menu ul li span {
+    color: #a5b3bf;
+    font-size: 16px;
+    padding: 0px 0px 3px 6px;
+}
+.navigation-menu ul li a {
+    padding: 11px;
+    font-weight: bold;
+    color: #2a333b;
+    font-size: 16px;
+}
+.navigation-menu li:first-child a {
+    color: #1bbc9b !important;
+}
+.search-box {
+    display: inline-table;
+    vertical-align: middle;
+    margin-bottom: 10px;
+    width: 13%;
+}
+.search-box input[type="search"] {
+    width: 150%;
+    height: 38px;
+    background-image: url("images/forms.png");
+    background-repeat: no-repeat;
+    border-radius: 1px;
+    border: 1px solid rgba(42, 51, 59, 0.33);
+    background-position: 100% 4px;
+    font-size: 16px;
+    color: #000000;
+}
+/***********************End Of Navigation Division*********************/
+
+/***********************Start Of Welcome Note Wrapper Division*********/
+
+.welcome-note-wrapper {
+    margin: 68px;
+    margin-bottom: 61px;
+    padding-left: 7px;
+    margin-left: 35px;
+}
+.container p.welcome-note-heading {
+    font-size: 42px;
+    font-weight: bold;
+    color: #333333;
+}
+.container p.welcome-note-text {
+    margin-top: 23px;
+    width: 76%;
+    font-size: 16px;
+    color: #5c5c5c;
+}
+/***********************End Of Welcome Note Wrapper Division***********/
+
+/***********************Start Of Portfolio Division********************/
+
+.portfolio {
+    margin-bottom: 2%;
+}
+.portfolio-heading {
+    display: inline-table;
+    vertical-align: middle;
+    margin-left: 42px;
+    margin-bottom: 29px;
+    width: 80.3%;
+}
+p.portfolio-tag {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #7f8185;
+    margin-bottom: 5px;
+}
+p.portfolio-head {
+    color: #2a333b;
+    font-size: 36px;
+    font-weight: bold;
+}
+.view-portfolio {
+    display: inline-table;
+    vertical-align: middle;
+    color: #ffffff;
+    background-color: #1bbc9b;
+    padding: 10px 20px;
+    border-radius: 3px;
+    margin-bottom: 30px;
+}
+.view-portfolio:hover {
+    background-color: #229E85;
+    cursor: pointer;
+}
+#list1, #list2 {
+    margin-left: 27px;
+    margin-right: 27px;
+}
+.potfolio-option {
+    display: inline-block;
+    margin: 16.1715px;
+    position: relative;
+}
+#list2 > div.potfolio-option {
+    padding-bottom: 6%;
+    border-bottom: 4px solid rgba(92, 92, 92, 0.07);
+}
+#list2 > div.potfolio-option > div.overlay {
+	height:75% !important;
+}
+
+.overlay {
+    width: 100%;
+    height: 97%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.46);
+    opacity: 0;
+}
+.overlay p {
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top:40px ;
+    margin-left:30px ;
+}
+.overlay:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+/***********************End Of Portfolio Division**********************/
+
+/***********************Start Of Service List Division*****************/
+
+.icon img {
+    width: 65px;
+    height: 65px;
+    padding: 0px 20px;
+}
+.service-list {
+    margin-left: 4%;
+}
+.service-option-list {
+    display: inline-block;
+    width: 32%;
+    margin-bottom: 40px;
+}
+.service-option-list .service-note {
+    display: inline-block;
+    vertical-align: top;
+    width: 68%;
+}
+.service-note .service-heading {
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+.service-note .service-text {
+    width: 100%;
+}
+/***********************End Of Service List Division*******************/
+
+/***********************Start of Comments Division*********************/
+
+.quotes img {
+    width: 35px;
+    height: 35px;
+}
+.quotes {
+    text-align: center;
+    margin-bottom: 25px;
+}
+.comments {
+    padding: 7.5% 0px;
+    margin-top: 5%;
+    background-color: #f0f2f4;
+}
+.comment-text {
+    text-align: center;
+    color: #554B4B;
+    margin-bottom: 15px;
+}
+.author-name {
+    text-align: center;
+    margin-top: 10px;
+}
+.author-name > span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+.author-name > span:hover {
+    color: #1bbc9b;
+    cursor: pointer;
+}
+/***********************End Of Comments Division***********************/
+
+/***********************Start Of Footer Blog Division******************/
+
+.footer-blog {
+    background-color: #2a333b;
+    padding: 60px 0;
+    color: #a5b3bf;
+    padding-left: 5%;
+}
+.about-home {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    margin-left: 2%;
+}
+.blog-posts {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    margin-left: 7%;
+}
+.instagram {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+p.footer-blog-heading {
+    font-size: 36px;
+    margin-bottom: 35px;
+    color: #ffffff;
+}
+.blog-list-text {
+    display: inline-block;
+    vertical-align: top;
+}
+.blog-posts figure {
+    display: inline-block;
+}
+figure img {
+    padding: 0px 10px 10px 0px;
+}
+p.footer-para {
+    margin-top: 10px;
+}
+p.instagram-body {
+    width: 20%;
+}
+p.blog-list-heading {
+    font-size: 20px;
+    color: #ffffff;
+}
+p.blog-list-heading:hover {
+    color: #229E85;
+    cursor: pointer;
+}
+p.blog-list-date {
+    font-size: 11px;
+}
+/***********************End Of Footer blog Division********************/
+
+/***********************Start of Footer Division***********************/
+
+.footer {
+    padding: 30px 0;
+    background-color: #242b32;
+    position: relative;
+    padding-left: 5%;
+}
+.gotop {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 20px;
+    top: 20px;
+    right: 65px;
+    background-color: #1BBC9B;
+    position: absolute;
+    border-radius: 2px;
+    border: 2px solid #A8D8BF;
+}
+.gotop a {
+    text-decoration: none;
+}
+.gotop:hover {
+    background-color: #1bbc9b;
+}
+p.copyright {
+    font-size: 16px;
+    color: #CEC7C7;
+    margin-left: 2%;
+}
+/***********************End Of Footer Division*************************/
