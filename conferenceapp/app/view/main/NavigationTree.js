@@ -1,0 +1,20 @@
+Ext.define('ConferenceApp.view.main.NavigationTree', {
+    extend: 'Ext.tree.Panel',
+    requires: ['ConferenceApp.store.Navigation'],
+    xtype: 'navigationtree',
+    title: 'Navigation',
+    rootVisible: false,
+    lines: false,
+    useArrows: true,
+    hideHeaders: true,
+    collapseFirst: false,
+    width: 200,
+    minWidth: 100,
+    height: 200,
+    split: true,
+    collapsible: true,
+    store: 'Navigation',
+    cls: 'navigation-tree',
+    collapsedCls: 'collapsed-nav-header'
+    // activeItem:'eventdetails'
+});

@@ -1,0 +1,202 @@
+
+.app-body>.x-panel-body{
+    overflow-y:scroll !important;
+}
+/*********************** Tab Panel Starts *******************/
+
+.agenda-list-tab-panel{
+    padding:30px;
+    background-color: #e3e7ea;
+}
+.agenda-list-tab-panel .x-tab-bar-default {
+    background-color: #d7dbde;
+}
+.agenda-list-tab-panel .x-tab-default {
+    background-color: #d7dbde;
+    padding: 14px 20px;
+    border: 0px !important;
+}
+.agenda-list-tab-panel .x-tab-inner-default {
+    color: #6a6b6f;
+    font-size: 14px;
+    font-weight: normal;
+}
+.agenda-list-tab-panel .x-tab.x-tab-active.x-tab-default .x-tab-inner-default {
+    color: #6a6b6f;
+}
+.agenda-list-tab-panel .x-tab.x-tab-active.x-tab-default {
+    border: 0px !important;
+    outline: none !important;
+    background-color: #fcfcfc;
+}
+.agenda-list-tab-panel .x-tab-pressed {
+    border: 0px !important;
+    outline: none !important;
+}
+.agenda-list-tab-panel .x-tab-bar {
+    border-radius: 4px;
+}
+.agenda-list-tab-panel .x-tab-bar-strip-default {
+    height: 0px;
+}
+.agenda-list-tab-panel .x-box-inner {
+    height: 45px;
+}
+.agenda-list-tab-panel>.x-panel-body {
+    top: 44px !important;
+}
+.agenda-list-tab-panel .x-tabpanel-child {
+    padding: 25px !important;
+    background-color: #fcfcfc;
+}
+.agenda-list-tab-panel .x-tabpanel-child .x-panel-body {
+    width: 100% !important;
+}
+.agenda-date {
+    color: #666d73;
+    font-size: 24px;
+    line-height: 26px;
+}
+.agenda-info-field {
+    margin-top: 28px;
+    overflow: auto;
+}
+.agenda-info-field .agenda-time-field {
+    float: left;
+    margin-top: 15px;
+    width: 17%;
+    padding: 15px 49px;
+    border-left: 4px solid #4987c0;
+    text-align: center;
+}
+.agenda-time-field .starting-time, .agenda-time-field .ending-time {
+    font-size: 14px;
+    font-weight: bold;
+    color: #525252;
+    margin-bottom: 4px;
+}
+.agenda-time-field .to-container {
+    text-align: center;
+    color: #56555b;
+    margin-bottom: 4px;
+}
+.agenda-info-field .speaker-list-wrapper {
+    overflow: auto;
+    float: left;
+    width: 83%;
+    padding: 20px 10px 10px 12px;
+    background-color: #e9e9e9;
+    border-radius: 4px;
+    -webkit-box-shadow:inset 5px 5px 15px #b6b6b6;
+    -moz-box-shadow:inset 5px 5px 15px #b6b6b6;
+    box-shadow:inset 5px 5px 15px #b6b6b6;
+}
+/*************** Speaker List Starts ***************/
+
+.speaker-list-wrapper .agenda-name {
+    float: none;
+    color: #434343;
+    font-size: 19px;
+    font-weight: bold;
+}
+.speaker-list-wrapper .agenda-name::first-letter{
+    text-transform: uppercase;
+}
+.speaker-list-wrapper .agenda-location-container {
+    margin-top: 8px;
+    color: #45494c;
+    font-size: 14px;
+}
+.agenda-location-container .icon-container {
+    margin-right: 5px;
+}
+.speaker-list-wrapper .speaker-details {
+    width: 47%;
+    float: left;
+    margin: 20px 0px 0px 10px;
+}
+.speaker-details .speaker-image-container {
+    display: inline-block;
+}
+.speaker-details .speaker-image-container .speaker-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+}
+.speaker-details .speaker-info-container {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 8px;
+}
+.speaker-info-container .speaker-name {
+    color: #4d83b4;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+.speaker-info-container .carrier-info {
+    color: #515757;
+}
+.carrier-info .designation {
+    font-style: italic;
+    font-size: 14px;
+}
+/****************** Speaker List Ends ***************/
+/********************* Tab Panel Ends ********************/
+/************************ Agenda List Ends ************************/
+
+
+/************************ Add Agenda Form Starts ************************/
+.add-agenda-form .label-separator{
+    color: red;
+}
+
+.add-agenda-form .add-agenda-form-item{
+    border-bottom: 1px solid #d7d7d9;
+    padding: 20px 55px 20px 11px;
+}
+.add-agenda-form>.x-panel-body>.x-autocontainer-outerCt {
+    background-color: #fcfcfc;
+    border-radius: 4px;
+}
+
+.add-agenda-form .x-form-trigger-wrap {
+    border-radius: 3px;
+}
+
+.add-agenda-form .x-form-item-label-default .x-form-item-label-inner {
+    width: 86px !important;
+    text-align: right;
+    font-size: 14px;
+}
+.add-agenda-form .agendaDate {
+    padding: 18px 0 18px 2% !important;
+    border-bottom: 1px solid #d7d7d9;
+}
+.add-agenda-form .agendaTime {
+    padding: 18px 10% 18px 6% !important;
+    border-bottom: 1px solid #d7d7d9;
+}
+.add-agenda-form .agendaTime .x-form-text-default, 
+.add-agenda-form .agendaDate .x-form-text-default {
+    color: gray;
+}
+.add-agenda-form .x-toolbar-footer {
+    background-color: #fcfcfc;
+    padding:20px 0;
+    width:100% !important;
+}
+.x-css-shadow, .x-datepicker {
+    width: 246px;
+}
+/************************ Add Agenda Form Ends ************************/
+
+.speaker-list-item-container .speaker-image{
+    width:40px !important;
+    height:45px !important;
+}
+
+/************************* Navigation *********************/
+ .x-grid-cell-inner .event-node-icon {
+    background: none !important;
+}
