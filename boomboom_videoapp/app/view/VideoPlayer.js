@@ -27,6 +27,7 @@ Ext.define('BoomBoom.view.VideoPlayer', {
                 ui: 'plain'
             }]
         }, {
+            cls:'video-iframe',
             tpl: document.getElementById('video_player_template').innerHTML,
             name: 'video_player_container',
             data: []
