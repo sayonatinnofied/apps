@@ -1,0 +1,19 @@
+{
+	"oneTimeMessage": {
+		"title": "One Time Message",
+		"icon": "",
+		"draftBtnName": "Drafts",
+		"message": "Send a message to an audience now or schedule one for future date.",
+		"exampleText": "Examples: Special event promotion, new product promotion, holiday promotion or company notification.",
+		"manualDeployment": true
+	},
+	"apiTriggered": {
+		"title": "API Triggered",
+		"icon": "",
+		"draftBtnName": "Current Campaigns",
+		"message": "Automatically sends to an individual based on an API request from your own infrastructure.",
+		"exampleText": "Examples: ...etc...",
+		"campaignAutomation": true
+	}
+
+}

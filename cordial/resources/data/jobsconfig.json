@@ -1,0 +1,99 @@
+{
+    "columns": [{
+        "name": "Action",
+        "label": "",
+        "sortable": false,
+        "grid": true,
+        "thumbnail": false,
+        "quickSearchable": false,
+        "advancedSearchable": false
+    }, {
+        "name": "_id",
+        "label": "ID",
+        "sortable": true,
+        "grid": true,
+        "direction": "descending",
+        "quickSearchable": true
+    }, {
+        "name": "jobName",
+        "label": "Job Name",
+        "sortable": true,
+        "grid": true,
+        "quickSearchable": true,
+        "advancedSearchable": true,
+        "advanceSearchHasDropdown": true,
+        "advanceSearchDropdown": [{
+            "label": "Import Contacts",
+            "value": "ImportContacts"
+        }, {
+            "label": "Send Message",
+            "value": "SendMessage"
+        }]
+    }, {
+        "name": "status",
+        "label": "Status",
+        "sortable": true,
+        "grid": true,
+        "advancedSearchable": true,
+        "advanceSearchHasDropdown": true,
+        "advanceSearchDropdown": [{
+            "label": "Scheduled",
+            "value": "Scheduled"
+        }, {
+            "label": "Pending",
+            "value": "Pending"
+        }, {
+            "label": "Processing",
+            "value": "Processing"
+        }, {
+            "label": "Done",
+            "value": "Done"
+        }, {
+            "label": "Errored",
+            "value": "Errored"
+        }]
+    }, {
+        "name": "ct",
+        "label": "Create Time",
+        "sortable": true,
+        "grid": true
+    }, {
+        "name": "times.start",
+        "label": "Start Time",
+        "sortable": true,
+        "grid": true,
+        "quickSearchable": true,
+        "advancedSearchable": true,
+        "advanceSearchHasDate": true,
+        "advanceSearchValidInput": "Start Time"
+    }, {
+        "name": "times.end",
+        "label": "End Time",
+        "sortable": true,
+        "grid": true,
+        "quickSearchable": true,
+        "advancedSearchable": true,
+        "advanceSearchHasDate": true,
+        "advanceSearchValidInput": "End Time"
+    }],
+    "title": {
+        "singular": "Job Widget ",
+        "plural": "Jobs Widget"
+    },
+    "actions": [{
+        "name": "details",
+        "displayText": "Details"
+    }],
+    "templates": {
+        "grid": "<td class='center' data-class='menu-btn'></td><td>{{_id}}</td><td>{{jobName}}</td><td>{{status}}</td><td>{{#dateFormat ct}}{{/dateFormat}}</td><td>{{#dateFormat times.start}}{{/dateFormat}}</td><td>{{#dateFormat times.end}}{{/dateFormat}}</td>"
+    },
+    "headerSettings": {
+        "hasQuickSearchOption": true,
+        "hasAdvanceSearchOption": true,
+        "hasViewOption": false,
+        "hasPerPageSetting": true,
+        "hasSelectOption": false,
+        "hasAddOption": false
+    },
+    "defaultView": "grid"
+}
