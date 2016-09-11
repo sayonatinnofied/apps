@@ -1,7 +1,7 @@
 var SQS = (function(){
 
-	var access_key_id = 'AKIAJPLUN3HSVWTJ4NKQ';
-	var secret_access_key = '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';
+	var access_key_id = 'ACCESS_KEY';
+	var secret_access_key = 'SECRET_ID';
 	var region = 'us-west-2';
 	var sqs_api_version = '2012-11-05';
 	var send_queue_url = "https://sqs.us-west-2.amazonaws.com/692480644307/smartenginerequestnew";
