@@ -1,0 +1,72 @@
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+  <h1>
+    Product Details
+    <small>Version 2.0</small>
+  </h1>
+  <ol class="breadcrumb">
+    <li><a ng-click="goCustomerHome()"><i class="fa fa-dashboard"></i> Home</a></li>
+    <li class="active">Product Details</li>
+  </ol>
+</section>
+
+<!-- Main content -->
+<section class="content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="box box-primary">
+        <div class="box-header box-bottom-border">
+          <h3 class="box-title">{{offer.ProductName}}</h3>
+          <p><small>{{offer.BrandName}}</small></p>
+        </div><!-- /.box-header -->
+        <div class="box-body">
+          <div class="row">
+            <div class="col-md-6">
+            <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
+              <uib-slide ng-repeat="slide in slides" active="slide.active">
+                <img ng-src="{{slide.image}}" style="margin:auto;height:360px;">
+                <div class="carousel-caption">
+                  <!-- <h4>Slide {{$index}}</h4> -->
+                  <p>{{slide.text}}</p>
+                </div>
+              </uib-slide>
+            </uib-carousel>
+            </div>
+            <div class="col-md-6">
+              <div class="product-info-wrapper">
+                <div class="product-price-wrapper pull-right">
+                  <!-- <p class="product-price"> Rs {{offer.Price}} </p>
+                  <p class="product-savings"> Savings: <span>Rs {{((offer.OfferDiscount * offer.Price) / (100 - offer.OfferDiscount)) | number:0}}</span></p> -->
+                  <p class="item-old-price"> Rs {{offer.Price}} </p>
+                  <p class="item-price"> Rs {{offer.Price - ((offer.OfferDiscount / 100) * offer.Price)}} </p>
+                  <p class="item-savings"> Savings : <span>Rs {{((offer.OfferDiscount / 100) * offer.Price)}}</span></p>
+                </div>
+                <div class="productdetails-info pull-left">
+                  <p class="item-offer"><span class="label label-success"> {{offer.OfferDiscount}}% off </span> </p> 
+                  <p class="productdetails-offer"> Offer Code: <span class="label label-offer"> {{offer.OfferCode}}</span></p>
+                  <p class="product-usedfor"> {{offer.OfferDescription}}</p>
+                  <p class="product-usedfor"> Offer valid till {{offer.OfferEndDate}}</p>
+                  <p class="product-category"> {{offer.ProductCategory}} </p>
+                </div>
+              </div>
+              <div class="form-group productdetails-quantity pull-left">
+                <label for="quantity" class="control-label">Quantity</label>
+                <select class="form-control" id="quantity" ng-model="quantity" ng-change= "setQuantity(quantity)">.
+                  <option value="1" ng-selected="true">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+              <button class="btn btn-warning btn-flat btn-lg pull-right add-to-cart-btn" ng-click = "upsertCart(offer)"> Add to Cart </button>
+            </div>
+          </div>
+        </div><!-- /.box-body -->
+        <!-- <div class="box-footer">
+          <button class="btn btn-warning btn-flat btn-lg pull-right"> Add to Cart </button>
+        </div> -->
+      </div><!-- /.box -->
+    </div>
+  </div>
+  <!-- Info boxes -->
+</section><!-- /.content -->

@@ -1,0 +1,56 @@
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+   <h1>
+      Update Location
+    <small>Version 2.0</small>
+  </h1>
+  <ol class="breadcrumb">
+    <li><a ng-click="goAdminHome()"><i class="fa fa-dashboard"></i> Home</a></li>
+    <li>Update</li>
+    <li class="active">Location</li>
+  </ol>
+</section>
+
+<!-- Main content -->
+<section class="content">
+  <!-- Info boxes -->
+  <div class="row">
+    <div class="col-md-12">
+      <div class="box box-primary box-center">
+        <div class="box-body">
+          <form>
+            <div class="form-group select-box">
+              <label for="selectLocation">Select Location</label>
+              <select  class="form-control select2" style="width: 100%;" ng-model="Location" ng-change="selectLocation(Location)">
+                <option value="">Select a Location</option>
+                <option ng-repeat="Location in locations" value="{{Location}}">{{Location.LocationName}}</option>
+              </select>
+            </div>
+          </form>
+        </div><!-- /.box-body -->
+      </div>
+    </div>
+  </div><!-- /.row --><!-- /.row -->
+  <div class="row animate-show" ng-show="selected">
+    <div class="col-md-12">
+      <div class="box box-primary box-center">
+        <div class="box-body">
+          <form name="addForm" novalidate>
+            <div class="form-group" ng-class="{ 'has-error' : addForm.locationName.$invalid && !addForm.locationName.$pristine }">
+              <label for="locationName" class="control-label">Location Name <span class="red">*</span></label>
+              <input type="text" name="locationName" class="form-control" id="locationName" ng-model="location.LocationName" placeholder="Location Name" required>
+              <p ng-show="addForm.locationName.$invalid && !addForm.locationName.$pristine" class="help-block">Location name is required.</p>
+            </div>
+            <div class="form-group">
+              <div class="text-center">
+                <button ng-click="upsertLocation(1)" ng-disabled="addForm.$invalid" class="btn btn-info">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div><!-- /.box-body -->
+      </div>
+    </div>
+  </div>
+
+</section><!-- /.content -->

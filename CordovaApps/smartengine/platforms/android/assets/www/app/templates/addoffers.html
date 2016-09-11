@@ -1,0 +1,103 @@
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+   <h1>
+      Add Offers
+    <small>Version 2.0</small>
+  </h1>
+  <ol class="breadcrumb">
+    <li><a ng-click="goAdminHome()"><i class="fa fa-dashboard"></i> Home</a></li>
+    <li>Add</li>
+    <li class="active">Offers</li>
+  </ol>
+</section>
+
+<!-- Main content -->
+<section class="content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="box box-primary box-center">
+        <div class="box-body">
+          <form name="addForm" novalidate>
+              <div class="form-group" ng-class="{ 'has-error' : addForm.offerName.$invalid && !addForm.offerName.$pristine }">
+                <label for="OfferName" class="control-label">Offer Name <span class="red">*</span></label>
+                <input type="text" class="form-control" id="OfferName" name="offerName" ng-model="offer.OfferName" placeholder="Offer Name"required>
+                <p ng-show="addForm.offerName.$invalid && !addForm.offerName.$pristine" class="help-block">Offer name is required.</p>
+              </div>
+              <div class="form-group select-box" ng-class="{ 'has-error' : addForm.productName.$invalid && !addForm.productName.$pristine }">
+                <label for="productName" class="control-label">Product Name <span class="red">*</span></label>
+                <select class="form-control" name="productName" style="width: 100%;" id="productName" ng-model="offer.ProductID" required>
+                  <option value="">Select a Product</option>
+                  <option ng-repeat="product in products" value="{{product.ProductID}}">{{product.ProductName}} - {{product.BrandName}}</option>
+                </select>
+                <p ng-show="addForm.productName.$invalid && !addForm.productName.$pristine" class="help-block">Product name is required.</p>
+              </div>
+              <div class="form-group" ng-class="{ 'has-error' : addForm.offerCode.$invalid && !addForm.offerCode.$pristine }">
+                <label for="OfferCode" class="control-label">Offer Code <span class="red">*</span></label>
+                <input type="text" class="form-control" name="offerCode" id="OfferCode" ng-model="offer.OfferCode" required>
+                <p ng-show="addForm.offerCode.$invalid && !addForm.offerCode.$pristine" class="help-block">Offer Code is required.</p>
+              </div>
+              <div class="form-group" ng-class="{ 'has-error' : addForm.offerDiscount.$invalid && !addForm.offerDiscount.$pristine }">
+                <label for="OfferDiscount" class="control-label">Offer Discount <span class="red">*</span></label>
+                <input type="number" class="form-control" name="offerDiscount" id="OfferDiscount" ng-model="offer.OfferDiscount" min="1" max="100" required>
+                <p ng-show="addForm.offerDiscount.$invalid && !addForm.offerDiscount.$pristine" class="help-block">Offer Discount is required and should be numeric within 1 to 100.</p>
+              </div>
+              <div class="form-group" ng-class="{ 'has-error' : addForm.offerStartDate.$invalid && !addForm.offerStartDate.$pristine }">
+                <label for="OfferDateTimeRange" class="control-label">Offer Start Date <span class="red">*</span></label>
+                <div class="input-group">
+                    <input type="text" name="offerStartDate"class="form-control" uib-datepicker-popup="{{format}}" ng-model="offer.OfferStartDate" is-open="status.startDate" min-date="startDate.minDate" max-date="offer.OfferEndDate" datepicker-append-to-body="true" datepicker-options="dateOptions" ng-required="true" close-text="Close" readonly />
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-default" ng-click="open(1)"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+                <p ng-show="addForm.offerStartDate.$invalid && !addForm.offerStartDate.$pristine" class="help-block">Offer start date is required.</p>
+              </div>
+              <div class="form-group" ng-class="{ 'has-error' : addForm.offerEndDate.$invalid && !addForm.offerEndDate.$pristine }">
+                <label for="OfferDateTimeRange" class="control-label">Offer End Date <span class="red">*</span></label>
+                <div class="input-group">
+                    <input type="text" name="offerEndDate" class="form-control" uib-datepicker-popup="{{format}}" ng-model="offer.OfferEndDate" is-open="status.endDate" min-date="offer.OfferStartDate" max-date="endDate.maxDate" datepicker-append-to-body="true" datepicker-options="dateOptions" ng-required="true" close-text="Close" readonly />
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-default" ng-click="open(2)"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+                <p ng-show="addForm.offerEndDate.$invalid && !addForm.offerEndDate.$pristine" class="help-block">Offer end date is required.</p>
+              </div>
+              <div class="form-group" ng-class="{ 'has-error' : addForm.offerDescription.$invalid && !addForm.offerDescription.$pristine }">
+                <label for="OfferDescription" class="control-label">Offer Description <span class="red">*</span></label>
+                <textarea class="form-control" name="offerDescription" id="OfferDescription" ng-model="offer.OfferDescription" placeholder="Offer Description" required></textarea>
+                <p ng-show="addForm.offerDescription.$invalid && !addForm.offerDescription.$pristine" class="help-block">Offer description is required.</p>
+              </div>
+              <div class="form-group" ng-class="{ 'has-error' : addForm.offerLocations.$invalid && !addForm.offerLocations.$pristine }">
+                <label for="offerLocations" class="control-label">Offer Locations <span class="red">*</span></label>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="offerLocations" name="offerLocations" ng-model="selectedLocation" required disabled>
+                  <span class="input-group-btn">
+                    <button type="button" class="btn btn-default" ng-click="openLocationModal()"><i class="fa fa-edit"></i></button>
+                  </span>
+                </div>
+                <p ng-show="addForm.offerLocations.$invalid && !addForm.offerLocations.$pristine" class="help-block">Offer Location is required.</p>
+              </div>
+              <div class="form-group" ng-class="{ 'has-error' : addForm.offerHobbies.$invalid && !addForm.offerHobbies.$pristine }">
+                <label for="offerHobbies" class="control-label">Offer for Hobbies <span class="red">*</span></label>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="offerHobbies" name="offerHobbies" ng-model="selectedHobby" required disabled>
+                  <span class="input-group-btn">
+                    <button type="button" class="btn btn-default" ng-click="openHobbiesModal()"><i class="fa fa-edit"></i></button>
+                  </span>
+                </div>
+                <p ng-show="addForm.offerHobbies.$invalid && !addForm.offerHobbies.$pristine" class="help-block">Offer for hobby is required.</p>
+              </div>
+              <div class="form-group">
+                <div class="text-center">
+                  <button ng-click="upsertOffer()" ng-disabled="addForm.$invalid" class="btn btn-info">Submit</button>
+                </div>
+              </div>
+            </form>
+        </div><!-- /.box-body -->
+      </div>
+
+    </div>
+  </div><!-- /.row -->
+
+
+</section><!-- /.content -->

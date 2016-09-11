@@ -1,0 +1,38 @@
+<section class="hold-transition login-page">
+  <div class="login-box">
+    <div class="login-logo">
+      <a href="#"><b>Smart</b>Engine</a>
+    </div><!-- /.login-logo -->
+    <div class="login-box-body">
+      <p class="login-box-msg">Sign in as a Customer</p>
+      <form name="customerLoginForm" novalidate>
+        <div class="form-group has-feedback" ng-class="{ 'has-error' : customerLoginForm.email.$invalid && !customerLoginForm.email.$pristine }">
+          <input type="email" name="email" class="form-control" ng-model="customer.EmailID" placeholder="Email" required>
+          <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+          <p ng-show="customerLoginForm.email.$invalid && !customerLoginForm.email.$pristine" class="help-block">Enter a valid email.</p>
+        </div>
+        <div class="form-group has-feedback" ng-class="{ 'has-error' : customerLoginForm.password.$invalid && !customerLoginForm.password.$pristine }">
+          <input type="password" name="password" class="form-control" ng-model="customer.Password" placeholder="Password" required>
+          <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+          <p ng-show="customerLoginForm.password.$invalid && !customerLoginForm.password.$pristine" class="help-block">Enter a password.</p>
+        </div>
+        <div class="row">
+          <div class="col-xs-8">
+            <div class="checkbox checkbox-primary">
+              <input id="rememberMe" type="checkbox" ng-model="rememberMe">
+              <label for="rememberMe">
+                Remember Me
+              </label>
+            </div>
+          </div><!-- /.col -->
+          <div class="col-xs-4">
+            <button class="btn btn-primary btn-block btn-flat" id="adminsigninbtn" ng-click="loginCustomer()" ng-disabled="customerLoginForm.$invalid">Sign In</button>
+          </div><!-- /.col -->
+        </div>
+      </form>
+      <a ng-click="goForgotPassword()">I forgot my password</a><br>
+      <a ng-click="goRegister()" class="text-center">Register a new membership</a><br>
+      <a ng-click="goAdminLogin()" class="text-center">Login as an Administrator</a>
+    </div><!-- /.login-box-body -->
+  </div><!-- /.login-box -->
+</section>

@@ -1,0 +1,207 @@
+/********** Color Reference ********
+Text Font Color: #565656;
+Active State Color:#72C9D3;
+Up Indication: #A2DA93;
+Down Indication: #DE7E80;
+***********************************/
+
+.no-border {
+    border: none !important;
+}
+.no-padding {
+    padding: 0 !important;
+}
+.margin-left-30 {
+    margin: 0 0 0 30px;
+}
+.inline-block {
+    display: inline-block !important;
+}
+.vertical-padding {
+    padding: 5px 0;
+}
+.figure, .percent {
+    font-family: 'Open Sans', sans-serif;
+}
+.vertical-margin {
+    margin: 15px 0;
+}
+/***************************** *******************************/
+
+.dashboard-block-header {
+    padding-bottom: 0 !important;
+}
+.dashboard-content {
+    font-family: RalewayRegular;
+    padding: 40px 30px;
+    color: #565656;
+}
+.dashboard-block-heading-text {
+    font-size: 20px;
+    font-family: RalewayRegular;
+}
+.dashboard-block-menu li {
+    padding: 0px 15px !important;
+}
+.dashboard-block-menu li i {
+    display: none;
+}
+.dashboard-block-menu {
+    margin-top: 10px;
+}
+.dashboard-block-menu .active {
+    border-bottom: 7px solid #72C9D3;
+    position: relative;
+    text-align: center;
+}
+.dashboard-block-menu .active i {
+    display: inherit;
+    font-size: 38px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    left: 0;
+    color: #72C9D3;
+}
+.dashboard-block-menu .active a {
+    font-weight: bold;
+    color: #565656;
+}
+.dashboard-block-menu li a {
+    color: #565656;
+    font-size: 13px;
+}
+.menu-small li {
+    padding: 5px 10px !important;
+}
+.menu-small {
+    padding-bottom: 20px;
+}
+.menu-small .active {
+    border-bottom: 3px solid #72C9D3;
+}
+.menu-small .active i {
+    font-size: 24px;
+    top: 22px;
+}
+.menu-small .active a {
+    font-weight: normal;
+    color: #565656;
+}
+/******************************************* ************************************************/
+/************************************* Billing Starts *******************************/
+
+.dashboard-content-block .block-flat {
+    margin: 0 2px;
+}
+.dashboard-block-item {
+    text-align: center;
+    padding: 15px;
+}
+.dashboard-block-item > div {
+    padding: 3px 0;
+}
+.dashboard-block-item-heading {
+    font-size: 15px;
+}
+.dashboard-block-item-stat {} .dashboard-block-item-note {
+    font-size: 14px;
+}
+.dashboard-block-item-stat .figure {
+    font-weight: bolder;
+    font-size: 20px;
+}
+.dashboard-block-item-stat .indicator {
+    color: #A2DA93;
+    margin: 0 5px;
+    font-size: 18px;
+}
+.indicator.down {
+    color: #DE7E80;
+}
+.dashboard-block-item-stat .percent {
+    color: #A2DA93;
+    font-size: 14px;
+    font-weight: bold;
+}
+.percent.down {
+    color: #DE7E80;
+}
+.dashboard-block-item-stat .icon {
+    font-size: 20px;
+    margin: 0 5px;
+}
+/************************************* Billing Ends *********************************/
+/************************************* Email Section ********************************/
+
+.all-email-icon {
+    padding: 5px 7px;
+    border: 1px solid #72C9D3;
+    border-radius: 50%;
+    color: #72C9D3;
+    font-size: 24px;
+    margin: 0 8px 0 0;
+    vertical-align: middle;
+}
+.all-email-heading-text {
+    color: #72C9D3;
+}
+.device-image {
+    float: left;
+    width: 155px;
+}
+.device-image img {
+    width: 70px;
+}
+.custom-progress-wrapper {
+    height: 25px;
+}
+.custom-progress {
+    background: #72C9D3;
+    height: 25px;
+}
+.custom-progress.all {
+	width:100%;
+}
+.custom-progress.desktop {
+	width:75%;
+}
+.custom-progress.ipad {
+	width:50%;
+}
+.custom-progress.mobile {
+	width:25%;
+}
+.device-stat {
+    margin: 0 0 0 155px;
+    padding-top: 12px;
+}
+.device-image .figure {
+    font-size: 14px;
+    padding: 0 5px 0 10px;
+    vertical-align: middle;
+    text-align: right;
+    width: 75px;
+}
+.all-email-icon.fa-paper-plane {
+    padding: 9px 11px 9px 7px;
+    font-size: 18px;
+}
+/************************************* Responsive Css ************************************/
+
+@media(max-width:680px) {
+    .dashboard-block-heading-text {
+        display: block !important;
+    }
+    .menu-large .active {
+        border-bottom: 2px solid #72C9D3;
+        position: relative;
+        text-align: left;
+    }
+    .menu-large > li {
+        display: block;
+    }
+    .menu-large .active i {
+        display: none;
+    }
+}

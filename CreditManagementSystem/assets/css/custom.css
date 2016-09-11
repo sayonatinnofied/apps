@@ -1,0 +1,97 @@
+/**
+ *
+ * Apply your custom CSS here
+ *
+*/
+
+body {	
+}
+
+a {
+}
+
+.login-container{max-width:400px; 
+	margin: 0 auto;
+/*border-top:solid 5px #AAA;*/}
+.login-header{text-align:center;}
+.login-page .login-form .login-footer{margin-top:-0; margin-bottom:20px !important;}
+
+ .main-footer.sticky.login-page-footer{margin-left:0; margin-right:0; text-align: center; 
+ 	/*margin-bottom:24px; */
+ 	/*position: absolute; bottom: 20px; width: 100%;*/
+ }
+.footer.main-footer > .login-page-footer{margin:0; padding:20px 0 !important;}
+
+footer.main-footer .footer-text.float-none{float:none; color: #2c2e2f;}
+footer.main-footer .footer-text.float-none strong{color: #2c2e2f;}
+footer.main-footer .footer-text.float-none a{color: #463e99}
+
+.login-page.login-light{background:url("../../assets/images/conference.jpg") center center;}
+a.blue{color: #463e99!important}
+.login-page{
+	padding-top: 150px;
+}
+.login-form {
+  background: #fff;
+  color: #979898;
+  position: relative;
+  padding: 40px 30px;
+  margin-bottom: 50px;
+}
+.login-page-footer{
+	background: #fff;
+	padding: 20px;
+	/*margin:10px 0 25px 0;*/
+}
+.errors-container{
+	color: red;
+	transition:all 0.5s;
+}
+
+.dashboard-page{
+	padding-top: 100px;
+}
+.brand-logo>img{
+	width: 70px;
+}
+.navbar-default {
+  background-color: #2C2E2F;
+  border-color: #2C2E2F;
+}
+.greetings>a{
+	  font-size: 18px;
+  color: #eee !important;
+}
+.logout-icon {
+	font-size: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.logout>a{
+	color: #eee !important;
+}
+.credit-score-number{
+	  font-size: 24px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: rgb(51, 159, 51);
+  font-style: italic;
+}
+.u-icon{
+	  color: rgb(89, 89, 177);
+  font-size: 16px;
+  margin-right: 5px;
+  width: 15px;
+  text-align: center;
+}
+.user-address,.contact-addres{
+	  padding: 10px;
+  border-top: 2px solid rgb(195, 195, 195);
+  margin-top: 5px;
+}
+.user-name{
+	font-size: 20px;
+}
+.contact-addres div{
+	margin-bottom: 5px;
+}

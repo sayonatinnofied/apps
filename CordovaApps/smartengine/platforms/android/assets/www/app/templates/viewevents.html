@@ -1,0 +1,78 @@
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+   <h1>
+      View Events
+    <small>Version 2.0</small>
+  </h1>
+  <ol class="breadcrumb">
+    <li><a ng-click="goAdminHome()"><i class="fa fa-dashboard"></i> Home</a></li>
+    <li>View</li>
+    <li class="active">Events</li>
+  </ol>
+</section>
+
+<!-- Main content -->
+<section class="content">
+  <!-- Info boxes -->
+  <div class="row">
+    <div class="col-xs-12">
+
+      <div class="box box-primary">
+        <div class="box-header">
+          <h3 class="box-title">Event Details</h3>
+          <br/><br/>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                  <input type="text" class="form-control" placeholder="Search Event" ng-model="eventSearch">
+                </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="search-result-count">
+                <div class="pull-left">Showing page <span><b>{{currentEventPage}}</b></span> out of <span><b>{{numPages}}</b></span> pages</div>
+                <div class="pull-right">
+                  <uib-pagination total-items="totalEventItems" ng-model="currentEventPage" max-size="maxSize" class="pagination-sm" boundary-links="true" rotate="false" num-pages="numPages" items-per-page="itemsPerPage"></uib-pagination>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.box-header -->
+        <div class="box-body">
+          <table id="eventDetails" class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Event Id</th>
+                <th>Event Name</th>
+                <th>Event Location</th>
+                <th>Event Category</th>
+                <th>Event Start Date Time</th>
+                <th>Event End Date Time</th>
+                <th>Event Address</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="fadeInOut" ng-repeat="event in eventItems=(events.slice(((currentEventPage-1)*itemsPerPage), ((currentEventPage)*itemsPerPage))|filter:eventSearch)">
+                  <td>{{event.EventId}}</td>
+                  <td>{{event.EventName}}</td>
+                  <td>{{event.EventLocationName}}</td>
+                  <td>{{event.EventCategoryName}}</td>
+                  <td>{{event.EventStartDate}}</td>
+                  <td>{{event.EventEndDate}}</td>
+                  <td>{{event.EventAddress}}</td>
+              </tr>
+            </tbody>
+            <tfoot>
+            </tfoot>
+          </table>
+          <div ng-hide="eventItems.length" class="empty-text no-items">{{emptyText}}</div>
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div><!-- /.col -->
+  </div>
+
+
+</section><!-- /.content -->

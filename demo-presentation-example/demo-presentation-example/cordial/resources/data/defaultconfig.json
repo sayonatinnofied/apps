@@ -1,0 +1,35 @@
+{
+    "numberOfItems": [{
+        "items": 25      
+    }, {
+        "items": 50
+    }, {
+        "items": 75
+    }, {
+        "items": 100
+    }],
+    "activeItemsPerPage": "25",
+    "actions": [{
+        "name": "edit",
+        "displayText": "Edit",
+        "isPrimary": true,
+        "isSingularAction": true,
+        "isBulkAction": true,
+        "icon": "fa fa-pencil"
+    }, {
+        "name": "copy",
+        "displayText": "Copy",
+        "isPrimary": true,
+        "isSingularAction": true,
+        "isBulkAction": true,
+        "icon": "fa fa-copy"
+    }, {
+        "name": "remove",
+        "displayText": "Remove",
+        "isPrimary": true,
+        "isSingularAction": true,
+        "isBulkAction": true,
+        "icon": "fa fa-times"
+    }]
+
+}

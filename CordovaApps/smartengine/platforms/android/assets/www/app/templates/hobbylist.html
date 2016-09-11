@@ -1,0 +1,22 @@
+<div class="modal-header">
+    <h3 class="modal-title">Select the hobbies</h3>
+</div>
+<div class="modal-body">
+    <ul class="list-unstyled">
+        <li ng-repeat="item in items">
+            <!-- <a href="#" ng-click="$event.preventDefault(); selectedItems.push(item)">{{ item }}</a> -->
+            <div class="checkbox checkbox-primary">
+                <input id="hobbyID{{ item.HobbyName }}" type="checkbox" ng-model="item.value" ng-change="alterSelection(item)" ng-true-value="true" ng-false-value="false">
+                <label for="hobbyID{{ item.HobbyName }}">
+                    {{ item.HobbyName }}
+                </label>
+            </div>
+        </li>
+    </ul>
+    <br/>
+    Selected hobbies: <b ng-repeat="selectedItem in selectedItems">{{ selectedItem.HobbyName  }}  </b><b ng-show="!selectedItems.length" class="empty-text">{{ emptySelectionText }}  </b>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
+    <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+</div>

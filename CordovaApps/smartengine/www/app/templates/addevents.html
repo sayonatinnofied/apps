@@ -1,0 +1,83 @@
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+   <h1>
+      Add Events
+    <small>Version 2.0</small>
+  </h1>
+  <ol class="breadcrumb">
+    <li><a ng-click="goAdminHome()"><i class="fa fa-dashboard"></i> Home</a></li>
+    <li>Add</li>
+    <li class="active">Events</li>
+  </ol>
+</section>
+
+<!-- Main content -->
+<section class="content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="box box-primary box-center">
+        <div class="box-body">
+          <form name="addForm" novalidate>
+              <div class="form-group" ng-class="{ 'has-error' : addForm.eventName.$invalid && !addForm.eventName.$pristine }">
+                <label for="eventName" class="control-label">Event Name <span class="red">*</span></label>
+                <input type="text" class="form-control" id="eventName" name="eventName" ng-model="event.EventName" placeholder="Event Name" required>
+                <p ng-show="addForm.eventName.$invalid && !addForm.eventName.$pristine" class="help-block">Event name is required.</p>
+              </div>
+              <div class="form-group" ng-class="{ 'has-error' : addForm.eventLocation.$invalid && !addForm.eventLocation.$pristine }">
+                <label for="eventLocation" class="control-label">Event Location <span class="red">*</span></label>
+                <select class="form-control select2" style="width: 100%;" id="eventLocation" name="eventLocation" ng-model="event.EventLocation" required>
+                  <option value=""> Select a Event Location </option>
+                  <option ng-repeat="locationOption in locations" value="{{locationOption.LocationID}}">{{locationOption.LocationName}}
+                  </option>
+                </select>
+                <p ng-show="addForm.eventLocation.$invalid && !addForm.eventLocation.$pristine" class="help-block">Event location is required.</p>
+              </div>
+              <div class="form-group" ng-class="{ 'has-error' : addForm.eventCategory.$invalid && !addForm.eventCategory.$pristine }">
+                <label for="eventCategory" class="control-label">Event Category <span class="red">*</span></label>
+                <select class="form-control select2" style="width: 100%;" name="eventCategory" id="eventCategory" ng-model="event.EventCategory" required>
+                  <option value=""> Select a Event Category </option>
+                  <option ng-repeat="eventCategory in eventCategories" value="{{eventCategory.EventCategoryID}}">{{eventCategory.EventCategoryName}}
+                  </option>
+                </select>
+                <p ng-show="addForm.eventCategory.$invalid && !addForm.eventCategory.$pristine" class="help-block">Event category is required.</p>
+              </div>
+              <div class="form-group" ng-class="{ 'has-error' : addForm.eventStartDate.$invalid && !addForm.eventStartDate.$pristine }">
+                <label for="eventDateTimeRange" class="control-label">Event Start Date <span class="red">*</span></label>
+                <div class="input-group">
+                    <input type="text" class="form-control" name="eventStartDate" uib-datepicker-popup="{{format}}" ng-model="event.EventStartDate" is-open="status.startDate" min-date="startDate.minDate" max-date="event.EventEndDate" datepicker-append-to-body="true" datepicker-options="dateOptions" ng-required="true" close-text="Close" readonly />
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-default" ng-click="open(1)"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+                <p ng-show="addForm.eventStartDate.$invalid && !addForm.eventStartDate.$pristine" class="help-block">Event start date is required.</p>
+              </div>
+              <div class="form-group" ng-class="{ 'has-error' : addForm.eventEndDate.$invalid && !addForm.eventEndDate.$pristine }">
+                <label for="eventDateTimeRange" class="control-label">Event End Date <span class="red">*</span></label>
+                <div class="input-group">
+                    <input type="text" name="eventEndDate" class="form-control" uib-datepicker-popup="{{format}}" ng-model="event.EventEndDate" is-open="status.endDate" min-date="event.EventStartDate" max-date="endDate.maxDate" datepicker-append-to-body="true" datepicker-options="dateOptions" ng-required="true" close-text="Close" readonly />
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-default" ng-click="open(2)"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+                <p ng-show="addForm.eventEndDate.$invalid && !addForm.eventEndDate.$pristine" class="help-block">Event end date is required.</p>
+              </div>
+              <div class="form-group" ng-class="{ 'has-error' : addForm.eventAddress.$invalid && !addForm.eventAddress.$pristine }">
+                <label for="eventAddress" class="control-label">Event Address <span class="red">*</span></label>
+                <textarea class="form-control" id="eventAddress" name="eventAddress" ng-model="event.EventAddress" placeholder="Event Address" required></textarea>
+                <p ng-show="addForm.eventAddress.$invalid && !addForm.eventAddress.$pristine" class="help-block">Event address is required.</p>
+              </div>
+              <div class="form-group">
+                <div class="text-center">
+                  <button ng-click="upsertEvent()" ng-disabled="addForm.$invalid" class="btn btn-info">Submit</button>
+                </div>
+              </div>
+            </form>
+        </div><!-- /.box-body -->
+      </div>
+
+    </div>
+  </div><!-- /.row -->
+
+
+</section><!-- /.content -->

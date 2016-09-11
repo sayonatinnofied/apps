@@ -1,0 +1,470 @@
+[{
+    "label": "Dashboard",
+    "target": "",
+    "icon": "fa fa-home",
+    "access": {
+        "role": {
+            "superadmin": true,
+            "account": true
+        },
+        "version": {
+            "beta": false
+        }
+    }
+}, {
+    "label": "Messages",
+    "target": false,
+    "icon": "fa fa-envelope",
+    "access": {
+        "role": {
+            "superadmin": true,
+            "account": true
+        },
+        "version": {
+            "beta": true
+        }
+    },
+    "subItems": [{
+        "label": "Compose New Message",
+        "target": "new-compose",
+        "access": {
+            "role": {
+                "superadmin": true,
+                "account": true
+            },
+            "version": {
+                "beta": true
+            }
+        }
+    }, {
+        "label": "All Messages",
+        "target": "/#allmessages",
+        "access": {
+            "role": {
+                "superadmin": true,
+                "account": false
+            },
+            "version": {
+                "beta": false
+            }
+        }
+    }, {
+        "label": "Approvals",
+        "target": "/#approvals",
+        "access": {
+            "role": {
+                "superadmin": true,
+                "account": false
+            },
+            "version": {
+                "beta": false
+            }
+        }
+    }, {
+        "label": "Drafts",
+        "target": "/#approvals",
+        "access": {
+            "role": {
+                "superadmin": true,
+                "account": false
+            },
+            "version": {
+                "beta": false
+            }
+        }
+    }, {
+        "label": "Scheduled",
+        "target": "/#approvals",
+        "access": {
+            "role": {
+                "superadmin": true,
+                "account": false
+            },
+            "version": {
+                "beta": false
+            }
+        }
+    }, {
+        "label": "Sent",
+        "target": "/#approvals",
+        "access": {
+            "role": {
+                "superadmin": true,
+                "account": false
+            },
+            "version": {
+                "beta": false
+            }
+        }
+    }]
+}, {
+    "label": "Message Automation",
+    "target": false,
+    "icon": "fa fa-cogs",
+    "access": {
+        "role": {
+            "superadmin": true,
+            "account": false
+        },
+        "version": {
+            "beta": false
+        }
+    },
+    "subItems": [{
+        "label": "Recurring Messages",
+        "target": "",
+        "access": {
+            "role": {
+                "superadmin": true,
+                "account": true
+            },
+            "version": {
+                "beta": true
+            }
+        }
+    }, {
+        "label": "Triggered Messages",
+        "target": "",
+        "access": {
+            "role": {
+                "superadmin": true,
+                "account": true
+            },
+            "version": {
+                "beta": true
+            }
+        }
+    }, {
+        "label": "Message Streams",
+        "target": "",
+        "access": {
+            "role": {
+                "superadmin": true,
+                "account": true
+            },
+            "version": {
+                "beta": true
+            }
+        }
+    }, {
+        "label": "Message Triggers",
+        "target": "",
+        "access": {
+            "role": {
+                "superadmin": true,
+                "account": true
+            },
+            "version": {
+                "beta": true
+            }
+        }
+    }]
+}, {
+    "label": "Content",
+    "target": false,
+    "icon": "fa fa-code",
+    "access": {
+        "role": {
+            "superadmin": true,
+            "account": true
+        },
+        "version": {
+            "beta": true
+        }
+    },
+    "subItems": [{
+        "label": "Messages",
+        "target": "",
+        "access": {
+            "role": {
+                "superadmin": true,
+                "account": false
+            },
+            "version": {
+                "beta": true
+            }
+        }
+    }, {
+        "label": "Images",
+        "target": "",
+        "access": {
+            "role": {
+                "superadmin": true,
+                "account": false
+            },
+            "version": {
+                "beta": false
+            }
+        }
+    }, {
+        "label": "HTML Conent",
+        "target": "html-content",
+        "access": {
+            "role": {
+                "superadmin": true,
+                "account": true
+            },
+            "version": {
+                "beta": true
+            }
+        }
+    }, {
+        "label": "Live Content",
+        "target": "",
+        "access": {
+            "role": {
+                "superadmin": true,
+                "account": false
+            },
+            "version": {
+                "beta": true
+            }
+        }
+    }, {
+        "label": "Landing Pages(Soon)",
+        "target": "",
+        "access": {
+            "role": {
+                "superadmin": true,
+                "account": false
+            },
+            "version": {
+                "beta": true
+            }
+        }
+    }, {
+        "label": "Forms(Soon)",
+        "target": "",
+        "access": {
+            "role": {
+                "superadmin": true,
+                "account": false
+            },
+            "version": {
+                "beta": true
+            }
+        }
+    }]
+}, {
+    "label": "Contact",
+    "target": false,
+    "icon": "fa fa-users",
+    "access": {
+        "role": {
+            "superadmin": true,
+            "account": true
+        },
+        "version": {
+            "beta": true
+        }
+    },
+    "subItems": [{
+        "label": "Add Contacts",
+        "target": "",
+        "access": {
+            "role": {
+                "superadmin": true,
+                "account": false
+            },
+            "version": {
+                "beta": true
+            }
+        }
+    }, {
+        "label": "Search Contacts",
+        "target": "search-contacts",
+        "access": {
+            "role": {
+                "superadmin": true,
+                "account": true
+            },
+            "version": {
+                "beta": true
+            }
+        }
+    }, {
+        "label": "Import Contacts",
+        "target": "",
+        "access": {
+            "role": {
+                "superadmin": true,
+                "account": false
+            },
+            "version": {
+                "beta": true
+            }
+        }
+    }, {
+        "label": "Export Contacts",
+        "target": "",
+        "access": {
+            "role": {
+                "superadmin": true,
+                "account": false
+            },
+            "version": {
+                "beta": true
+            }
+        }
+    }]
+}, {
+    "label": "Data",
+    "target": false,
+    "icon": "fa fa-table",
+    "access": {
+        "role": {
+            "superadmin": true,
+            "account": true
+        },
+        "version": {
+            "beta": true
+        }
+    },
+    "subItems": [{
+        "label": "Contact Attributes",
+        "target": "contact-attributes",
+        "access": {
+            "role": {
+                "superadmin": true,
+                "account": true
+            },
+            "version": {
+                "beta": true
+            }
+        }
+    }, {
+        "label": "Lists",
+        "target": "account-list",
+        "access": {
+            "role": {
+                "superadmin": true,
+                "account": true
+            },
+            "version": {
+                "beta": true
+            }
+        }
+    }, {
+        "label": "Contact Data Interests",
+        "target": "",
+        "access": {
+            "role": {
+                "superadmin": true,
+                "account": false
+            },
+            "version": {
+                "beta": true
+            }
+        }
+    }, {
+        "label": "Interest Scoring",
+        "target": "",
+        "access": {
+            "role": {
+                "superadmin": true,
+                "account": false
+            },
+            "version": {
+                "beta": true
+            }
+        }
+    }, {
+        "label": "Supplement Data",
+        "target": "supplement-data",
+        "access": {
+            "role": {
+                "superadmin": true,
+                "account": true
+            },
+            "version": {
+                "beta": true
+            }
+        }
+    }, {
+        "label": "Product Data",
+        "target": "product-data",
+        "access": {
+            "role": {
+                "superadmin": true,
+                "account": true
+            },
+            "version": {
+                "beta": true
+            }
+        }
+    }, {
+        "label": "Purchase Data",
+        "target": "",
+        "access": {
+            "role": {
+                "superadmin": true,
+                "account": false
+            },
+            "version": {
+                "beta": true
+            }
+        }
+    }, {
+        "label": "Trackables",
+        "target": "",
+        "access": {
+            "role": {
+                "superadmin": true,
+                "account": false
+            },
+            "version": {
+                "beta": true
+            }
+        }
+    }, {
+        "label": "Link Tags",
+        "target": "",
+        "access": {
+            "role": {
+                "superadmin": true,
+                "account": false
+            },
+            "version": {
+                "beta": true
+            }
+        }
+    }, {
+        "label": "Message Tags",
+        "target": "",
+        "access": {
+            "role": {
+                "superadmin": true,
+                "account": false
+            },
+            "version": {
+                "beta": true
+            }
+        }
+    }]
+}, {
+    "label": "Social",
+    "target": "",
+    "icon": "fa fa-facebook-square",
+    "access": {
+        "role": {
+            "superadmin": true,
+            "account": false
+        },
+        "version": {
+            "beta": true
+        }
+    }
+}, {
+    "label": "Reports",
+    "target": "",
+    "icon": "fa fa-bar-chart-o",
+    "access": {
+        "role": {
+            "superadmin": true,
+            "account": false
+        },
+        "version": {
+            "beta": true
+        }
+    }
+}]

@@ -1,0 +1,77 @@
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+  <h1>
+      Add Products
+    <small>Version 2.0</small>
+  </h1>
+  <ol class="breadcrumb">
+    <li><a ng-click="goAdminHome()"><i class="fa fa-dashboard"></i> Home</a></li>
+    <li>Add</li>
+    <li class="active">Products</li>
+  </ol>
+</section>
+
+<!-- Main content -->
+<section class="content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="box box-primary box-center">
+        <div class="box-body">
+          <form name="addForm" novalidate>
+              <div class="form-group"  ng-class="{ 'has-error' : addForm.productName.$invalid && !addForm.productName.$pristine }">
+                <label for="productName" class="control-label">Product Name <span class="red">*</span></label>
+                <input type="text" class="form-control" id="productName" name="productName" ng-model="product.ProductName"  placeholder="Product Name" required>
+                <p ng-show="addForm.productName.$invalid && !addForm.productName.$pristine" class="help-block">Product name is required.</p>
+              </div>
+              <div class="form-group select-box" ng-class="{ 'has-error' : addForm.brandName.$invalid && !addForm.brandName.$pristine }">
+                <label for="brandName" class="control-label">Brand Name <span class="red">*</span></label>
+                <select class="form-control select2" style="width: 100%;" name="brandName" id="brandName" ng-model="product.BrandId" required>
+                  <option value=""> Select a Brand </option>
+                  <option ng-repeat="brand in brands" value="{{brand.BrandId}}">{{brand.BrandName}}
+                  </option>
+                </select>
+                <p ng-show="addForm.brandName.$invalid && !addForm.brandName.$pristine" class="help-block">Brand name is required.</p>
+              </div>
+              <div class="form-group select-box">
+                <label for="EventName" class="control-label">Event Name</label>
+                <select class="form-control select2" style="width: 100%;" id="EventName" ng-model="product.EventId">
+                  <option value=""> Select an Event </option>
+                  <option ng-repeat="event in events" value="{{event.EventId}}">{{event.EventName}} - {{event.EventLocationName}}</option>
+                </select>
+              </div>
+              <div class="form-group" ng-class="{ 'has-error' : addForm.category.$invalid && !addForm.category.$pristine }">
+                <label for="category" class="control-label">Category <span class="red">*</span></label>
+                <select class="form-control select2" style="width: 100%;" name="category" id="category" ng-model="product.ProductCategory" required>
+                  <option value=""> Select a Product Category </option>
+                  <option ng-repeat="productCategory in productCategories" value="{{productCategory.ProductCategoryID}}">{{productCategory.ProductCategoryName}}
+                  </option>
+                </select>
+                <p ng-show="addForm.category.$invalid && !addForm.category.$pristine" class="help-block">Product Category is required.</p>
+              </div>
+              <div class="form-group" ng-class="{ 'has-error' : addForm.price.$invalid && !addForm.price.$pristine }">
+                <label for="price" class="control-label">Price <span class="red">*</span></label>
+                <div class="input-group">
+                  <span class="input-group-addon no-padding">
+                    <select class="currency" id="currency">
+                      <option>Rs.</option>
+                      <option>$</option>
+                    </select>
+                  </span>
+                  <input type="text" class="col-sm-11 form-control" id="price" name="price" placeholder="Price" ng-model="product.Price" pattern="[\d]+[.]?[\d]*" required>
+                </div>
+                <p ng-show="addForm.price.$invalid && !addForm.price.$pristine" class="help-block">Product price is required and should be numeric.</p>
+              </div>
+              <div class="form-group">
+                <div class="text-center">
+                  <button ng-click="upsertProduct()" ng-disabled = "addForm.$invalid" class="btn btn-info">Submit</button>
+                </div>
+              </div>
+          </form>
+        </div><!-- /.box-body -->
+      </div>
+
+    </div>
+  </div><!-- /.row -->
+
+</section><!-- /.content -->

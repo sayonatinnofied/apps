@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="BizzConf Admin Panel" />
+	<meta name="author" content="Innofied Solutions Pvt. Ltd." />
+
+	<title>Credit Management System - Login </title>
+	
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arimo:400,700,400italic">
+	<link rel="stylesheet" href="assets/css/fonts/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/css/custom.css">
+
+    </head>
+    <body class="page-body login-page login-light">
+
+
+	<div class="login-container">
+
+	    <div class="row">
+
+		<div class="col-sm-12">
+
+		    
+
+		   
+
+		    <!-- Add class "fade-in-effect" for login form effect -->
+		    <form method="post" role="form" id="login" class="login-form" onsubmit="return validateLogin()">
+
+			<div class="login-header">
+			    <a href="index.html" class="logo">
+				<img src="assets/images/BuizzConf-Logo-Dark.png" alt="" width="200" />
+			    </a>
+
+			    <p>Dear user, log in to access the admin area!</p>
+			</div>
+
+
+			<div class="form-group">
+			    <label class="control-label" for="username">Username</label>
+			    <input type="text" class="form-control" name="username" id="username" autocomplete="off"/>
+			</div>
+
+			<div class="form-group">
+			    <label class="control-label" for="passwd">Password</label>
+			    <input type="password" class="form-control" name="passwd" id="passwd" autocomplete="off" />
+			</div>
+
+			 <!-- Errors container -->
+		    <div class="errors-container form-group" id="errors_container">
+
+
+		    </div>
+
+			<div class="form-group">
+			    <button type="submit" class="btn btn-primary  btn-block text-center">
+				<i class="fa fa-lock"></i>
+				Log In
+			    </button>
+			</div>
+
+			<div class="login-footer">
+			    <a class="pull-left" href="#">Forgot your password?</a>
+			    <!-- <a class="pull-right blue" href="#">Sign Up</a> -->
+			    <!-- <div class="info-links">
+						 <a href="#">ToS</a> -
+						 <a href="#">Privacy Policy</a>
+					 </div> -->
+
+			</div>
+
+		    </form>
+
+		    <!-- External login -->
+		    <!-- <div class="external-login">
+			    <a href="#" class="facebook text-center">
+				    <i class="fa-facebook"></i>
+				    Facebook Login
+			    </a>
+			    
+		    </div>-->
+
+		</div>
+
+	    </div>
+
+	</div>
+
+	<footer class="main-footer sticky login-page-footer">
+
+	    <div class="footer-inner">
+
+		<!-- Add your copyright text here -->
+		<div class="footer-text float-none">
+		    © 2015
+		    <strong>Credit Management System</strong> Powered by <a href="http://innofied.com" target="_blank">Cognizant</a>
+		</div>
+
+	    </div>
+
+	</footer>
+
+	<script type="text/javascript" src="assets/js/validations.js"></script>
+	<script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
+    </body>
+</html>

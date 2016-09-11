@@ -1,0 +1,40 @@
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+   <h1>
+      Add Event Category
+    <small>Version 2.0</small>
+  </h1>
+  <ol class="breadcrumb">
+    <li><a ng-click="goAdminHome()"><i class="fa fa-dashboard"></i> Home</a></li>
+    <li>Add</li>
+    <li class="active">Event Category</li>
+  </ol>
+</section>
+
+<!-- Main content -->
+<section class="content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="box box-primary box-center">
+        <div class="box-body">
+          <form name="addForm" novalidate>
+            <div class="form-group" ng-class="{ 'has-error' : addForm.eventCategoryName.$invalid && !addForm.eventCategoryName.$pristine }">
+              <label for="eventCategoryName" class="control-label">Event Category Name <span class="red">*</span></label>
+              <input type="text" name="eventCategoryName" class="form-control" id="eventCategoryName" ng-model="eventCategory.EventCategoryName" placeholder="Event Category Name" required>
+              <p ng-show="addForm.eventCategoryName.$invalid && !addForm.eventCategoryName.$pristine" class="help-block">Event Category name is required.</p>
+            </div>
+            <div class="form-group">
+              <div class="text-center">
+                <button ng-click="upsertEventCategory()" ng-disabled="addForm.$invalid" class="btn btn-info">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div><!-- /.box-body -->
+      </div>
+
+    </div>
+  </div><!-- /.row -->
+
+
+</section><!-- /.content -->

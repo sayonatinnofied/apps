@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Incubatize</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <script src="jquery/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/circular-progress.js"></script>
+    <script src="js/progress-bars.js"></script>
+</head>
+
+<body class="body-content">
+    <div class="navigation-mobile">
+        <div class="navigation-header-logo">
+            <img src="images/incubatize_logo_ipad.png">
+        </div>
+        <div class="navigation-list-wrapper">
+            <ul class="nav nav-pills nav-stacked navigation-list">
+                <li>
+                    <a href="#">
+                        <span class="new-idea"></span>
+                        <div class="navigation-text">New Idea</div>
+                    </a>
+                </li>
+                <li class="list-item-selected">
+                    <a href="#">
+                        <span class="idea-stream"></span>
+                        <div class="navigation-text">Idea Stream</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="goals"></span>
+                        <div class="navigation-text">Goals</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="analysis"></span>
+                        <div class="navigation-text">Analysis</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="leaderboard"></span>
+                        <div class="navigation-text">LeaderBoard</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="quick-captures"></span>
+                        <div class="navigation-text">Quick Captures</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="manage-team"></span>
+                        <div class="navigation-text">Manage Team</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="navigation-tab">
+                <div class="navigation-header-logo">
+                    <img src="images/incubatize_logo_ipad.png">
+                </div>
+                <div class="navigation-list-wrapper">
+                    <ul class="nav nav-pills nav-stacked navigation-list">
+                        <li>
+                            <a href="#">
+                                <div class="new-idea-tab"></div>
+                                <div class="navigation-text">New Idea</div>
+                            </a>
+                        </li>
+                        <li class="list-item-selected">
+                            <a href="#">
+                                <div class="idea-stream-tab"></div>
+                                <div class="navigation-text">Idea Stream</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="goals-tab"></div>
+                                <div class="navigation-text">Goals</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="analysis-tab"></div>
+                                <div class="navigation-text">Analysis</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="leaderboard-tab"></div>
+                                <div class="navigation-text">LeaderBoard</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="quick-captures-tab"></div>
+                                <div class="navigation-text">Quick Captures</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="manage-team-tab"></div>
+                                <div class="navigation-text">Manage Team</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+    </div>
+    <div class="slide">
+        <!-- *************** Content Header Starts *************************** -->
+        <div class="row content-header">
+            <div class="col-xs-12 header-menu">
+                <div class="logo text-left">
+                    <img class="logo-small" src="images/incubatizelogo.png"></img>
+                    <i class="fa fa-bars"></i>
+                </div>
+                <div class="header">
+                    <div class="capture-wrapper">
+                        <i class="fa fa-camera"></i>
+                        <span class="badge">2</span>
+                        <div class="badge-text">CAPTURE</div>
+                    </div>
+                    <div class="capture-wrapper head-notification-icon">
+                        <i class="fa fa-bell"></i>
+                        <span class="badge">2</span>
+                    </div>
+                    <div class="seperator">
+                    </div>
+                    <div class="account-options">
+                        <div class="image-wrapper">
+                            <img class="profile-image" src="images/profile-picture.jpg"></img>
+                            <img class="profile-image dropdown-toggle" data-toggle="dropdown" src="images/profile-picture.jpg"></img>
+                        </div>
+                        <div class="profile-options">
+                            <div class="dropdown-options">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                    <span class="pull-left">Welcome</span><i class="fa fa-angle-down down-caret"></i>
+                                </a>
+                            </div>
+                            <div class="profile-name">
+                                <span>Maria Schneider</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- *************** Content Header Ends ***************************** -->
+        <!-- *********************** Content Starts ************************* -->
+        <div class="row content-wrapper">
+            <!-- ******************* Left side Navigation Starts ********************* -->
+            <div class="navigation-desktop">
+                <div class="navigation-list-wrapper">
+                    <ul class="nav nav-pills nav-stacked navigation-list">
+                        <li>
+                            <a href="#">
+                                <span class="new-idea"></span>
+                                <div class="navigation-text">New Idea</div>
+                            </a>
+                        </li>
+                        <li class="list-item-selected">
+                            <a href="#">
+                                <span class="idea-stream"></span>
+                                <div class="navigation-text">Idea Stream</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="goals"></span>
+                                <div class="navigation-text">Goals</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="analysis"></span>
+                                <div class="navigation-text">Analysis</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="leaderboard"></span>
+                                <div class="navigation-text">LeaderBoard</div>
+                            </a>
+                        </li>
+                        <li class="list-item-selected">
+                            <a href="#">
+                                <span class="quick-captures"></span>
+                                <div class="navigation-text">Quick Captures</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="manage-team"></span>
+                                <div class="navigation-text">Manage Team</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- ******************* Left side Navigation Ends *********************** -->
+            <div class="idea-feed">
+                <!-- <div class="col-xs-12 header-menu">
+                    <div class="header">
+                        <div class="capture-wrapper">
+                            <i class="fa fa-camera"></i>
+                            <span class="badge">2</span>
+                            <div class="badge-text">CAPTURE</div>
+                        </div>
+                        <div class="seperator">
+                        </div>
+                        <div class="account-options">
+                            <div class="image-wrapper">
+                                <img class="profile-image" src="images/profile-picture.jpg">
+                            </div>
+                            <div class="profile-options">
+                                <div class="dropdown-options">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                        <span class="pull-left">Welcome</span><i class="fa fa-angle-down down-caret"></i>
+                                    </a>
+                                </div>
+                                <div class="profile-name">
+                                    <span>Maria Schneider</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="idea-feed-wrapper">
+                    <div class="idea-feed-search">
+                        <div class="search-wrapper">
+                            <span class="search-icon"></span>
+                            <input type='search' class="idea-feed-searchfield" placeholder="Search for People, Goal, Tags and more...">
+                        </div>
+                        <div class="idea-feed-sorters pull-right">
+                            <span class="sorter-header">Sort By:</span>
+                            <span class="sorter-list-options">
+                                <ul class="sorter-list list-inline">
+                                    <li><a href="#">Recent</a>
+                                    </li>
+                                    <li><a href="#">By Goal</a>
+                                    </li>
+                                    <li><a href="#">By Total Likes</a>
+                                    </li>
+                                    <li><a href="#">Total Average IPA</a>
+                                    </li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- *********** Ipsita ********** -->
+                    <div class="panel panel-default my-idea">
+                        <div class="idea-tag">
+                            <img src="images/my-idea-tag.png"></img>
+                        </div>
+                        <div class="panel-body comments-data-wrapper">
+                            <div class="row issue-wrapper">
+                                <div class="col-xs-2 issue-header-container">
+                                    <div class="profile-image-wrapper">
+                                        <div>
+                                            <img class="status-image" src="images/profile-picture.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="like-icon-wrapper">
+                                        <div class="like-icon">
+                                            <div class="like-icon-holder"></div>
+                                            <div>22 Votes</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-10 issue-details-container">
+                                    <div class="issue-header">
+                                        How about half baked feature?
+                                        <p>
+                                            Maria Schneider,&nbsp
+                                            <span>
+                                                Sep 18, 2014
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="issue-details">
+                                        Raghu suggested that Half baked is a big problem. Lets add a feature to solve that. Raghu suggested that Half baked is a big problem. Lets add a feature to solve that.
+                                        <div class="issue-resolved">
+                                            <span class="issue-icon"></span>
+                                            <span class="issue-text">
+                                                Identify issues or bugs with the features that should be resolved
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row box-container">
+                                <div class="left-box-panel">
+                                    <div class="ipa-box">
+                                        <div class="ipa-box-rating">6.4</div>
+                                        <div class="ipa-box-text">IPA</div>
+                                    </div>
+                                    <div class="impact-box-container">
+                                        <div class="active-impact-box">
+
+                                        </div>
+                                        <div>Impact</div>
+                                    </div>
+                                    <div class="practicality-box-container">
+                                        <div class="active-practicality-box">
+
+                                        </div>
+                                        <div class=>Practicality</div>
+                                    </div>
+                                    <div class="alignment-box-container">
+                                        <div class="active-alignment-box">
+
+                                        </div>
+                                        <div>Alignment</div>
+                                    </div>
+                                </div>
+                                <div class="right-box-panel">
+                                    <div class="files-box">
+                                        <div class="files-box-rating">3</div>
+                                        <div class="files-box-text">
+                                            Files
+                                        </div>
+                                    </div>
+                                    <div class="comment-box">
+                                        <div class="comment-box-rating">8</div>
+                                        <div class="comment-box-text">
+                                            Comments
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Pabitra-->
+                            <div class="comment">
+                                <div class="triangle">
+                                </div>
+                                <div class="own-comment">
+                                    <input class="own-comment-field" id="focusedInput" type="text" placeholder="Your comment here">
+                                    <a href="#" class="btn btn-danger comment-btn">Comment</a>
+                                </div>
+                                <div class="comment-list-container">
+                                    <ul class="comment-list">
+                                        <li>
+                                            <span class="visitor-image-container">
+                                                <img src="images/img1.jpg" class="visitor-image"></img>
+                                            </span>
+                                            <span class="visitor-info-container">
+                                                <p class="visitor-name">
+                                                    John Kennedy
+                                                </p>
+                                                <p class="visitor-comment">
+                                                    Very nice idea Very nice idea @ parag
+                                                </p>
+                                            </span>
+                                            <span class="comment-info-container">
+                                                <p class="comment-date">
+                                                    Today
+                                                </p>
+                                                <p class="comment-time">
+                                                    2 hrs ago
+                                                </p>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="visitor-image-container">
+                                                <img src="images/img2.jpg" class="visitor-image"></img>
+                                            </span>
+                                            <span class="visitor-info-container">
+                                                <p class="visitor-name">
+                                                    Eduard Gorobets
+                                                </p>
+                                                <p class="visitor-comment">
+                                                    Very nice idea nice idea Very nice idea @ parag
+                                                </p>
+                                            </span>
+                                            <span class="comment-info-container">
+                                                <p class="comment-date">
+                                                    Sep 02, 2014
+                                                </p>
+                                                <p class="comment-time">
+                                                    18:53
+                                                </p>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="visitor-image-container">
+                                                <img src="images/img3.jpg" class="visitor-image">
+                                                </img>
+                                            </span>
+                                            <span class="visitor-info-container">
+                                                <p class="visitor-name">
+                                                    Giuseppe Peppoloni
+                                                </p>
+                                                <p class="visitor-comment">
+                                                    Very nice idea @ parag
+                                                </p>
+                                            </span>
+                                            <span class="comment-info-container">
+                                                <p class="comment-date">
+                                                    Sep 02, 2014
+                                                </p>
+                                                <p class="comment-time">
+                                                    01:42
+                                                </p>
+                                            </span>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="more-comment-link">
+                                    <a href="">Load more comments</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ********** Mobile *********** -->
+                        <div class="panel-body comments-wrapper-mobile">
+                            <div class="idea-header-container-mobile">
+                                <div class="issue-header">
+                                    How about half baked feature?
+                                </div>
+                                <div class="images-container-mobile">
+                                    <div class="pull-left">
+                                        <div class="profile-image-mobile">
+                                            <img class="status-image" src="images/profile-picture.jpg">
+                                        </div>
+                                        <div class="profile-image-text">
+                                            Maria Schneider&nbsp
+                                            <span>
+                                                Sep 18, 2014
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="like-vote-wrapper pull-right">
+                                        <div class="like-icon-wrapper-mobile">
+                                            <div class="like-icon-holder"></div>
+                                        </div>
+                                        <div class="votes-mobile">22
+                                            <span>Votes</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="idea-feed-details-mobile">
+                                <div class="issue-details-mobile">
+                                    Raghu suggested that Half baked is a big problem. Lets add a feature to solve that. Raghu suggested that Half baked is a big problem.
+                                </div>
+                                <div>
+                                    <span class="issue-icon"></span>
+                                    <div class="issue-text-mobile">
+                                        Identify issues or bugs with the features that should be resolved
+                                    </div>
+                                </div>
+                                <div class="row box-container">
+                                    <div class="left-box-panel">
+                                        <div class="ipa-box">
+                                            <div class="ipa-box-rating">6.4</div>
+                                            <div class="ipa-box-text">IPA</div>
+                                        </div>
+                                    </div>
+                                    <div class="right-box-panel">
+                                        <div class="files-box">
+                                            <div class="files-box-rating">3</div>
+                                            <div class="files-box-text">
+                                                Files
+                                            </div>
+                                        </div>
+                                        <div class="comment-box">
+                                            <div class="comment-box-rating">8</div>
+                                            <div class="comment-box-text">
+                                                Comments
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment">
+                                    <div class="triangle">
+                                    </div>
+                                    <div class="own-comment">
+                                        <input class="own-comment-field" id="focusedInput" type="text" placeholder="Your comment here">
+                                        <a href="#" class="btn btn-danger comment-btn">Comment</a>
+                                    </div>
+                                    <div class="comment-list-container">
+                                        <ul class="comment-list">
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-xs-2 visitor-image-container-mobile">
+                                                        <img src="images/img1.jpg" class="visitor-image"></img>
+                                                    </div>
+                                                    <div class="col-xs-10 visitor-info-container-mobile">
+                                                        <p class="visitor-name">
+                                                            John Kennedy
+                                                        </p>
+                                                        <p class="visitor-comment">
+                                                            Very nice idea Very nice idea @ parag
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="comment-info-container-mobile">
+                                                    <span class="comment-date">
+                                                        2 hrs ago,
+                                                    </span>
+                                                    <span class="comment-time">
+                                                        Today
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-xs-2 visitor-image-container-mobile">
+                                                        <img src="images/img2.jpg" class="visitor-image"></img>
+                                                    </div>
+                                                    <div class="col-xs-10 visitor-info-container-mobile">
+                                                        <p class="visitor-name">
+                                                            Eduard Gorobets
+                                                        </p>
+                                                        <p class="visitor-comment">
+                                                            Very nice idea nice idea Very nice idea @ parag
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="comment-info-container-mobile">
+                                                    <span class="comment-date">
+                                                        18:53,
+                                                    </span>
+                                                    <span class="comment-time">
+                                                        Sep 02, 2014
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-xs-2 visitor-image-container-mobile">
+                                                        <img src="images/img3.jpg" class="visitor-image">
+                                                        </img>
+                                                    </div>
+                                                    <div class="col-xs-10 visitor-info-container-mobile">
+                                                        <p class="visitor-name">
+                                                            Giuseppe Peppoloni
+                                                        </p>
+                                                        <p class="visitor-comment">
+                                                            Very nice idea @ parag
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="comment-info-container-mobile">
+                                                    <span class="comment-date">
+                                                        01:42,
+                                                    </span>
+                                                    <span class="comment-time">
+                                                        Sep 02, 2014
+                                                    </span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="more-comment-link">
+                                        <a href="">Load more comments</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ********** Mobile *********** -->
+                    </div>
+                </div>
+            </div>
+            <!-- *********** Idea Feed Ends ********************************** -->
+            <!-- *********** Notifications Starts **************************** -->
+            <div class="notifications">
+                <div class="notifications-list-header">
+                    <div class="notification-list-header-container">
+                        <i class="fa fa-bell"></i>
+                        <span class="notification-header">Notifications</span>
+                    </div>
+                    <ul class="notification-list">
+                        <li>
+                            <div class="vertical-dash"></div>
+                            <div class="notification-bullet"><i class="fa fa-heart"></i>
+                            </div>
+                            <div class="horizontal-dash">
+                                <span></span>
+                            </div>
+                            <div class="notification-content-wrapper">
+                                <div class="notification-content">
+                                    <img src="images/profile-picture.jpg">
+                                    <div class="notification-text">Lorem ipsum dolor sit amet, consectetur</div>
+                                </div>
+                                <div class="notification-time pull-right">10 Sep 2014</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="vertical-dash"></div>
+                            <div class="notification-bullet"><i class="fa fa-comment"></i>
+                            </div>
+                            <div class="horizontal-dash">
+                                <span></span>
+                            </div>
+                            <div class="notification-content-wrapper">
+                                <div class="notification-content">
+                                    <img src="images/profile-picture.jpg">
+                                    <div class="notification-text">Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum earum, aperiam voluptatum molestiae quos explicabo dignissimos. A harum sit aliquid, cumque, accusantium dolore non in eaque accusamus, vero placeat porro.</div>
+                                </div>
+                                <div class="notification-time pull-right">10 Sep 2014</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="vertical-dash"></div>
+                            <div class="notification-bullet"><i class="fa fa-bar-chart"></i>
+                            </div>
+                            <div class="horizontal-dash">
+                                <span></span>
+                            </div>
+                            <div class="notification-content-wrapper">
+                                <div class="notification-content">
+                                    <img src="images/profile-picture.jpg">
+                                    <div class="notification-text">Lorem ipsum dolor sit amet, consectetur</div>
+                                </div>
+                                <div class="notification-time pull-right">10 Sep 2014</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- *********** Notifications Ends ****************************** -->
+        </div>
+        <!-- *********************** Footer Starts *********************************** -->
+        <div class="row footer text-center">
+            <span class="footer-note">&copy;Copyright 2014,</span>
+            <span class="footer-logo">INCUBATIZE</span>
+        </div>
+        <!-- *********************** Footer Ends ************************************* -->
+    </div>
+</body>
+
+</html>

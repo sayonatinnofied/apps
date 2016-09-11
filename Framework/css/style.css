@@ -1,0 +1,228 @@
+/** General Declarations starts **/
+.marB-0{
+	margin-bottom: 0px;
+}
+.show{
+    visibility: visible;
+}
+.hide{
+    visibility: hidden;
+}
+.color-blackish{
+    color:#ACABAB;
+}
+/** General Declarations ends**/
+
+/**************** purchase timeline starts ************/
+.payment-flow {
+    position: relative;
+    border-bottom: 2px solid #d3246d;
+    width: 85%;
+    margin: 30px 15px;
+}
+.position-tick{
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 12px;
+}
+.flow-bubble {
+    border: 1px solid #d3246d;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    background-color: #F3F3ED;
+}
+.billing-bubble{
+    background-color: #F3F3ED;
+    position: absolute;
+    top: -8px;
+}
+
+.shipping-bubble{
+    position: absolute;
+    left: 50%;
+    top: -8px;
+}
+
+.payment-bubble{
+    position: absolute;
+    right: 0px;
+    top: -8px;
+}
+
+.bubble-selected{
+    background-color: #d3246d;
+}
+.bubble-selected >p {
+    color: #d3246d;
+}
+.bubble-completed .position-tick{
+    visibility: visible;
+}
+.position-tick{
+    visibility: hidden;
+}
+.bubble-title{
+    position: absolute;
+    top: 30px;
+    left: -20px;
+    cursor: pointer;
+    font-family: Lato;
+    color: #ACABAB;
+    font-weight: 400
+}
+.bubble-title:active{
+    color: #000;
+}
+.bubble-title:hover{
+    color: #d3246d;
+}
+.color-black{
+    color: #000;
+}
+.bubble{
+    position: absolute;
+    background-color: #fff;
+    width: 200px;
+    padding: 10px;
+    border-bottom: #d3246d 2px solid;
+    -webkit-box-shadow: 0 4px 8px 2px rgba(125, 125, 125, 0.3);
+    box-shadow: 0 4px 8px 2px rgba(125, 125, 125, 0.3);    
+    z-index: 100;
+}
+.billing-address-container{
+    top: 80px;
+    left: -15px;	
+}
+.shipping-address-container{
+    top: 80px;
+    left: -20px;    
+}
+.corner{
+	width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 30px solid #fff;
+    position: absolute;
+    top: -25px;
+    left: 20px;
+}
+.main-box{
+	position: relative;
+    height: 190px;
+}
+.shipping-address-option{
+	cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+.edit-text{
+	display: inline;
+    font-size: 12px;
+}
+.shipping-address{
+	position: absolute;
+    top: 40px;
+    left: 20px;
+}
+.name-and-address{
+	margin-bottom: 15px;
+}
+.name{
+	font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.address{
+    margin-bottom: 0px;
+    color:#ACABAB;
+}
+/**************** purchase timeline ends ************/
+
+/******************* Payment Block *********************/
+.payment-wrapper {
+    overflow: auto;
+}
+.payment-block-title{
+    font-size: 21px;
+    font-family: Lato;
+    font-style: italic;
+    margin: 90px 15px 25px 15px;
+}
+.payment-form{
+    padding:0 15px;
+}
+
+.payment-options label {
+    display: inline-block;
+    position: relative;
+    margin-right: 15px;
+    padding: 10px 50px !important;
+    vertical-align: middle;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.payment-options input[type=radio]{
+    display: none;
+}
+.payment-options label:before {
+    content: "";
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #DBDBDB;
+}
+
+.payment-options  label:before {
+    border-radius: 0px;
+}
+
+
+.payment-options input[type=radio]:checked + label:before {
+    background: url(../assets/goodearth/images/forms/right.png) #DBDBDB no-repeat center;
+}
+.payment-buttons {
+    padding: 30px;
+}
+.payment-infoline {
+    display: inline-block;
+    margin-right: 30px;
+    font-family: Lato;
+    font-style: italic;
+    color: #A89891;
+}
+.payment-submit {
+    display: inline-block;
+}
+.payment-submit .btn-primary{
+    border-radius: 0;
+    border: none;
+    border-color: #BF3B79;
+    background-color: #B5296B;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 20px 40px;
+}
+
+.payment-submit .btn-primary:hover,.btn-primary:focus {
+    color: #fff;
+    background-color: #BF3B79;
+    border-color: #BF3B79;
+}
+
+.payment-next-image{
+    width: 10px;
+    margin: 0 0 5px 5px;
+}
+/*******************************************************/

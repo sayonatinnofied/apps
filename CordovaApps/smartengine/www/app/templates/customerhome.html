@@ -1,0 +1,78 @@
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+  <h1>
+    Dashboard
+    <small>Version 2.0</small>
+  </h1>
+  <ol class="breadcrumb">
+    <li><a ng-click="goCustomerHome()"><i class="fa fa-dashboard"></i> Home</a></li>
+    <li class="active">Dashboard</li>
+  </ol>
+</section>
+
+<!-- Main content -->
+<section class="content">
+  <!-- Info boxes -->
+  <div class="row">
+    <div class="col-md-8">
+      <div class="box box-primary">
+        <div class="box-header with-border">
+          <h3 class="box-title">Exclusive Offers for You</h3>
+        </div><!-- /.box-header -->
+        <div class="box-body">
+          <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
+            <uib-slide ng-repeat="slide in slides" active="slide.active">
+              <img ng-src="{{slide.image}}" style="margin:auto;height:360px;">
+              <div class="carousel-caption">
+                <!-- <h4>Slide {{$index}}</h4> -->
+                <p>{{slide.text}}</p>
+              </div>
+            </uib-slide>
+          </uib-carousel>
+        </div><!-- /.box-body -->
+      </div><!-- /.box -->
+    </div>
+    <div class="col-md-4">
+      <!-- PRODUCT LIST -->
+      <div class="box box-solid box-primary">
+        <div class="box-header with-border">
+          <h3 class="box-title">Choose your exciting offers</h3>
+        </div><!-- /.box-header -->
+        <div class="box-body">
+          <ul class="products-list product-list-in-box">            
+            <li class="item fadeInOut" ng-repeat="offer in customerOffers | limitTo: 4" ng-click="goProductDetails(offer)">
+              <div class="product-img">
+                <img src="resources/img/default-50x50.gif" alt="Product Image">
+              </div>
+              <div class="product-info">
+                <a class="product-title">{{offer.ProductName}}<span class="label label-warning pull-right">Rs. {{offer.Price - ((offer.OfferDiscount / 100) * offer.Price)}}</span></a>
+                <span class="product-description">
+                  {{offer.OfferDescription}}
+                </span>
+                <span class="label label-offer"> {{offer.OfferCode}}</span>
+                <span class="label label-success">  {{offer.OfferDiscount}}% off </span>
+              </div>
+            </li><!-- /.item -->
+          </ul>
+          <div class="empty-text" ng-show="!customerOffers.length">{{offerItemsEmptyText}}</div>
+        </div><!-- /.box-body -->
+        <div class="box-footer text-center">
+          <a ng-click="goOffers()" class="uppercase">View All Offers</a>
+        </div><!-- /.box-footer -->
+      </div><!-- /.box -->
+    </div>
+  </div><!-- /.row -->
+  <div class="row">
+    <div class="col-md-12">
+      <div class="box box-primary">
+        <div class="box-header with-border">
+          <h3 class="box-title">Your Location</h3>
+        </div><!-- /.box-header -->
+        <div class="box-body map-wrapper">
+          <div id="map"></div>
+        </div>
+    </div>
+  </div>
+</section><!-- /.content -->
+

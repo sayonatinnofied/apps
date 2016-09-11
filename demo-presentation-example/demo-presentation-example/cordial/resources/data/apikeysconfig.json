@@ -1,0 +1,71 @@
+{
+    "columns": [{
+        "name": "Action",
+        "label": "",
+        "sortable": false,
+        "grid": true,
+        "thumbnail": false
+    }, {
+        "name": "name",
+        "label": "Name",
+        "sortable": true,
+        "grid": true
+    }, {
+        "name": "apiKey",
+        "label": "API Key",
+        "sortable": true,
+        "grid": true,
+        "detailsGrid": true,
+        "complexAttribute": true,
+        "valueConnector": "-",
+        "arrayOfAttributes": ["_id", "secret"]
+    }, {
+        "name": "ips",
+        "label": "IPs",
+        "detailsGrid": true,
+        "arrayOfObjects": true,
+        "objectProperties": [{
+            "name": "ip",
+            "label": "IP Address"
+        }, {
+            "name": "description",
+            "label": "Description",
+            "ifEmpty": "N/A"
+        }]
+    }],
+    "title": {
+        "singular": "API Key",
+        "plural": "API Keys"
+    },
+    "actions": [{
+        "name": "edit",
+        "displayText": "Edit",
+        "isPrimary": true,
+        "isSingularAction": true,
+        "isBulkAction": false,
+        "icon": "fa fa-pencil"
+    }, {
+        "name": "remove",
+        "displayText": "Remove",
+        "isPrimary": false,
+        "isSingularAction": true,
+        "isBulkAction": false,
+        "icon": "fa fa-times"
+    }, {
+        "name": "details",
+        "displayText": "Details"
+    }],
+    "templates": {
+        "grid": "<td class='center' data-class='menu-btn'><div class='icheckbox_square-blue checkbox {{#if selected}}checked {{/if}}' data-class='checkbox' aria-checked='false' aria-disabled='false' style='position: relative;'><input type='checkbox' class='icheck' style='position: absolute; opacity: 0;'><ins class='iCheck-helper' style='position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; border: 1px; opacity: 0; background: rgb(255, 255, 255);'></ins></div></td><td>{{name}}</td><td>{{_id}}-{{#obfuscate secret}}{{/obfuscate}}<i class='fa fa-copy' data-class='copy-to-clipboard' data-field='apiKey'></i></td>"
+    },
+    "headerSettings": {
+        "hasQuickSearchOption": false,
+        "hasAdvanceSearchOption": false,
+        "hasViewOption": false,
+        "hasPerPageSetting": true,
+        "hasSelectOption": true,
+        "hasAddOption": true
+    },
+    "defaultView": "grid",
+    "uniqueKey": "_id"
+}

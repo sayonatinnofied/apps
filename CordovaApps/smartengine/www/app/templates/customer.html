@@ -1,0 +1,129 @@
+
+<div class="fadeInOut wrapper">
+
+  <header class="main-header">
+
+    <!-- Logo -->
+    <a class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>C</b>TS</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>Smart</b>Engine</span>
+    </a>
+
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top" role="navigation">
+      <!-- Sidebar toggle button-->
+      <a  class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Messages: style can be found in dropdown.less-->
+          <li class="dropdown messages-menu">
+            <a ng-click="goShoppingCart()">
+              <i class="fa fa-shopping-cart"></i>
+              <span class="label label-success">{{cartItemCount}}</span>
+            </a>
+          </li>
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a  class="dropdown-toggle" data-toggle="dropdown">
+              <img src="resources/img/user8-128x128.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">{{user.CustomerName}}</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="resources/img/user8-128x128.jpg" class="img-circle" alt="User Image">
+                <p>
+                  {{user.CustomerName}} - {{user.Designation}}
+                  <small>Member since {{user.SignUpDate}}</small>
+                </p>
+              </li>
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a  ng-click="goViewProfile()" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a ng-click="logoutCustomer()" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <!-- Control Sidebar Sign Out Button -->
+          <li>
+            <a ng-click="logoutCustomer()"><i class="fa fa-power-off"></i></a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+  </header>
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="resources/img/user8-128x128.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>{{user.CustomerName}}</p>
+          <a>{{user.Designation}}</a>
+        </div>
+      </div>
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu">
+        <li class="header">MAIN NAVIGATION</li>
+
+        <li class="treeview" navigate-sidebar="Dashboard">
+          <a ng-click="goCustomerHome()"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a>
+        </li>
+        <li class="treeview" navigate-sidebar="Profile">
+          <a >
+            <i class="fa fa-share"></i> <span>Profile</span>
+            <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li navigate-sidebar="View Profile"><a ng-click="goViewProfile()"><i class="fa fa-circle-o"></i> View Profile</a></li>
+            <li navigate-sidebar="Update Profile"><a ng-click="goUpdateProfile()"><i class="fa fa-circle-o"></i> Update Profile</a></li>
+            <li navigate-sidebar="Change Profile Picture"><a ng-click="goChangeProfilePicture()"><i class="fa fa-circle-o"></i> Change Profile Picture</a></li>
+            <li navigate-sidebar="Update Email"><a ng-click="goUpdateEmail()"><i class="fa fa-circle-o"></i> Update Email</a></li>
+            <li navigate-sidebar="Change Password"><a ng-click="goChangePassword()"><i class="fa fa-circle-o"></i> Change Password</a></li>
+          </ul>
+        </li>
+        <li class="treeview" navigate-sidebar="Purchase"><a ng-click="goPurchase()"><i class="fa fa-cart-plus"></i> <span>Purchase</span></a></li>
+        <li class="treeview" navigate-sidebar="Orders"><a ng-click="goOrders()"><i class="fa fa-cart-plus"></i> <span>Orders</span></a></li>
+        <li class="treeview" navigate-sidebar="Offers">
+          <a ng-click="goOffers()">
+            <i class="fa fa-calendar"></i> <span>Offers</span>
+            <small class="label pull-right bg-red">{{offerCount}}</small>
+          </a>
+        </li>
+        <li class="treeview" navigate-sidebar="Shopping Cart">
+          <a ng-click="goShoppingCart()">
+            <i class="fa fa-shopping-cart"></i> <span>Shopping Cart</span>
+            <small class="label pull-right bg-green">{{cartItemCount}}</small>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div ui-view="content" class="fadeInOut content-wrapper" animate-scroll>
+
+  </div><!-- /.content-wrapper -->
+
+  <footer class="main-footer">
+    <div class="pull-right hidden-xs">
+      <b>Version</b> 2.3.0
+    </div>
+    <strong>Copyright &copy; 2014-2015 <a href="http://cognizant.com">Cognizant India Pvt Ltd</a>.</strong> All rights reserved.
+  </footer>
+
+</div><!-- ./wrapper -->

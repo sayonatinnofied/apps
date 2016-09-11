@@ -1,0 +1,79 @@
+ {
+     "columns": [{
+         "name": "Action",
+         "label": "",
+         "grid": true
+     }, {
+         "name": "name",
+         "label": "Name",
+         "sortable": true,
+         "grid": true,
+         "list": true
+     }, {
+         "name": "key",
+         "label": "Key",
+         "sortable": true,
+         "grid": true,
+         "list": true,
+         "direction": "descending"
+     }, {
+         "name": "",
+         "label": "# indexes",
+         "sortable": true,
+         "grid": true,
+         "list": true
+     }, {
+         "name": "",
+         "label": "Records last updated",
+         "sortable": true,
+         "grid": true,
+         "list": true
+     }, {
+         "name": "indexes",
+         "label": "Indexes",
+         "detailsGrid": true,
+         "arrayOfNestedObjectProperty": true,
+         "objectProperty": "field"
+     }],
+     "title": {
+         "singular": "Supplement",
+         "plural": "Supplements"
+     },
+     "actions": [{
+         "name": "edit",
+         "displayText": "Edit",
+         "isPrimary": true,
+         "isSingularAction": true,
+         "isBulkAction": false,
+         "icon": "fa fa-pencil"
+     }, {
+         "name": "viewRecords",
+         "displayText": "View Records",
+         "isSingularAction": true,
+         "icon": "fa fa-eye"
+     }, {
+         "name": "details",
+         "displayText": "Details"
+     }],
+     "templates": {
+         "grid": "<td class='center' data-class='menu-btn'><div class='icheckbox_square-blue checkbox {{#if selected}}checked {{/if}}' data-class='checkbox' aria-checked='false' aria-disabled='false' style='position: relative;'><input type='checkbox' class='icheck' style='position: absolute; opacity: 0;'><ins class='iCheck-helper' style='position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; border: 1px; opacity: 0; background: rgb(255, 255, 255);'></ins></div></td><td>{{name}}</td><td>{{key}}</td><td>{{#supplementIndexedFields indexes}}{{/supplementIndexedFields}}</td><td></td>",
+         "list": "<div class='list-item-control'><div class='icheckbox_square-blue checkbox {{#if selected}}checked{{/if}}' aria-checked='false' aria-disabled='false' data-class='checkbox'><input type='checkbox' class='icheck' style='position: absolute; opacity: 0;'><ins class='iCheck-helper' style='position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);'></ins></div><div class='item-name'><span class='fa {{#if expanded}}fa-angle-up{{else}}fa-angle-down{{/if}}'></span>{{name}}</div></div><div class='row list-item-details' data-class='list-details' style='{{#if expanded}}display: block{{else}}display :none{{/if}}'><div class='col-xs-12'><div class='btn-group item-actions'><button type='button' class='btn btn-default' rel='tooltip' title='Edit Supplement Data' data-class='edit'><i class='fa fa-pencil'></i></button><button type='button' class='btn btn-default' rel='tooltip' title='View Records Supplement' data-class='viewRecords'><i class='fa fa-eye'></i></button></div></div><div class='col-sm-10 col-sm-offset-2 col-xs-8 col-xs-offset-4 form-horizontal'><div class='form-group'><label class='control-label col-sm-2'>Key</label><div class='text col-sm-6 form-control-static'>{{key}}</div></div><div class='form-group'><label class='control-label col-sm-2'># indexed fields</label><div class='text col-sm-6 form-control-static'>{{#supplementIndexedFields indexes}}{{/supplementIndexedFields}}</div></div><div class='form-group'><label class='control-label col-sm-2'>Records Last Updated</label><div class='text col-sm-6 form-control-static'></div></div></div></div>"
+     },
+     "viewOptions": [{
+         "displayText": "Table",
+         "attributes": "data-class=show-tableview"
+     }, {
+         "displayText": "List",
+         "attributes": "data-class=show-listview"
+     }],
+     "headerSettings": {
+         "hasQuickSearchOption": true,
+         "hasAdvanceSearchOption": true,
+         "hasViewOption": true,
+         "hasPerPageSetting": true,
+         "hasSelectOption": true,
+         "hasAddOption": true
+     },
+     "defaultView": "grid",
+     "uniqueKey": "key"
+ }

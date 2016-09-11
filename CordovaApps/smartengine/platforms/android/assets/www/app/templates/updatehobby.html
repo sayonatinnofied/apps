@@ -1,0 +1,56 @@
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+   <h1>
+      Update Hobby
+    <small>Version 2.0</small>
+  </h1>
+  <ol class="breadcrumb">
+    <li><a ng-click="goAdminHome()"><i class="fa fa-dashboard"></i> Home</a></li>
+    <li>Update</li>
+    <li class="active">Hobby</li>
+  </ol>
+</section>
+
+<!-- Main content -->
+<section class="content">
+  <!-- Info boxes -->
+  <div class="row">
+    <div class="col-md-12">
+      <div class="box box-primary box-center">
+        <div class="box-body">
+          <form>
+            <div class="form-group select-box">
+              <label for="selectHobby">Select Hobby</label>
+              <select  class="form-control select2" style="width: 100%;" ng-model="Hobby" ng-change="selectHobby(Hobby)">
+                <option value="">Select a Hobby</option>
+                <option ng-repeat="Hobby in hobbies" value="{{Hobby}}">{{Hobby.HobbyName}}</option>
+              </select>
+            </div>
+          </form>
+        </div><!-- /.box-body -->
+      </div>
+    </div>
+  </div><!-- /.row --><!-- /.row -->
+  <div class="row animate-show" ng-show="selected">
+    <div class="col-md-12">
+      <div class="box box-primary box-center">
+        <div class="box-body">
+          <form name="addForm" novalidate>
+            <div class="form-group" ng-class="{ 'has-error' : addForm.hobbyName.$invalid && !addForm.hobbyName.$pristine }">
+              <label for="hobbyName" class="control-label">Hobby Name <span class="red">*</span></label>
+              <input type="text" name="hobbyName" class="form-control" id="hobbyName" ng-model="hobby.HobbyName" placeholder="Hobby Name" required>
+              <p ng-show="addForm.hobbyName.$invalid && !addForm.hobbyName.$pristine" class="help-block">Hobby name is required.</p>
+            </div>
+            <div class="form-group">
+              <div class="text-center">
+                <button ng-click="upsertHobby(1)" ng-disabled="addForm.$invalid" class="btn btn-info">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div><!-- /.box-body -->
+      </div>
+    </div>
+  </div>
+
+</section><!-- /.content -->

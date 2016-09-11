@@ -1,0 +1,103 @@
+ {
+     "columns": [{
+         "name": "Action",
+         "label": "",
+         "grid": true
+     }, {
+         "name": "name",
+         "label": "Name",
+         "sortable": true,
+         "grid": true,
+         "list": true,
+         "direction": "ascending",
+         "quickSearchable": true,
+         "advancedSearchable": true,
+         "advanceSearchHasText": true
+     }, {
+         "name": "key",
+         "label": "Attribute Key",
+         "sortable": true,
+         "grid": true,
+         "list": true,
+         "quickSearchable": true,
+         "advancedSearchable": true,
+         "advanceSearchHasText": true
+     }, {
+         "name": "type",
+         "label": "Type",
+         "sortable": true,
+         "grid": true,
+         "list": true,
+         "advancedSearchable": true,
+         "advanceSearchHasDropdown": true,
+         "advanceSearchDropdown": [{
+             "label": "String",
+             "value": "string"
+         }, {
+             "label": "Number",
+             "value": "number"
+         }, {
+             "label": "Date",
+             "value": "date"
+         }, {
+             "label": "Geo Location",
+             "value": "geo"
+         }, {
+             "label": "Boolean",
+             "value": "boolean"
+         }]
+     }, {
+         "name": "index",
+         "label": "Searchable",
+         "grid": true,
+         "list": true
+     }, {
+         "name": "lm",
+         "label": "Date Last Modified",
+         "grid": true,
+         "sortable": true,
+         "list": true,
+         "advancedSearchable": true,
+         "advanceSearchHasDate": true
+     }],
+     "title": {
+         "singular": "Contact Attribute",
+         "plural": "Contact Attributes"
+     },
+     "actions": [{
+         "name": "edit",
+         "displayText": "Edit",
+         "isPrimary": true,
+         "isSingularAction": true,
+         "isBulkAction": false,
+         "icon": "fa fa-pencil"
+     }, {
+         "name": "remove",
+         "displayText": "Remove",
+         "isPrimary": false,
+         "isSingularAction": true,
+         "isBulkAction": true,
+         "icon": "fa fa-times"
+     }],
+     "templates": {
+         "grid": "<td class='center' data-class='menu-btn'><div class='icheckbox_square-blue checkbox {{#if selected}}checked {{/if}}' data-class='checkbox' aria-checked='false' aria-disabled='false' style='position: relative;'><input type='checkbox' class='icheck' style='position: absolute; opacity: 0;'><ins class='iCheck-helper' style='position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; border: 1px; opacity: 0; background: rgb(255, 255, 255);'></ins></div></td><td>{{name}}</td><td>{{key}}</td><td>{{type}}</td><td>{{index}}</td><td>{{#dateFormat lm}}{{/dateFormat}}</td>",
+         "list": "<div class='list-item-control'><div class='icheckbox_square-blue checkbox {{#if selected}}checked{{/if}}' aria-checked='false' aria-disabled='false' data-class='checkbox'><input type='checkbox' class='icheck' style='position: absolute; opacity: 0;'><ins class='iCheck-helper' style='position: absolute; top: 0%; left: 0%; display: block; width: 100%; height: 100%; margin: 0px; padding: 0px; border: 0px; opacity: 0; background: rgb(255, 255, 255);'></ins></div><div class='item-name'><span class='fa {{#if expanded}}fa-angle-up{{else}}fa-angle-down{{/if}}'></span>{{name}}</div></div><div class='row list-item-details' data-class='list-details' style='{{#if expanded}}display: block{{else}}display :none{{/if}}'><div class='col-xs-12'><div class='btn-group item-actions'><button type='button' class='btn btn-default' rel='tooltip' title='Edit Contact Attribute' data-class='edit'><i class='fa fa-pencil'></i></button><button type='button' class='btn btn-default' rel='tooltip' title='Remove Contact Attribute' data-class='remove'><i class='fa fa-times'></i></button></div></div><div class='col-sm-10 col-sm-offset-2 col-xs-8 col-xs-offset-4 form-horizontal'><div class='form-group'><label class='control-label col-sm-2'>Attribute Key</label><div class='text col-sm-6 form-control-static'>{{key}}</div></div><div class='form-group'><label class='control-label col-sm-2'>Type</label><div class='text col-sm-6 form-control-static'>{{type}}</div></div><div class='form-group'><label class='control-label col-sm-2'>Searchable</label><div class='text col-sm-6 form-control-static'>{{index}}</div></div><div class='form-group'><label class='control-label col-sm-2'>Date Last Modified</label><div class='text col-sm-6 form-control-static'>{{#dateFormat lm}}{{/dateFormat}}</div></div></div></div>"
+     },
+     "viewOptions": [{
+         "displayText": "Table",
+         "attributes": "data-class=show-tableview"
+     }, {
+         "displayText": "List",
+         "attributes": "data-class=show-listview"
+     }],
+     "headerSettings": {
+         "hasQuickSearchOption": true,
+         "hasAdvanceSearchOption": false,
+         "hasViewOption": true,
+         "hasPerPageSetting": true,
+         "hasSelectOption": true,
+         "hasAddOption": true
+     },
+     "defaultView": "grid",
+     "uniqueKey": "key"
+ }

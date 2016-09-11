@@ -1,0 +1,564 @@
+/* 
+   ------------------------------------------------------
+          Responsive Styles
+   ------------------------------------------------------
+*/
+
+@media (max-width: 359px) {
+    .profile-image-text {
+        font-size: 11px !important;
+        margin-left: 0px !important;
+        width: 100px;
+    }
+    .idea-feed-searchfield {
+        width: 88% !important;
+        font-size: 12px !important;
+    }
+    .sorter-list li {
+        font-size: 10px !important;
+        line-height: 18px;
+    }
+    .votes-mobile {
+        margin-left: 5px !important;
+    }
+    .profile-image-text span {
+        font-size: 10px !important;
+    }
+    .profile-image-mobile {
+        width: 35px !important;
+    }
+    .images-container-mobile {
+        padding: 2px !important;
+    }
+    .like-vote-wrapper {
+        position: absolute;
+        right: 10px;
+    }
+    .images-container-mobile {
+        height: 40px;
+    }
+    .images-container-mobile .pull-left {
+        position: absolute;
+        left: 0px;
+    }
+}
+@media (max-width: 479px) {
+    .own-comment-field {
+        font-size: 12px;
+        height: 28px;
+        width: 60% !important;
+    }
+    .comment-btn {
+        width: 82px;
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    .idea-feed-searchfield {
+        width: 88% !important;
+        font-size: 13px !important;
+    }
+    .like-icon-wrapper-mobile {
+        width: 40px !important;
+    }
+    .sorter-list li {
+        font-size: 11px !important;
+    }
+}
+@media (max-width: 767px) {
+    .navigation-desktop, .navigation-tab, .notifications, .content-header, .navigation-mobile, .comments-data-wrapper {
+        display: none;
+    }
+    .comments-wrapper-mobile {
+        display: inherit;
+    }
+    .idea-feed-wrapper {
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+    .navigation-mobile {
+        display: none;
+    }
+    .content-header-mobile {
+        display: inherit;
+    }
+    .navigation-mobile {
+        color: #fff;
+        padding-left: 0px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: rgba(0, 0, 0, 0.3);
+        min-width: 180px;
+        height: 100%;
+    }
+    .visitor-info-container-mobile {
+        padding-right: 0px;
+        margin-bottom: 10px;
+    }
+    .navigation-list-wrapper {
+        margin-top: 25px;
+    }
+    .navigation-list li {
+        font-size: 16px;
+    }
+    .navigation-list li i {
+        margin: 0px 10px 0px 5px;
+    }
+    .list-item-selected {
+        border-left: 5px solid rgb(118, 173, 86);
+    }
+    .list-item-selected a {
+        padding-left: 10px !important;
+    }
+    .list-item-selected .navigation-text {
+        font-size: 16px;
+        color: rgb(160, 204, 236);
+        margin: 12px 0px 0px 5px;
+    }
+    .navigation-text {
+        margin: 9px 0px 0px 5px;
+    }
+    .navigation-list li a {
+        padding: 10px 0px 10px 15px;
+    }
+    .body-content {
+        position: relative;
+    }
+    .slide {
+        margin-left: 0px;
+    }
+    .idea-feed {
+        padding-top: 3px;
+    }
+    .idea-feed-sorters {
+        float: left !important;
+        padding-left: 5px;
+        margin-bottom: 5px;
+    }
+    .sorter-header {
+        display: none;
+    }
+    .sorter-list li {
+        border-right: 2px solid rgb(115, 209, 231);
+        padding-right: 7px;
+        padding-left: 2px;
+        font-size: 16px;
+    }
+    .idea-feed-search {
+        width: 100%;
+    }
+    .idea-feed-searchfield {
+        width: 90%;
+        font-size: 15px;
+    }
+    .search-wrapper i {
+        font-size: 20px;
+    }
+    .comments-wrapper-mobile {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .idea-header-container-mobile {
+        box-shadow: 0 4px 7px 0 #ccc;
+        padding: 0px 15px 13px;
+    }
+    .idea-feed-details-mobile {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .issue-header {
+        font-size: 16px;
+        margin: 5px 10px 15px 0px;
+        line-height: 22px;
+    }
+    .status-image {
+        width: 35px;
+        border-radius: 3px;
+    }
+    .images-container-mobile > * {
+        display: inline-block;
+        vertical-align: top;
+    }
+    .profile-image-mobile {
+        width: 40px;
+    }
+    .profile-image-text {
+        vertical-align: top;
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: 2px;
+        color: rgb(84, 84, 84);
+    }
+    .profile-image-text span {
+        font-size: 13px;
+        color: rgb(173, 166, 166);
+        line-height: 1.6em;
+        display: block;
+        /*margin-top: 5px;*/
+    }
+    .like-icon-wrapper-mobile {
+        width: 50px;
+        border: 1px solid #ff8c45;
+        border-radius: 3px;
+        display: inline-block;
+        padding: 3px 0px;
+        text-align: center;
+    }
+    .like-icon-holder {
+        margin: 0px auto;
+    }
+    .votes-mobile {
+        vertical-align: top;
+        width: 40px;
+        margin-left: 6px;
+        font-size: 13px;
+        margin-top: 2px;
+        font-weight: bold;
+        float: right;
+        line-height: 1.3em;
+    }
+    .votes-mobile span {
+        font-weight: normal;
+    }
+    .issue-details-mobile {
+        margin: 20px 0px;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 1.5em;
+    }
+    .issue-icon {
+        display: inline-block;
+    }
+    .issue-text-mobile {
+        display: inline-block;
+        width: 90%;
+        vertical-align: top;
+        font-size: 13px;
+        color: #2a729b;
+        font-weight: bold;
+        line-height: 1.5em;
+    }
+    .own-comment-field {
+        width: 64%;
+    }
+    .comment-list li {
+        margin-bottom: 20px;
+    }
+    .visitor-image-container-mobile {
+        width: 35px;
+        padding: 0;
+    }
+    .visitor-name, .visitor-comment {
+        font-size: 11px;
+    }
+    .like-vote-wrapper > * {
+        display: inline-block;
+    }
+    .comment-info-container-mobile {
+        width: 100%;
+        font-size: 10px;
+        font-weight: 600;
+        color: #8c8c8c;
+        text-align: right;
+        margin-top: 2px;
+    }
+    .profile-image-mobile, .profile-image-text {
+        display: inline-block;
+    }
+    .images-container-mobile {
+        overflow: hidden;
+        position: relative;
+    }
+    .content-wrapper {
+        margin-top: 60px;
+    }
+    /******************************* Mobile Header *********************************/
+    
+    .logo {
+        border-right: 2px solid rgb(92, 84, 84);
+        padding: 16px 15px 16px 2px;
+    }
+    .logo i {
+        display: initial;
+        font-size: 24px;
+        color: rgb(123, 123, 123);
+    }
+    .profile-image {
+        display: none;
+    }
+    .profile-image.dropdown-toggle {
+        display: initial;
+    }
+    .profile-image.dropdown-toggle:hover {
+        cursor: pointer;
+    }
+    .content-header {
+        display: initial;
+        border-bottom: 2px solid grey;
+    }
+    .logo-small, .badge-text, .seperator, .profile-options {
+        display: none;
+    }
+    .head-notification-icon {
+        display: inline-block;
+    }
+    .header {
+        padding: 10px 0 5px;
+    }
+    .capture-wrapper {
+        position: relative;
+        text-align: center;
+        margin-right: 25px;
+        vertical-align: top;
+        margin-top: 18px;
+    }
+    .capture-wrapper i {
+        font-size: 16px;
+    }
+    .capture-wrapper .badge {
+        bottom: 18px;
+        left: 15px;
+    }
+    .account-options {
+        margin-right: 0px;
+    }
+    .image-wrapper {
+        margin-left: 20px;
+    }
+    .image-wrapper img {
+        width: 39px;
+        height: 39px;
+    }
+    /*****************************************************************/
+}
+@media (max-width: 425px) and(min-width: 320px) {
+    .profile-image-text {
+        font-size: 12px;
+    }
+    .like-icon-wrapper-mobile {
+        margin-left: 30px;
+    }
+}
+/******************* Pabitra *************************/
+
+@media (min-width: 768px) and (max-width: 1092px) {
+    .impact-box-container, .practicality-box-container, .alignment-box-container {
+        margin-left: 0px !important;
+    }
+    .comments-data-wrapper {
+        padding: 15px;
+        font-size: 12px;
+    }
+}
+/******************* Pabitra *************************/
+
+@media (min-width: 768px) and (max-width: 1040px) {
+    .content-header {
+        width: 90%;
+        padding-bottom: 9px;
+    }
+    .logo {
+        display: none;
+    }
+    .header {
+        padding-top: 9px;
+    }
+    .navigation-desktop {
+        display: none;
+    }
+    .content-wrapper {
+        /*margin-top: 100px;*/
+        
+        margin-top: 90px;
+    }
+    .idea-feed .header-menu {
+        display: inherit;
+        padding-right: 0px;
+    }
+    .idea-feed {
+        padding-top: 0px;
+    }
+    /************* Navigation Panel starts ***************/
+    
+    .navigation-tab {
+        display: inherit;
+        width: 90px;
+        min-width: 90px;
+    }
+    .navigation-tab .navigation-text {
+        font-size: 11px !important;
+    }
+    .navigation-header-logo {
+        padding: 11px;
+    }
+    .navigation-header-logo img {
+        width: 55px;
+    }
+    .slide {
+        margin-left: 90px;
+    }
+    /************* Navigation Panel ends ***************/
+    /************* Notification panel starts ***********/
+    
+    .notifications {
+        max-width: 220px;
+        margin: 0px 3px 0px 0px;
+    }
+    .notification-list-header-container i {
+        padding: 5px;
+        font-size: 16px;
+        margin-left: 0px;
+    }
+    .notification-bullet i {
+        padding: 4px;
+        font-size: 11px;
+    }
+    .notification-header {
+        font-size: 19px;
+    }
+    .notification-content img {
+        width: 30px;
+    }
+    .horizontal-dash {
+        width: 6px;
+        margin-top: 38px;
+    }
+    .notification-text {
+        width: 76%;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .notification-bullet {
+        margin-top: 28px;
+    }
+    /************* Notification panel ends ***********/
+    /************* Idea feed starts ******************/
+    
+    .my-idea .idea-tag {
+        top: -5px;
+        right: -5px;
+    }
+    .idea-tag img {
+        width: 69px;
+    }
+    .idea-feed-wrapper {
+        margin: 0px 220px 0px 10px;
+    }
+    .impact-box-container, .practicality-box-container, .alignment-box-container {
+        margin-left: 0px !important;
+        width: 61px;
+    }
+    .comments-data-wrapper {
+        padding: 15px;
+    }
+    .own-comment {
+        /*padding: 14px 4% 0px 4%;*/
+    }
+    .own-comment-field {
+        width: 73%;
+    }
+    .comment-btn {
+        float: right;
+        padding: 9px;
+    }
+    .visitor-info-container {
+        width: 61%;
+        margin-left: 7px;
+    }
+    .visitor-image {
+        width: 37px;
+    }
+    .visitor-name {
+        font-size: 11px;
+    }
+    .visitor-comment {
+        font-size: 12px;
+    }
+    .comment-info-container {
+        width: 80px;
+        font-size: 10px;
+    }
+    .issue-header {
+        padding-right: 8%;
+        font-size: 17px;
+        margin-top: -2px;
+        line-height: 20px;
+    }
+    .issue-header p {
+        font-size: 12px;
+    }
+    .issue-header-container {
+        padding: 0px;
+        width: 79px;
+    }
+    .profile-image-wrapper {
+        width: 74px;
+    }
+    .issue-details {
+        font-size: 90%;
+        line-height: 17px;
+        margin-top: 13px;
+    }
+    .issue-resolved {
+        font-size: 11px;
+        margin-top: 20px;
+    }
+    .issue-details-container {
+        width: 74%;
+        padding-right: 0px;
+    }
+    .impact-box-container div:last-child, .practicality-box-container div:last-child, .alignment-box-container div:last-child {
+        font-size: 10px;
+        letter-spacing: -0.5px;
+    }
+    .right-box-panel {
+        width: 34%;
+    }
+    .files-box {
+        width: 37%;
+    }
+    .comment-box {
+        width: 55%;
+    }
+    .ipa-box-text, .files-box-text, .comment-box-text {
+        font-size: 11px;
+        letter-spacing: -.5px;
+    }
+    .like-icon div:last-child {
+        margin-left: 0px;
+        letter-spacing: 0px;
+    }
+    /************* Idea feed ends ******************/
+    /************* Idea feed search ****************/
+    
+    .search-wrapper {
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+    }
+    .idea-feed-searchfield {
+        font-size: 15px;
+    }
+    .idea-feed-sorters {
+        float: none !important;
+        margin-bottom: 10px;
+        padding: 5px 0px;
+    }
+    .sorter-header, .sorter-list li {
+        font-size: 12px;
+    }
+    .sorter-list li a {
+        letter-spacing: -1px !important;
+    }
+    .idea-feed-search {
+        width: 100%;
+    }
+    /************ Idea Feed Search Ends *************/
+    /*********** Idea feed header menu **************/
+    
+    .account-options {
+        margin-right: 0px;
+    }
+    .comment .triangle {
+        right: 7.5%;
+    }
+}
